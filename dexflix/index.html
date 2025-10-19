@@ -132,7 +132,7 @@ body {
 </style>
 </head>
     
-<!-- IMPROVEMENT: Removed user-hostile `oncontextmenu="return false;"` --><body class="text-white">
+<body class="text-white">
 
 <!-- Pre-loader --><div id="preloader">
     <div class="loader"></div>
@@ -167,7 +167,8 @@ body {
 </nav>
 
 <!-- Banner Section: The big featured movie at the top --><header id="banner" class="relative text-white object-cover bg-cover bg-center" style="height: 56.25vw; max-height: 800px;">
-    <!-- Wrapper for content to apply fade transition --><div id="banner-content-wrapper" class="transition-opacity duration-500">
+    <!-- FIX: Added relative and z-10 to ensure content is above the fade effect, making buttons clickable -->
+    <div id="banner-content-wrapper" class="relative z-10 transition-opacity duration-500">
         <div class="ml-4 md:ml-8 pt-32 sm:pt-48 md:pt-56 h-full">
             <h1 id="banner-title" class="text-xl sm:text-3xl md:text-6xl font-extrabold pb-2"></h1>
             <div class="flex space-x-2 my-4">
@@ -185,10 +186,12 @@ body {
         </div>
     </div>
 
-    <!-- FIX: Moved banner-fade-bottom outside banner-content-wrapper to ensure it's always at the very bottom --><div class="banner-fade-bottom"></div>
+    <div class="banner-fade-bottom"></div>
     
-    <!-- Carousel navigation dots --><div id="banner-dots" class="absolute bottom-20 md:bottom-16 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
-        <!-- Dots will be inserted here by JS --></div>
+    <!-- FIX: Adjusted mobile positioning of dots to be lower on the screen -->
+    <div id="banner-dots" class="absolute bottom-8 md:bottom-16 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+        <!-- Dots will be inserted here by JS -->
+    </div>
 </header>
 
 
