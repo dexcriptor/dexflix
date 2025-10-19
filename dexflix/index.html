@@ -117,17 +117,11 @@ footer {
 }
 </style>
 
-<!-- Popads -->
-<script type="text/javascript" data-cfasync="false">
-/*<![CDATA[/* */
-(function(){var k=window,j="b36557cb37e17a1a0223a05680846392",n=[["siteId",842-971-72-470+535+5246436],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],h=["d3d3LnZpc2FyaW9tZWRpYS5jb20veHBvc3RhbC5taW4uY3Nz","ZDEzazdwcmF4MXlpMDQuY2xvdWRmcm9udC5uZXQveXRhL2hpbmRleC5taW4uanM="],i=-1,r,x,b=function(){clearTimeout(x);i++;if(h[i]&&!(1786272867000<(new Date).getTime()&&1<i)){r=k.document.createElement("script");r.type="text/javascript";r.async=!0;var u=k.document.getElementsByTagName("script")[0];r.src="https://"+atob(h[i]);r.crossOrigin="anonymous";r.onerror=b;r.onload=function(){clearTimeout(x);k[j.slice(0,16)+j.slice(0,16)]||b()};x=setTimeout(b,5E3);u.parentNode.insertBefore(r,u)}};if(!k[j]){try{Object.freeze(k[j]=n)}catch(e){}b()}})();
-/*]]>/* */
-</script>
-
 </head>
+
     
-    
-<body class="text-white">
+  
+<body class="text-white" oncontextmenu="return false;">
 
 <!-- Pre-loader -->
 <div id="preloader">
@@ -140,8 +134,8 @@ footer {
         <div class="flex items-center space-x-4">
             <div>
                  <a href="index.html" class="no-underline hover:opacity-80 transition">
-                    <img src="logo-dexflix-v4.png" alt="DexFlix Logo" class="h-12 w-auto">
-                </a>
+                     <img src="logo-dexflix-v4.png" alt="DexFlix Logo" class="h-12 w-auto">
+                 </a>
             </div>
         </div>
         <div class="flex items-center space-x-1 md:space-x-4">
@@ -206,6 +200,16 @@ footer {
     <div id="player-wrapper" class="relative md:w-3/5 w-full aspect-video max-w-6xl">
         <iframe id="youtube-player" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <iframe id="vidsrc-player" class="hidden absolute top-0 left-0 w-full h-full" frameborder="0" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen allowscripts="true" allow-same-origin="true"></iframe>
+    </div>
+
+    <!-- Fullscreen Button Container -->
+    <div class="w-full max-w-6xl flex justify-center">
+        <button id="fullscreen-btn" class="mt-2 text-white bg-zinc-700 hover:bg-zinc-600 font-bold rounded px-4 py-2 transition text-sm flex items-center" aria-label="Toggle fullscreen">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" />
+            </svg>
+            Full Screen
+        </button>
     </div>
 
     <!-- Details Overlay -->
@@ -387,6 +391,14 @@ function createMovieRow(title, moviesPromise, isLargeRow = false) {
             poster.src = `${isLargeRow ? IMAGE_BASE_URL_POSTER : IMAGE_BASE_URL_BACKDROP}${imagePath}`;
             poster.alt = `Poster for ${movie.name || movie.title || 'Movie'}`;
             poster.loading = 'lazy';
+            
+            // *** CHANGE: Added onerror fallback for images ***
+            const placeholderImageUrl = `https://placehold.co/${isLargeRow ? '200x300' : '300x170'}/141414/FFFFFF?text=No+Image`;
+            poster.onerror = function() {
+                this.onerror=null; 
+                this.src=placeholderImageUrl;
+            };
+
             const itemHeight = isLargeRow ? 'h-60 sm:h-72' : 'h-28 sm:h-32';
             poster.className = `object-cover w-full ${itemHeight} rounded transition-transform duration-300 group-hover:scale-105`;
 
@@ -721,12 +733,58 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.style.backgroundColor = window.scrollY > 100 ? '#141414' : 'transparent';
     });
 
+    // --- Fullscreen Button Logic ---
+    const fullscreenBtn = document.getElementById('fullscreen-btn');
+    const playerWrapper = document.getElementById('player-wrapper');
+    const enterFullscreenIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" /></svg> Full Screen`;
+    const exitFullscreenIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h5v5m0-5l-6 6m-6 6H4v-5m0 5l6-6" /></svg> Exit Full Screen`;
+
+    fullscreenBtn.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+            playerWrapper.requestFullscreen().catch(err => {
+                console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+            });
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+        if (document.fullscreenElement) {
+            fullscreenBtn.innerHTML = exitFullscreenIcon;
+            try {
+                // Lock the screen orientation to landscape on fullscreen
+                if (screen.orientation && typeof screen.orientation.lock === 'function') {
+                    screen.orientation.lock('landscape').catch(err => {
+                        console.log("Could not lock screen orientation: ", err);
+                    });
+                }
+            } catch (e) {
+                console.error("Screen orientation lock failed:", e);
+            }
+        } else {
+            fullscreenBtn.innerHTML = enterFullscreenIcon;
+            try {
+                // Unlock the screen orientation when exiting fullscreen
+                if (screen.orientation && typeof screen.orientation.unlock === 'function') {
+                    screen.orientation.unlock();
+                }
+            } catch (e) {
+                console.error("Screen orientation unlock failed:", e);
+            }
+        }
+    });
+    // --- End Fullscreen Button Logic ---
+
     // Dynamically update footer year
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 });
+
 </script>
     
 <!-- ADDED: Footer was missing from the HTML body -->
@@ -735,11 +793,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <p><i>Disclaimer: I do not own or host any of the videos streamed on this site. The links provided were found publicly available through Google search and are shared here for convenience only. If you are the rightful copyright holder and wish to have any content removed, please contact me at the below link, and I will promptly take action.</i></p><br/>
   <p><a href="https://forms.gle/otJ17bAKZ6K5uXU69" target="_blank" class="text-red-500 hover:underline">Contact Me</a></p>
 </footer>    
-    
-<script type='text/javascript' src='//pl27848134.effectivegatecpm.com/55/f5/ed/55f5ed47619f90005b22f2044c36fd0a.js'></script>
-
+   
 </body>
 </html>
-
-
 
