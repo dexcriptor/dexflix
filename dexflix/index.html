@@ -4,13 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DexFlix</title>
-<!-- Tailwind CSS for styling -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google Fonts for the Netflix look -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Tailwind CSS for styling --><script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts for the Netflix look --><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://dexflix.online/favicon.ico">
 
 <style>
 /* Custom styles to perfect the Netflix look */
@@ -18,14 +16,6 @@ body {
     background-color: #141414;
     font-family: 'Inter', sans-serif;
 }
-    
-footer {
-  text-align: center;
-  font-size: 12px;
-  padding: 20px;
-  background-color: #000000;
-  color: white;
-}    
     
 /* Hides the scrollbar but allows scrolling in movie rows */
 .scrollbar-hide::-webkit-scrollbar {
@@ -36,7 +26,12 @@ footer {
     scrollbar-width: none; /* Firefox */
 }
 /* Creates the fade-out effect at the bottom of the banner */
+/* FIX: Adjusted the positioning to be relative to the banner itself and only at the very bottom */
 .banner-fade-bottom {
+    position: absolute; /* Added: Position absolutely within the banner */
+    bottom: 0; /* Added: Anchor to the bottom */
+    left: 0;
+    right: 0;
     height: 7.4rem;
     background-image: linear-gradient(180deg, transparent, rgba(37,37,37,.61), #141414);
 }
@@ -115,41 +110,53 @@ footer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* NEW: Banner Carousel Styles */
+#banner {
+    transition: background-image 1s ease-in-out;
+}
+
+.banner-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
 </style>
-
 </head>
-
     
-  
-<body class="text-white" oncontextmenu="return false;">
+<!-- IMPROVEMENT: Removed user-hostile `oncontextmenu="return false;"` --><body class="text-white">
 
-<!-- Pre-loader -->
-<div id="preloader">
+<!-- Pre-loader --><div id="preloader">
     <div class="loader"></div>
 </div>
 
-<!-- Navbar: Stays at the top -->
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 p-4 transition-colors duration-500">
+<!-- Navbar: Stays at the top --><nav id="navbar" class="fixed top-0 left-0 right-0 z-50 p-4 transition-colors duration-500">
     <div class="flex justify-between items-center">
         <div class="flex items-center space-x-4">
             <div>
                  <a href="index.html" class="no-underline hover:opacity-80 transition">
-                     <img src="logo-dexflix-v4.png" alt="DexFlix Logo" class="h-12 w-auto">
+                      <img src="https://dexflix.online/logo-dexflix-v4.png" alt="DexFlix Logo" class="h-12 w-auto">
                  </a>
             </div>
         </div>
         <div class="flex items-center space-x-1 md:space-x-4">
-             <!-- Search Form -->
-            <form id="search-form" class="relative hidden flex items-center md:flex items-center bg-black bg-opacity-70 border border-gray-600 rounded">
+             <!-- Search Form --><form id="search-form" class="relative hidden flex items-center md:flex items-center bg-black bg-opacity-70 border border-gray-600 rounded">
                 <input type="search" id="search-input" placeholder="Search..." class="bg-transparent px-3 py-1 w-36 md:w-48 focus:outline-none transition-all duration-300">
                 <button type="submit" class="p-1 text-gray-400 hover:text-white" aria-label="Submit search">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                     </svg>
                 </button>
             </form>
-             <!-- Mobile Search Toggle -->
-            <button id="search-toggle-btn" class="p-1 text-gray-200 hover:text-white md:hidden" aria-label="Toggle search bar">
+             <!-- Mobile Search Toggle --><button id="search-toggle-btn" class="p-1 text-gray-200 hover:text-white md:hidden" aria-label="Toggle search bar">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 28 28" fill="currentColor">
                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                 </svg>
@@ -159,51 +166,48 @@ footer {
     </div>
 </nav>
 
-<!-- Banner Section: The big featured movie at the top -->
-<header id="banner" class="relative text-white object-cover bg-cover bg-center" style="height: 56.25vw; max-height: 800px;">
-    <div class="ml-4 md:ml-8 pt-32 sm:pt-48 md:pt-56 h-full">
-        <h1 id="banner-title" class="text-xl sm:text-3xl md:text-6xl font-extrabold pb-2"></h1>
-        <div class="flex space-x-2 my-4">
-            <button id="banner-play-btn" class="bg-white text-black font-bold rounded px-3 sm:px-4 md:px-8 py-1 sm:py-1.5 md:py-2 hover:bg-gray-300 transition text-xs sm:text-sm md:text-base flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                </svg>
-                Play
-            </button>
-            <button id="banner-info-btn" class="bg-gray-500 bg-opacity-70 text-white font-bold rounded px-3 sm:px-4 md:px-8 py-1 sm:py-1.5 md:py-2 hover:bg-gray-600 transition text-xs sm:text-sm md:text-base">
-                More Info
-            </button>
+<!-- Banner Section: The big featured movie at the top --><header id="banner" class="relative text-white object-cover bg-cover bg-center" style="height: 56.25vw; max-height: 800px;">
+    <!-- Wrapper for content to apply fade transition --><div id="banner-content-wrapper" class="transition-opacity duration-500">
+        <div class="ml-4 md:ml-8 pt-32 sm:pt-48 md:pt-56 h-full">
+            <h1 id="banner-title" class="text-xl sm:text-3xl md:text-6xl font-extrabold pb-2"></h1>
+            <div class="flex space-x-2 my-4">
+                <button id="banner-play-btn" aria-label="Play banner movie" class="bg-white text-black font-bold rounded px-3 sm:px-4 md:px-8 py-1 sm:py-1.5 md:py-2 hover:bg-gray-300 transition text-xs sm:text-sm md:text-base flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                    Play
+                </button>
+                <button id="banner-info-btn" aria-label="More information about banner movie" class="bg-gray-500 bg-opacity-70 text-white font-bold rounded px-3 sm:px-4 md:px-8 py-1 sm:py-1.5 md:py-2 hover:bg-gray-600 transition text-xs sm:text-sm md:text-base">
+                    More Info
+                </button>
+            </div>
+            <p id="banner-description" class="w-11/12 sm:max-w-sm md:max-w-md lg:max-w-lg pt-8 text-xs md:text-sm h-24 leading-snug" ></p>
         </div>
-        <p id="banner-description" class="w-11/12 sm:max-w-sm md:max-w-md lg:max-w-lg pt-8 text-xs md:text-sm h-24 leading-snug" ></p>
     </div>
 
-<div class="relative bottom-0 left-0 right-0 banner-fade-bottom"></div>
-
+    <!-- FIX: Moved banner-fade-bottom outside banner-content-wrapper to ensure it's always at the very bottom --><div class="banner-fade-bottom"></div>
+    
+    <!-- Carousel navigation dots --><div id="banner-dots" class="absolute bottom-20 md:bottom-16 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+        <!-- Dots will be inserted here by JS --></div>
 </header>
 
-<!-- Movie Rows: Container for all the movie carousels -->
-<main id="movie-rows" class="relative pt-20 md:pt-5 px-4 md:px-10 pb-16">
-    <!-- Rows will be dynamically added here by JavaScript -->
-    <!-- Skeleton loaders will be shown initially -->
-</main>
 
-<!-- Fullscreen Player Modal -->
-<div id="modal-overlay" class="hidden fixed inset-0 bg-black bg-opacity-95 z-[100] flex flex-col items-center p-4 sm:p-6 h-screen">
-    <!-- Close button -->
-    <button id="modal-close-btn" class="absolute top-5 left-5 text-white bg-black bg-opacity-50 rounded-full h-10 w-10 flex items-center justify-center z-20 hover:bg-opacity-75 transition" aria-label="Close modal">
+<!-- Movie Rows: Container for all the movie carousels --><main id="movie-rows" class="relative pt-20 md:pt-5 px-4 md:px-10 pb-16">
+    <!-- Rows will be dynamically added here by JavaScript --><!-- Skeleton loaders will be shown initially --></main>
+
+<!-- Fullscreen Player Modal --><div id="modal-overlay" class="hidden fixed inset-0 bg-black bg-opacity-95 z-[100] flex flex-col items-center p-4 sm:p-6 h-screen">
+    <!-- Close button --><button id="modal-close-btn" class="absolute top-5 left-5 text-white bg-black bg-opacity-50 rounded-full h-10 w-10 flex items-center justify-center z-20 hover:bg-opacity-75 transition" aria-label="Close modal">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
     </button>
 
-    <!-- Player Wrapper -->
-    <div id="player-wrapper" class="relative md:w-3/5 w-full aspect-video max-w-6xl">
+    <!-- Player Wrapper --><div id="player-wrapper" class="relative md:w-3/5 w-full aspect-video max-w-6xl">
         <iframe id="youtube-player" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <iframe id="vidsrc-player" class="hidden absolute top-0 left-0 w-full h-full" frameborder="0" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen allowscripts="true" allow-same-origin="true"></iframe>
     </div>
 
-    <!-- Fullscreen Button Container -->
-    <div class="w-full max-w-6xl flex justify-center">
+    <!-- Fullscreen Button Container --><div class="w-full max-w-6xl flex justify-center">
         <button id="fullscreen-btn" class="mt-2 text-white bg-zinc-700 hover:bg-zinc-600 font-bold rounded px-4 py-2 transition text-sm flex items-center" aria-label="Toggle fullscreen">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" />
@@ -212,10 +216,8 @@ footer {
         </button>
     </div>
 
-    <!-- Details Overlay -->
-    <div id="modal-details" class="w-full max-w-6xl pt-4 flex-grow flex flex-col md:flex-row md:gap-8 overflow-hidden">
-        <!-- Left Column: Info -->
-        <div class="md:w-2/3 flex flex-col">
+    <!-- Details Overlay --><div id="modal-details" class="w-full max-w-6xl pt-4 flex-grow flex flex-col md:flex-row md:gap-8 overflow-hidden">
+        <!-- Left Column: Info --><div class="md:w-2/3 flex flex-col">
             <h2 id="modal-title" class="text-2xl md:text-4xl font-bold"></h2>
             <div id="modal-meta-info" class="flex items-center space-x-4 text-sm text-zinc-400 mt-2">
                 <span id="modal-rating" class="font-semibold text-green-400"></span>
@@ -225,10 +227,8 @@ footer {
             <p id="modal-description" class="text-sm mt-4 text-zinc-300 flex-grow overflow-y-auto scrollbar-hide pr-4"></p>
         </div>
 
-        <!-- Right Column: Controls -->
-        <div class="md:w-1/3 mt-4 md:mt-0">
-            <!-- TV Show Season/Episode Selectors -->
-            <div id="tv-selector-container" class="hidden mb-4 grid grid-cols-2 gap-3">
+        <!-- Right Column: Controls --><div class="md:w-1/3 mt-4 md:mt-0">
+            <!-- TV Show Season/Episode Selectors --><div id="tv-selector-container" class="hidden mb-4 grid grid-cols-2 gap-3">
                 <div>
                     <label for="season-select" class="text-sm font-semibold text-zinc-400">Season</label>
                     <select id="season-select" class="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-2 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-red-600"></select>
@@ -239,8 +239,7 @@ footer {
                 </div>
             </div>
             <div class="flex flex-wrap gap-2" id="modal-actions">
-                <!-- Action buttons (Trailer, Servers) will be injected here -->
-            </div>
+                <!-- Action buttons (Trailer, Servers) will be injected here --></div>
             <div id="server-info" class="mt-3 text-xs text-zinc-500">
                 <p>Click a "Server" to play the full video. If the video doesn't play, try another server.</p>
             </div>
@@ -249,6 +248,9 @@ footer {
 </div>
 
 <script>
+// --- IMPORTANT SECURITY NOTE ---
+// This API key is visible on the client-side. For a production application,
+// it's crucial to hide this key by using a backend proxy server to make API requests.
 const API_KEY = 'cb1a56920d7eb6a09e31003b28d7daa9';
 
 // --- PERFORMANCE NOTE ---
@@ -274,10 +276,20 @@ const requests = {
 };
 
 // --- SERVER CONFIGURATION ---
+// IMPROVEMENT: Refactored to include a function for URL generation to simplify player logic.
 const SERVERS = [
-    { name: "Server 1", url: "https://player.videasy.net" },
-    { name: "Server 2", url: "https://moviesapi.club" },
-    { name: "Server 3", url: "https://vidsrc.to/embed" }
+    { 
+        name: "Server 1", 
+        getUrl: (type, id, s, e) => `https://player.videasy.net/${type}/${id}${type === 'tv' ? `/${s}/${e}` : ''}` 
+    },
+    { 
+        name: "Server 2", 
+        getUrl: (type, id, s, e) => type === 'tv' ? `https://moviesapi.club/tv/${id}-${s}-${e}` : `https://moviesapi.club/movie/${id}` 
+    },
+    { 
+        name: "Server 3", 
+        getUrl: (type, id, s, e) => `https://vidsrc.to/embed/${type}/${id}${type === 'tv' ? `/${s}/${e}` : ''}` 
+    }
 ];
 let activeServerIndex = 0; // Default to Server 1
 
@@ -292,6 +304,13 @@ const logo = document.querySelector('nav a');
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
 const searchToggleBtn = document.getElementById('search-toggle-btn');
+const bannerContentWrapper = document.getElementById('banner-content-wrapper');
+const bannerDotsContainer = document.getElementById('banner-dots');
+
+// --- BANNER CAROUSEL STATE ---
+let bannerCarouselMovies = [];
+let currentBannerIndex = 0;
+let bannerInterval;
 
 // --- CORE FUNCTIONS ---
 async function fetchData(endpoint) {
@@ -365,8 +384,8 @@ function createMovieRow(title, moviesPromise, isLargeRow = false) {
         postersContainer.innerHTML = ''; // Clear skeletons
         
         if (!movies || movies.length === 0) {
-              row.innerHTML = `<h2 class="text-xl md:text-2xl font-bold mb-2">${title}</h2><p class="text-gray-400">Could not load this category.</p>`;
-              return;
+             row.innerHTML = `<h2 class="text-xl md:text-2xl font-bold mb-2">${title}</h2><p class="text-gray-400">Could not load this category.</p>`;
+             return;
         }
 
         movies.forEach(movie => {
@@ -471,25 +490,11 @@ function displayModalWithDetails(details, mediaType) {
     const seasonSelect = document.getElementById('season-select');
     const episodeSelect = document.getElementById('episode-select');
 
-    // UPDATED: Corrected server URL logic
+    // IMPROVEMENT: Cleaner way to get the server URL
     const updatePlayerSrc = (serverIndex, season, episode) => {
         const server = SERVERS[serverIndex];
         const type = mediaType === 'tv' ? 'tv' : 'movie';
-        let srcUrl = '';
-
-        if (server.name === "Server 1") { // videasy
-            srcUrl = `${server.url}/${type}/${details.id}`;
-            if (type === 'tv') srcUrl += `/${season}/${episode}`;
-        } else if (server.name === "Server 2") { // moviesapi.club
-            srcUrl = type === 'tv' ? `${server.url}/tv/${details.id}-${season}-${episode}` : `${server.url}/movie/${details.id}`;
-        } else if (server.name === "Server 3") { // vidsrc.to
-            srcUrl = `${server.url}/${type}/${details.id}`;
-            // vidsrc.to supports appending season and episode for direct linking
-            if (type === 'tv') {
-                srcUrl += `/${season}/${episode}`;
-            }
-        }
-        vidsrcPlayer.src = srcUrl;
+        vidsrcPlayer.src = server.getUrl(type, details.id, season, episode);
     };
     
     const switchToPlayer = (playerType, season = 1, episode = 1) => {
@@ -604,17 +609,107 @@ function displayModalWithDetails(details, mediaType) {
         };
         modalActions.appendChild(serverButton);
     });
-
+    
+    // UX IMPROVEMENT: Prevent background scrolling when modal is open
+    document.body.style.overflow = 'hidden';
     modalOverlay.classList.remove('hidden');
 }
 
 function closeModal() {
+    // UX IMPROVEMENT: Restore background scrolling when modal is closed
+    document.body.style.overflow = 'auto';
     modalOverlay.classList.add('hidden');
     youtubePlayer.src = '';
     vidsrcPlayer.src = '';
     document.getElementById('tv-selector-container').classList.add('hidden');
     document.getElementById('season-select').innerHTML = '';
     document.getElementById('episode-select').innerHTML = '';
+}
+
+// --- BANNER CAROUSEL FUNCTIONS ---
+function updateBannerSlide(index, isManualClick = false) {
+    if (isManualClick) {
+        clearInterval(bannerInterval);
+    }
+    
+    currentBannerIndex = index;
+    const movie = bannerCarouselMovies[currentBannerIndex];
+
+    if (!movie) return;
+
+    // 1. Fade out content
+    bannerContentWrapper.style.opacity = '0';
+
+    // 2. Update dots
+    document.querySelectorAll('.banner-dot').forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentBannerIndex);
+    });
+
+    // 3. After fade-out, update content and fade back in
+    setTimeout(() => {
+        // Update background
+        banner.style.backgroundImage = `url('${IMAGE_BASE_URL_BACKDROP}${movie.backdrop_path}')`;
+        
+        // Update text
+        document.getElementById('banner-title').textContent = movie.name || movie.title || movie.original_name;
+        document.getElementById('banner-description').textContent = movie.overview;
+
+        // Update buttons by replacing them to clear old event listeners
+        const bannerPlayBtn = document.getElementById('banner-play-btn');
+        const bannerInfoBtn = document.getElementById('banner-info-btn');
+
+        const newPlayBtn = bannerPlayBtn.cloneNode(true);
+        const newInfoBtn = bannerInfoBtn.cloneNode(true);
+
+        const showModalForCurrentBanner = async () => {
+            try {
+                // Ensure media_type is correctly passed for the banner item
+                const mediaType = movie.media_type || 'tv'; // Default to 'tv' as originals are TV
+                const details = await fetchMovieDetails(movie.id, mediaType);
+                if (details) displayModalWithDetails(details, mediaType);
+            } catch (e) {
+                console.error("Could not load banner modal details:", e);
+            }
+        };
+
+        newPlayBtn.addEventListener('click', showModalForCurrentBanner);
+        newInfoBtn.addEventListener('click', showModalForCurrentBanner);
+
+        bannerPlayBtn.parentNode.replaceChild(newPlayBtn, bannerPlayBtn);
+        bannerInfoBtn.parentNode.replaceChild(newInfoBtn, bannerInfoBtn);
+        
+        // Fade in new content
+        bannerContentWrapper.style.opacity = '1';
+
+    }, 500); // This duration should match the opacity transition duration
+
+    // 4. Restart interval if it was a manual click
+    if (isManualClick) {
+        bannerInterval = setInterval(() => {
+            const nextIndex = (currentBannerIndex + 1) % bannerCarouselMovies.length;
+            updateBannerSlide(nextIndex);
+        }, 7000);
+    }
+}
+
+function setupBannerCarousel() {
+    clearInterval(bannerInterval); // Clear any previous interval
+    bannerDotsContainer.innerHTML = ''; // Clear old dots
+
+    bannerCarouselMovies.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'banner-dot';
+        dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+        dot.addEventListener('click', () => updateBannerSlide(index, true));
+        bannerDotsContainer.appendChild(dot);
+    });
+
+    updateBannerSlide(0); // Show the first slide immediately
+
+    bannerInterval = setInterval(() => {
+        const nextIndex = (currentBannerIndex + 1) % bannerCarouselMovies.length;
+        updateBannerSlide(nextIndex);
+    }, 7000); // Change slide every 7 seconds
 }
 
 
@@ -645,34 +740,34 @@ async function initializeHomepageContent() {
         // Handle the banner logic while rows are fetching/rendering
         const bannerMovies = await bannerMoviesPromise;
         if(bannerMovies && bannerMovies.length > 0) {
-            const bannerMovie = bannerMovies[Math.floor(Math.random() * bannerMovies.length)];
-            banner.style.backgroundImage = `url('${IMAGE_BASE_URL_BACKDROP}${bannerMovie.backdrop_path}')`;
-            document.getElementById('banner-title').textContent = bannerMovie.name || bannerMovie.title || bannerMovie.original_name;
-            document.getElementById('banner-description').textContent = bannerMovie.overview;
-
-            const showBannerModal = async () => {
-                try {
-                    const details = await fetchMovieDetails(bannerMovie.id, 'tv');
-                    if (details) displayModalWithDetails(details, 'tv');
-                } catch (e) {
-                    console.error("Could not load banner modal details:", e);
-                }
-            };
-            document.getElementById('banner-play-btn')?.addEventListener('click', showBannerModal);
-            document.getElementById('banner-info-btn')?.addEventListener('click', showBannerModal);
+            // Take the top 5 most popular for variety and shuffle them
+            bannerCarouselMovies = bannerMovies
+                .sort((a, b) => b.popularity - a.popularity)
+                .slice(0, 5)
+                .sort(() => 0.5 - Math.random());
+            
+            if (bannerCarouselMovies.length > 0) {
+                setupBannerCarousel();
+            }
         }
 
         // Wait for all row creation logic (including DOM updates) to complete
         await Promise.all(rowPromises);
     } catch (error) {
         console.error("Failed to initialize homepage:", error);
-        movieRowsContainer.innerHTML = `<div class="p-8 text-center"><h2 class="text-2xl font-bold text-red-500">Failed to Load Content</h2><p class="mt-2 text-gray-300">Please check your internet connection and try refreshing the page.</p></div>`;
+        movieRowsContainer.innerHTML = `<div class="p-8 text-center"><h2 class="2xl font-bold text-red-500">Failed to Load Content</h2><p class="mt-2 text-gray-300">Please check your internet connection and try refreshing the page.</p></div>`;
     }
 }
 
 async function performSearch(query) {
     if (!query) return;
     banner.style.display = 'none';
+    // IMPROVEMENT: Clear banner content and interval when searching
+    clearInterval(bannerInterval); 
+    bannerContentWrapper.style.opacity = '0';
+    bannerDotsContainer.innerHTML = '';
+
+
     movieRowsContainer.innerHTML = `<div class="my-8"><h2 class="text-xl md:text-2xl font-bold mb-2">Searching for "${query}"...</h2></div>`;
     
     try {
@@ -787,13 +882,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
     
-<!-- ADDED: Footer was missing from the HTML body -->
-<footer>
-  <p>© <span id="current-year">2025</span> DexFlix</p><br/>
-    <p><i>Disclaimer: I do not own or host any of the videos streamed on this site. The links provided were found publicly available through Google search and are shared here for convenience only. If you are the rightful copyright holder and wish to have any content removed, please contact me at the below link, and I will promptly take action.</i></p><br/>
-  <p><a href="https://forms.gle/otJ17bAKZ6K5uXU69" target="_blank" class="text-red-500 hover:underline">Contact Me</a></p>
-</footer>    
-   
+<!-- IMPROVEMENT: Re-styled footer with Tailwind CSS and better structure for readability --><footer class="bg-black text-white text-xs text-center p-5">
+    <div class="max-w-4xl mx-auto space-y-4">
+        <p>© <span id="current-year"></span> DexFlix</p>
+        <p class="text-gray-400 italic">Disclaimer: I do not own or host any of the videos streamed on this site. The links provided were found publicly available through Google search and are shared here for convenience only. If you are the rightful copyright holder and wish to have any content removed, please contact me at the below link, and I will promptly take action.</p>
+        <p><a href="https://forms.gle/otJ17bAKZ6K5uXU69" target="_blank" class="text-red-500 hover:underline">Contact Me</a></p>
+    </div>
+</footer>
+    
 </body>
 </html>
 
