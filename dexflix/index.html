@@ -128,35 +128,6 @@ body {
     background-color: white;
     transform: scale(1.2);
 }
-
-/* NEW: Styles for the Continue Watching remove button */
-.remove-cw-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border-radius: 9999px;
-    width: 1.75rem;
-    height: 1.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-    transform: scale(0.8);
-    cursor: pointer;
-    z-index: 20;
-}
-
-.group:hover .remove-cw-btn {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.remove-cw-btn:hover {
-    background-color: rgba(229, 9, 20, 0.9); /* Netflix Red on hover */
-}
 </style>
 </head>
     
@@ -170,32 +141,33 @@ body {
     <div class="flex justify-between items-center">
         <div class="flex items-center space-x-4">
             <div>
-                <a href="index.html" class="no-underline hover:opacity-80 transition">
-                    <img src="https://dexflix.online/logo-dexflix-v4.png" alt="DexFlix Logo" class="h-12 w-auto">
-                </a>
+                 <a href="index.html" class="no-underline hover:opacity-80 transition">
+                       <img src="https://dexflix.online/logo-dexflix-v4.png" alt="DexFlix Logo" class="h-12 w-auto">
+                 </a>
             </div>
         </div>
         <div class="flex items-center space-x-1 md:space-x-4">
-              <!-- Search Form --><form id="search-form" class="relative hidden flex items-center md:flex items-center bg-black bg-opacity-70 border border-gray-600 rounded-full">
-                  <input type="search" id="search-input" placeholder="Search..." class="bg-transparent px-3 py-1 w-36 md:w-48 focus:outline-none transition-all duration-300">
-                  <button type="submit" class="p-1 text-gray-400 hover:text-white" aria-label="Submit search">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                      </svg>
-                  </button>
-              </form>
-              <!-- Mobile Search Toggle --><button id="search-toggle-btn" class="p-1 text-gray-200 hover:text-white md:hidden" aria-label="Toggle search bar">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 28 28" fill="currentColor">
-                      <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                  </svg>
-              </button>
+             <!-- Search Form --><form id="search-form" class="relative hidden flex items-center md:flex items-center bg-black bg-opacity-70 border border-gray-600 rounded-full">
+                 <input type="search" id="search-input" placeholder="Search..." class="bg-transparent px-3 py-1 w-36 md:w-48 focus:outline-none transition-all duration-300">
+                 <button type="submit" class="p-1 text-gray-400 hover:text-white" aria-label="Submit search">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                     </svg>
+                 </button>
+             </form>
+             <!-- Mobile Search Toggle --><button id="search-toggle-btn" class="p-1 text-gray-200 hover:text-white md:hidden" aria-label="Toggle search bar">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 28 28" fill="currentColor">
+                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                 </svg>
+             </button>
         
         </div>
     </div>
 </nav>
 
 <!-- Banner Section: The big featured movie at the top --><header id="banner" class="relative text-white object-cover bg-cover bg-center" style="height: 56.25vw; max-height: 800px;">
-    <!-- FIX: Added relative and z-10 to ensure content is above the fade effect, making buttons clickable --><div id="banner-content-wrapper" class="relative z-10 transition-opacity duration-500">
+    <!-- FIX: Added relative and z-10 to ensure content is above the fade effect, making buttons clickable -->
+    <div id="banner-content-wrapper" class="relative z-10 transition-opacity duration-500">
         <div class="ml-4 md:ml-8 pt-32 sm:pt-48 md:pt-56 h-full">
             <h1 id="banner-title" class="text-xl sm:text-3xl md:text-6xl font-extrabold pb-2"></h1>
             <div class="flex space-x-2 my-4">
@@ -209,9 +181,11 @@ body {
                     More Info
                 </button>
             </div>
-            <!-- FIX: Moved dots here and updated classes for proper layout --><!-- Decreased mb-4 to mb-2 for less spacing --><div id="banner-dots" class="flex space-x-2 mb-2">
-                <!-- Dots will be inserted here by JS --></div>
-            <!-- Decreased pt-4 to pt-2 for less spacing --><p id="banner-description" class="w-11/12 sm:max-w-sm md:max-w-md lg:max-w-lg pt-2 text-xs md:text-sm h-24 leading-snug" ></p>
+            <!-- FIX: Moved dots here and updated classes for proper layout -->
+            <div id="banner-dots" class="flex space-x-2 mb-4">
+                <!-- Dots will be inserted here by JS -->
+            </div>
+            <p id="banner-description" class="w-11/12 sm:max-w-sm md:max-w-md lg:max-w-lg pt-4 text-xs md:text-sm h-24 leading-snug" ></p>
         </div>
     </div>
 
@@ -220,8 +194,8 @@ body {
 </header>
 
 
-<!-- Movie Rows: Container for all the movie carousels --><main id="movie-rows" class="relative pt-8 md:pt-12 px-4 md:px-10 pb-16">
-    <!-- NEW: Continue Watching row will be injected here by JS if it exists --><!-- Rows will be dynamically added here by JavaScript --><!-- Skeleton loaders will be shown initially --></main>
+<!-- Movie Rows: Container for all the movie carousels --><main id="movie-rows" class="relative pt-20 md:pt-24 px-4 md:px-10 pb-16">
+    <!-- Rows will be dynamically added here by JavaScript --><!-- Skeleton loaders will be shown initially --></main>
 
 <!-- Fullscreen Player Modal --><div id="modal-overlay" class="hidden fixed inset-0 bg-black bg-opacity-95 z-[100] flex flex-col items-center p-4 sm:p-6 h-screen">
     <!-- Close button --><button id="modal-close-btn" class="absolute top-5 left-5 text-white bg-black bg-opacity-50 rounded-full h-10 w-10 flex items-center justify-center z-20 hover:bg-opacity-75 transition" aria-label="Close modal">
@@ -280,30 +254,39 @@ body {
 // --- CODE REVIEW & SUGGESTIONS ---
 // =================================================================================
 //
-// Hi there! I've added the "Continue Watching" feature you requested. Here's a
-// quick rundown of the changes:
+// Hi there! This is a fantastic start to a Netflix-style streaming site. The UI is
+// clean, responsive, and the features like the banner carousel and skeleton
+// loaders are implemented really well. I've added a few improvements and suggestions
+// below, directly in the code, to enhance security, accessibility, and user experience.
 //
-// --- 1. NEW FEATURE: Continue Watching ---
-// I'm using your browser's `localStorage` to save items you've watched.
+// --- 1. CRITICAL: API Key Security ---
+// Your current API key is exposed on the client-side. This is a major security risk.
+// For a production application, anyone can view the source code and steal your key,
+// potentially leading to misuse and getting your key revoked.
 //
-// HOW IT WORKS:
-//   - When you click a "Server" button in the modal, the movie or TV show is
-//     saved to your "Continue Watching" list.
-//   - On page load, the app checks for this list and, if it exists, creates a
-//     new row at the very top of the page.
-//   - The list is sorted by most recently watched.
-//   - You can remove any item from the list by hovering over it and clicking the
-//     "X" button that appears.
+// SOLUTION: Create a simple backend proxy (e.g., using Node.js/Express, Netlify
+// Functions, or Cloudflare Workers). Your website would make requests to your
+// proxy, and the proxy would then securely add the API key and forward the
+// request to the TMDB API. This hides the key from the public.
 //
-// --- 2. SECURITY REMINDER ---
-// Your API key is still visible on the client-side. For a real-world application,
-// it's very important to move API requests to a backend proxy to protect your key.
+// --- 2. ACCESSIBILITY (a11y) IMPROVEMENT ---
+// The movie posters are clickable `<div>` elements. While this works for mouse
+// users, it's not ideal for keyboard or screen reader users. I've made a small
+// change to improve this.
 //
-// --- 3. ACCESSIBILITY (a11y) & UX ---
-// The accessibility and UX improvements from the previous version (like keyboard
-// navigation for posters and the "Clear Search" button) have been maintained.
+// CHANGE: I've added `role="button"` and `tabindex="0"` to the poster wrappers
+// and an event listener for key presses ('Enter' or 'Space'). This makes them
+// focusable and interactive for keyboard users.
 //
-// Enjoy the new feature!
+// --- 3. USER EXPERIENCE (UX) TWEAK ---
+// After performing a search, the only way back to the homepage is by clicking the
+// logo. This is good, but not always obvious.
+//
+// CHANGE: I've added a small "Clear" button that appears next to the search
+// results title. Clicking it will take the user back to the main homepage view,
+// providing a more intuitive navigation path.
+//
+// Keep up the great work!
 //
 // =================================================================================
 
@@ -336,6 +319,7 @@ const requests = {
 };
 
 // --- SERVER CONFIGURATION ---
+// IMPROVEMENT: Refactored to include a function for URL generation to simplify player logic.
 const SERVERS = [
     { 
         name: "Server 1", 
@@ -370,9 +354,6 @@ const bannerDotsContainer = document.getElementById('banner-dots');
 let bannerCarouselMovies = [];
 let currentBannerIndex = 0;
 let bannerInterval;
-
-// --- CONTINUE WATCHING STATE ---
-const CW_LOCAL_STORAGE_KEY = 'dexflixContinueWatching';
 
 // --- CORE FUNCTIONS ---
 async function fetchData(endpoint) {
@@ -412,9 +393,7 @@ async function fetchSeasonDetails(tvId, seasonNumber) {
     }
 }
 
-function createMovieRow(title, moviesPromise, options = {}) {
-    const { isLarge = false, isContinueWatching = false, prepend = false } = options;
-
+function createMovieRow(title, moviesPromise, isLargeRow = false) {
     const rowId = `row-${title.replace(/\s+/g, '-').toLowerCase()}`;
     const row = document.createElement('div');
     row.className = 'my-8';
@@ -433,166 +412,99 @@ function createMovieRow(title, moviesPromise, options = {}) {
     postersContainer.className = 'flex overflow-y-hidden overflow-x-scroll p-2 -ml-2 scrollbar-hide';
     rowContainer.appendChild(postersContainer);
     
-    // Add skeleton loaders only for network-fetched rows
-    if (!isContinueWatching) {
-        for (let i = 0; i < 10; i++) {
-            const skeleton = document.createElement('div');
-            skeleton.className = `flex-shrink-0 skeleton ${isLarge ? 'w-40 h-60 sm:w-48 sm:h-72' : 'w-48 h-28 sm:w-56 sm:h-32'} mr-3 rounded`;
-            postersContainer.appendChild(skeleton);
-        }
+    // Add skeleton loaders
+    for (let i = 0; i < 10; i++) {
+        const skeleton = document.createElement('div');
+        skeleton.className = `flex-shrink-0 skeleton ${isLargeRow ? 'w-40 h-60 sm:w-48 sm:h-72' : 'w-48 h-28 sm:w-56 sm:h-32'} mr-3 rounded`;
+        postersContainer.appendChild(skeleton);
     }
     
-    if (prepend) {
-        movieRowsContainer.prepend(row);
-    } else {
-        movieRowsContainer.appendChild(row);
-    }
-    
+    movieRowsContainer.appendChild(row);
+
     // Fetch data and replace skeletons
+    // Return the promise so we can know when it's done loading
     return moviesPromise.then(movies => {
-        postersContainer.innerHTML = ''; // Clear skeletons or initial state
+        postersContainer.innerHTML = ''; // Clear skeletons
         
         if (!movies || movies.length === 0) {
-            row.remove(); // Remove the row completely if there are no movies
-            return;
+             row.innerHTML = `<h2 class="text-xl md:text-2xl font-bold mb-2">${title}</h2><p class="text-gray-400">Could not load this category.</p>`;
+             return;
         }
 
         movies.forEach(movie => {
-            const imagePath = isLarge ? movie.poster_path : (movie.backdrop_path || movie.poster_path);
+            // UPDATED: Use poster_path as a fallback for backdrop_path in regular rows
+            const imagePath = isLargeRow ? movie.poster_path : (movie.backdrop_path || movie.poster_path);
             if (!imagePath) return;
 
+            // Create container for the entire item (image + title)
             const movieItemContainer = document.createElement('div');
-            const itemWidth = isLarge ? 'w-40 sm:w-48' : 'w-48 sm:w-56';
-            movieItemContainer.className = `${itemWidth} mr-3 flex-shrink-0 group relative`; // Added relative for button positioning
+            const itemWidth = isLargeRow ? 'w-40 sm:w-48' : 'w-48 sm:w-56';
+            movieItemContainer.className = `${itemWidth} mr-3 flex-shrink-0 group`;
             
+            // Image wrapper that is clickable
             const clickableWrapper = document.createElement('div');
+            // A11Y CHANGE: Added focus styles for keyboard navigation
             clickableWrapper.className = 'cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500 rounded';
+            // A11Y CHANGE: Added role and tabindex to make the div focusable and announce it as a button
             clickableWrapper.setAttribute('role', 'button');
             clickableWrapper.setAttribute('tabindex', '0');
             clickableWrapper.dataset.movieId = movie.id;
-            // NEW: Ensure media_type is stored correctly for Continue Watching items
-            clickableWrapper.dataset.mediaType = movie.media_type || (title.toLowerCase().includes('tv') || title.toLowerCase().includes('series') || isLarge ? 'tv' : 'movie');
-
+            clickableWrapper.dataset.mediaType = movie.media_type || (title.toLowerCase().includes('tv') || title.toLowerCase().includes('series') || isLargeRow ? 'tv' : 'movie');
             clickableWrapper.addEventListener('click', handlePosterClick);
+            // A11Y CHANGE: Added keydown listener to allow activation with Enter/Space keys
             clickableWrapper.addEventListener('keydown', handlePosterKeyPress);
 
+            // The poster image itself
             const poster = document.createElement('img');
-            poster.src = `${isLarge ? IMAGE_BASE_URL_POSTER : IMAGE_BASE_URL_BACKDROP}${imagePath}`;
+            poster.src = `${isLargeRow ? IMAGE_BASE_URL_POSTER : IMAGE_BASE_URL_BACKDROP}${imagePath}`;
             poster.alt = `Poster for ${movie.name || movie.title || 'Movie'}`;
             poster.loading = 'lazy';
             
-            const placeholderImageUrl = `https://placehold.co/${isLarge ? '200x300' : '300x170'}/141414/FFFFFF?text=No+Image`;
+            // *** CHANGE: Added onerror fallback for images ***
+            const placeholderImageUrl = `https://placehold.co/${isLargeRow ? '200x300' : '300x170'}/141414/FFFFFF?text=No+Image`;
             poster.onerror = function() {
                 this.onerror=null; 
                 this.src=placeholderImageUrl;
             };
 
-            const itemHeight = isLarge ? 'h-60 sm:h-72' : 'h-28 sm:h-32';
+            const itemHeight = isLargeRow ? 'h-60 sm:h-72' : 'h-28 sm:h-32';
             poster.className = `object-cover w-full ${itemHeight} rounded transition-transform duration-300 group-hover:scale-105`;
 
+            // The title text below the poster
             const movieTitle = document.createElement('p');
             movieTitle.className = 'mt-1 text-xs text-center text-gray-300 group-hover:text-white transition-colors duration-300 px-1 whitespace-nowrap overflow-hidden text-ellipsis';
             const titleText = movie.name || movie.title || movie.original_name;
             movieTitle.textContent = titleText;
             movieTitle.title = titleText; // Add a tooltip for the full title
 
+            // Assemble the card
             clickableWrapper.appendChild(poster);
             movieItemContainer.appendChild(clickableWrapper);
             movieItemContainer.appendChild(movieTitle);
             
-            // NEW: Add remove button for Continue Watching row
-            if (isContinueWatching) {
-                const removeBtn = document.createElement('button');
-                removeBtn.className = 'remove-cw-btn';
-                removeBtn.setAttribute('aria-label', `Remove ${titleText} from Continue Watching`);
-                removeBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>`;
-                removeBtn.onclick = (e) => {
-                    e.stopPropagation(); // Prevent modal from opening
-                    removeFromContinueWatching(movie.id);
-                    movieItemContainer.remove(); // Remove the item from the DOM
-                    // If the row is now empty, remove the entire row
-                    if (postersContainer.childElementCount === 0) {
-                        row.remove();
-                    }
-                };
-                movieItemContainer.appendChild(removeBtn);
-            }
-            
             postersContainer.appendChild(movieItemContainer);
         });
 
-        // Only add scroll arrows if there's overflow
-        if (postersContainer.scrollWidth > postersContainer.clientWidth) {
-            const leftArrow = document.createElement('button');
-            leftArrow.className = 'scroll-arrow left';
-            leftArrow.setAttribute('aria-label', 'Scroll left');
-            leftArrow.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>`;
-            leftArrow.addEventListener('click', () => postersContainer.scrollBy({ left: -window.innerWidth * 0.8, behavior: 'smooth' }));
-            rowContainer.appendChild(leftArrow);
+        const leftArrow = document.createElement('button');
+        leftArrow.className = 'scroll-arrow left';
+        leftArrow.setAttribute('aria-label', 'Scroll left');
+        leftArrow.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>`;
+        leftArrow.addEventListener('click', () => postersContainer.scrollBy({ left: -window.innerWidth * 0.8, behavior: 'smooth' }));
+        rowContainer.appendChild(leftArrow);
 
-            const rightArrow = document.createElement('button');
-            rightArrow.className = 'scroll-arrow right';
-            rightArrow.setAttribute('aria-label', 'Scroll right');
-            rightArrow.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>`;
-            rightArrow.addEventListener('click', () => postersContainer.scrollBy({ left: window.innerWidth * 0.8, behavior: 'smooth' }));
-            rowContainer.appendChild(rightArrow);
-        }
+        const rightArrow = document.createElement('button');
+        rightArrow.className = 'scroll-arrow right';
+        rightArrow.setAttribute('aria-label', 'Scroll right');
+        rightArrow.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>`;
+        rightArrow.addEventListener('click', () => postersContainer.scrollBy({ left: window.innerWidth * 0.8, behavior: 'smooth' }));
+        rowContainer.appendChild(rightArrow);
     });
 }
-
-// --- NEW: CONTINUE WATCHING FUNCTIONS ---
-function getContinueWatchingList() {
-    const list = localStorage.getItem(CW_LOCAL_STORAGE_KEY);
-    return list ? JSON.parse(list) : [];
-}
-
-function addToContinueWatching(movieDetails, mediaType) {
-    let list = getContinueWatchingList();
-    
-    // Remove if it already exists to move it to the front
-    list = list.filter(item => item.id !== movieDetails.id);
-
-    const watchItem = {
-        id: movieDetails.id,
-        title: movieDetails.title || movieDetails.name,
-        poster_path: movieDetails.poster_path,
-        backdrop_path: movieDetails.backdrop_path,
-        media_type: mediaType,
-        watchedAt: new Date().getTime() // Timestamp for sorting
-    };
-
-    list.unshift(watchItem); // Add to the beginning of the list
-
-    // Keep the list from getting too long (e.g., max 20 items)
-    if (list.length > 20) {
-        list.pop();
-    }
-    
-    localStorage.setItem(CW_LOCAL_STORAGE_KEY, JSON.stringify(list));
-}
-
-function removeFromContinueWatching(movieId) {
-    let list = getContinueWatchingList();
-    list = list.filter(item => item.id !== movieId);
-    localStorage.setItem(CW_LOCAL_STORAGE_KEY, JSON.stringify(list));
-}
-
-function displayContinueWatchingRow() {
-    const list = getContinueWatchingList();
-    if (list.length > 0) {
-        // The list is already sorted by most recent, so just resolve the promise
-        createMovieRow("Continue Watching", Promise.resolve(list), { 
-            isLarge: true, 
-            isContinueWatching: true,
-            prepend: true // Add this row at the top
-        });
-    }
-}
-
 
 // --- EVENT HANDLERS & MODAL LOGIC ---
 async function handlePosterClick(event) {
     try {
+        // Use currentTarget to ensure we get the dataset from the element the listener is attached to
         const { movieId, mediaType } = event.currentTarget.dataset;
         const details = await fetchMovieDetails(movieId, mediaType);
         if (details) {
@@ -603,6 +515,7 @@ async function handlePosterClick(event) {
     }
 }
 
+// A11Y NEW: Handle key presses for poster activation
 function handlePosterKeyPress(event) {
     if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault(); // Prevent page from scrolling
@@ -635,12 +548,11 @@ function displayModalWithDetails(details, mediaType) {
     const seasonSelect = document.getElementById('season-select');
     const episodeSelect = document.getElementById('episode-select');
 
+    // IMPROVEMENT: Cleaner way to get the server URL
     const updatePlayerSrc = (serverIndex, season, episode) => {
         const server = SERVERS[serverIndex];
         const type = mediaType === 'tv' ? 'tv' : 'movie';
         vidsrcPlayer.src = server.getUrl(type, details.id, season, episode);
-        // NEW: Add item to Continue Watching when a server is selected
-        addToContinueWatching(details, mediaType);
     };
     
     const switchToPlayer = (playerType, season = 1, episode = 1) => {
@@ -685,6 +597,7 @@ function displayModalWithDetails(details, mediaType) {
                 });
                 if (episodeSelect.options.length > 0) {
                     episodeSelect.value = episodeSelect.options[0].value;
+                    // On initial load, play trailer if available, otherwise play the first episode
                     if (isInitialLoad && trailer) {
                         switchToPlayer('trailer');
                     } else {
@@ -704,6 +617,7 @@ function displayModalWithDetails(details, mediaType) {
         }
     } else { // It's a movie
         tvSelectorContainer.classList.add('hidden');
+        // Play trailer if available, otherwise play from server
         if (trailer) {
             switchToPlayer('trailer');
         } else {
@@ -711,6 +625,7 @@ function displayModalWithDetails(details, mediaType) {
         }
     };
 
+    // Helper function to manage the active state of player control buttons
     const setActiveButton = (clickedButton) => {
         modalActions.querySelectorAll('button').forEach(btn => {
             btn.classList.remove('bg-red-600');
@@ -753,11 +668,13 @@ function displayModalWithDetails(details, mediaType) {
         modalActions.appendChild(serverButton);
     });
     
+    // UX IMPROVEMENT: Prevent background scrolling when modal is open
     document.body.style.overflow = 'hidden';
     modalOverlay.classList.remove('hidden');
 }
 
 function closeModal() {
+    // UX IMPROVEMENT: Restore background scrolling when modal is closed
     document.body.style.overflow = 'auto';
     modalOverlay.classList.add('hidden');
     youtubePlayer.src = '';
@@ -778,18 +695,24 @@ function updateBannerSlide(index, isManualClick = false) {
 
     if (!movie) return;
 
+    // 1. Fade out content
     bannerContentWrapper.style.opacity = '0';
 
+    // 2. Update dots
     document.querySelectorAll('.banner-dot').forEach((dot, idx) => {
         dot.classList.toggle('active', idx === currentBannerIndex);
     });
 
+    // 3. After fade-out, update content and fade back in
     setTimeout(() => {
+        // Update background
         banner.style.backgroundImage = `url('${IMAGE_BASE_URL_BACKDROP}${movie.backdrop_path}')`;
         
+        // Update text
         document.getElementById('banner-title').textContent = movie.name || movie.title || movie.original_name;
         document.getElementById('banner-description').textContent = movie.overview;
 
+        // Update buttons by replacing them to clear old event listeners
         const bannerPlayBtn = document.getElementById('banner-play-btn');
         const bannerInfoBtn = document.getElementById('banner-info-btn');
 
@@ -798,6 +721,7 @@ function updateBannerSlide(index, isManualClick = false) {
 
         const showModalForCurrentBanner = async () => {
             try {
+                // Ensure media_type is correctly passed for the banner item
                 const mediaType = movie.media_type || 'tv'; // Default to 'tv' as originals are TV
                 const details = await fetchMovieDetails(movie.id, mediaType);
                 if (details) displayModalWithDetails(details, mediaType);
@@ -809,13 +733,16 @@ function updateBannerSlide(index, isManualClick = false) {
         newPlayBtn.addEventListener('click', showModalForCurrentBanner);
         newInfoBtn.addEventListener('click', showModalForCurrentBanner);
         
+        // SUGGESTION: Instead of replacing the node, you can use .replaceWith for cleaner code
         bannerPlayBtn.replaceWith(newPlayBtn);
         bannerInfoBtn.replaceWith(newInfoBtn);
         
+        // Fade in new content
         bannerContentWrapper.style.opacity = '1';
 
     }, 500); // This duration should match the opacity transition duration
 
+    // 4. Restart interval if it was a manual click
     if (isManualClick) {
         bannerInterval = setInterval(() => {
             const nextIndex = (currentBannerIndex + 1) % bannerCarouselMovies.length;
@@ -825,8 +752,8 @@ function updateBannerSlide(index, isManualClick = false) {
 }
 
 function setupBannerCarousel() {
-    clearInterval(bannerInterval);
-    bannerDotsContainer.innerHTML = '';
+    clearInterval(bannerInterval); // Clear any previous interval
+    bannerDotsContainer.innerHTML = ''; // Clear old dots
 
     bannerCarouselMovies.forEach((_, index) => {
         const dot = document.createElement('button');
@@ -836,18 +763,18 @@ function setupBannerCarousel() {
         bannerDotsContainer.appendChild(dot);
     });
 
-    updateBannerSlide(0);
+    updateBannerSlide(0); // Show the first slide immediately
 
     bannerInterval = setInterval(() => {
         const nextIndex = (currentBannerIndex + 1) % bannerCarouselMovies.length;
         updateBannerSlide(nextIndex);
-    }, 7000);
+    }, 7000); // Change slide every 7 seconds
 }
 
 
 // --- INITIALIZATION & PAGE LOGIC ---
 const allRows = [
-    { title: "DexFlix Originals (TV)", endpoint: requests.fetchNetflixOriginals, options: { isLarge: true } },
+    { title: "DexFlix Originals (TV)", endpoint: requests.fetchNetflixOriginals, isLarge: true },
     { title: "Trending Now", endpoint: requests.fetchTrending },
     { title: "Top Rated Movies", endpoint: requests.fetchTopRated },
     { title: "Action & Adventure (TV)", endpoint: requests.fetchTvShows },
@@ -863,16 +790,16 @@ const allRows = [
 
 async function initializeHomepageContent() {
     try {
-        // NEW: Display the Continue Watching row first from local storage
-        displayContinueWatchingRow();
-    
+        // Kick off all fetches at once
         const bannerMoviesPromise = fetchData(requests.fetchNetflixOriginals);
         const rowPromises = allRows.map(rowConfig =>
-            createMovieRow(rowConfig.title, fetchData(rowConfig.endpoint), rowConfig.options)
+            createMovieRow(rowConfig.title, fetchData(rowConfig.endpoint), rowConfig.isLarge)
         );
 
+        // Handle the banner logic while rows are fetching/rendering
         const bannerMovies = await bannerMoviesPromise;
         if(bannerMovies && bannerMovies.length > 0) {
+            // Take the top 5 most popular for variety and shuffle them
             bannerCarouselMovies = bannerMovies
                 .sort((a, b) => b.popularity - a.popularity)
                 .slice(0, 5)
@@ -883,6 +810,7 @@ async function initializeHomepageContent() {
             }
         }
 
+        // Wait for all row creation logic (including DOM updates) to complete
         await Promise.all(rowPromises);
     } catch (error) {
         console.error("Failed to initialize homepage:", error);
@@ -893,6 +821,7 @@ async function initializeHomepageContent() {
 async function performSearch(query) {
     if (!query) return;
     banner.style.display = 'none';
+    // IMPROVEMENT: Clear banner content and interval when searching
     clearInterval(bannerInterval); 
     bannerContentWrapper.style.opacity = '0';
     bannerDotsContainer.innerHTML = '';
@@ -908,9 +837,12 @@ async function performSearch(query) {
         const filteredResults = results ? results.filter(item => item.media_type !== 'person' && (item.backdrop_path || item.poster_path)) : [];
 
         if (filteredResults.length > 0) {
+            // Since createMovieRow now expects a promise, we wrap the results
             const title = `Search Results for "${query}"`;
             createMovieRow(title, Promise.resolve(filteredResults));
 
+            // UX CHANGE: Add a "Clear" button after the row is created
+            // Using a timeout to ensure the h2 element is in the DOM before we try to modify it.
             setTimeout(() => {
                 const rowTitle = Array.from(document.querySelectorAll('#movie-rows h2')).find(h2 => h2.textContent.startsWith('Search Results'));
                 if (rowTitle) {
@@ -919,7 +851,7 @@ async function performSearch(query) {
                     clearButton.textContent = 'Clear';
                     clearButton.className = 'bg-zinc-700 text-white font-semibold rounded px-3 py-1 hover:bg-zinc-600 transition text-xs';
                     clearButton.setAttribute('aria-label', 'Clear search results and return to homepage');
-                    clearButton.onclick = () => logo.click();
+                    clearButton.onclick = () => logo.click(); // Re-use existing "go home" logic
                     rowTitle.appendChild(clearButton);
                 }
             }, 200);
@@ -937,6 +869,7 @@ async function performSearch(query) {
 document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
 
+    // This will now correctly wait for all rows to be processed before hiding the loader
     initializeHomepageContent().finally(() => {
         preloader.classList.add('hidden');
     });
@@ -952,12 +885,13 @@ document.addEventListener('DOMContentLoaded', () => {
         searchForm.classList.toggle('right-2');
         searchInput.classList.toggle('w-48');
         if(!searchForm.classList.contains('hidden')) {
-             searchInput.focus();
+             searchInput.focus(); // Auto-focus on the input when it appears
         }
     });
 
     logo.addEventListener('click', (e) => {
         e.preventDefault();
+        // Do nothing if already on the homepage with no search query
         if (banner.style.display !== 'none' && !searchInput.value) return;
 
         banner.style.display = 'block';
@@ -998,6 +932,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.fullscreenElement) {
             fullscreenBtn.innerHTML = exitFullscreenIcon;
             try {
+                // Lock the screen orientation to landscape on fullscreen
                 if (screen.orientation && typeof screen.orientation.lock === 'function') {
                     screen.orientation.lock('landscape').catch(err => {
                         console.log("Could not lock screen orientation: ", err);
@@ -1009,6 +944,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             fullscreenBtn.innerHTML = enterFullscreenIcon;
             try {
+                // Unlock the screen orientation when exiting fullscreen
                 if (screen.orientation && typeof screen.orientation.unlock === 'function') {
                     screen.orientation.unlock();
                 }
