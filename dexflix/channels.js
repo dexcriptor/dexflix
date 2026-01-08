@@ -29,13 +29,13 @@ A2Z: {
    },
    
 TFC: {
-      name: 'TFC',
+      name: 'TFC (DOWN)',
       url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/428ac0c9-8490-4a47-8c86-fff6f9120c0a/index.mpd',
       type: 'mpd'
     },
 
 ANC: {
-      name: 'ANC',
+      name: 'ANC (DOWN)',
       url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/346acbbc-d727-444b-a94b-1f068521addf/index.mpd',
       type: 'mpd'
     },
@@ -65,7 +65,7 @@ MYX: {
     },
 
 MOR: {
-      name: 'MOR',
+      name: 'MOR (DOWN)',
       url: 'https://abslive.akamaized.net/dash/live/2028025/mor3/manifest.mpd',
       type: 'mpd'
     },
