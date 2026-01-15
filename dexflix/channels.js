@@ -3,13 +3,13 @@ const channels = {
 KAPAMILYA: {
       name: 'Kapamilya Channel HD',
       url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/5946c2e1-c720-46e1-8189-0e93c753badf/index.mpd',
-		  type: 'mpd'
+	  type: 'mpd'
     },
 
 GMA: {
       name: 'GMA 7',
       url: 'https://gsattv.akamaized.net/live/media0/gma7/Widevine/gma7.mpd',
-		  type: 'mpd'
+	  type: 'mpd'
     },
     
 TV5: {
@@ -17,7 +17,7 @@ TV5: {
       url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/tv5_hd/default1/index.mpd',
       keyId: '2615129ef2c846a9bbd43a641c7303ef',
       key: '07c7f996b1734ea288641a68e1cfdc4d',
-     	type: 'mpd'
+      type: 'mpd'
     },
     
 A2Z: {
