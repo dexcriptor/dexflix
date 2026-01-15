@@ -42,7 +42,7 @@ ANC: {
 
 TELERADYO: {
       name: 'TeleRadyo',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/75ec6088-a6e4-4659-8e32-320ab7821917/index.mpd',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/43ef16fd-d2ec-406b-9a88-bf2ef928c039/index.mpd',
       type: 'mpd'
     },
 
@@ -60,13 +60,7 @@ CINEMO: {
 
 MYX: {
       name: 'MYX',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/b0fc8f68-6fcf-4e02-ab28-acc7116cb2b1/index.mpd',
-      type: 'mpd'
-    },
-
-MOR: {
-      name: 'MOR (DOWN)',
-      url: 'https://abslive.akamaized.net/dash/live/2028025/mor3/manifest.mpd',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/dbdb0651-e525-45d6-8bc7-87f1ee6d47a3/index.mpd',
       type: 'mpd'
     },
 
