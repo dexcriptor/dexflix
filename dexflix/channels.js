@@ -42,7 +42,7 @@ ANC: {
 
 TELERADYO: {
       name: 'TeleRadyo',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/43ef16fd-d2ec-406b-9a88-bf2ef928c039/index.mpd',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/8b6f8288-48c7-47e1-b275-67e936c9e37a/index.mpd',
       type: 'mpd'
     },
 
@@ -60,7 +60,7 @@ CINEMO: {
 
 MYX: {
       name: 'MYX',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/dbdb0651-e525-45d6-8bc7-87f1ee6d47a3/index.mpd',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/72c3e4d6-5909-44cb-a25b-e91d08a4c26e/index.mpd',
       type: 'mpd'
     },
 
