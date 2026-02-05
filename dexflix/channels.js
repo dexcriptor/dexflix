@@ -229,9 +229,9 @@ NHKWORLDJAPAN: {
     
     
 COMBATGO: {
-    name: 'Combat Go (HLS)',
+    name: 'Combat Go',
     url: 'https://jungotvstream.chanall.tv/jungotv/combatgo/playlist_720p.m3u8',
-		type: 'hls'
+	type: 'hls'
     },
     
 TRUE: {
@@ -373,55 +373,55 @@ CINEMAX: {
     },
 
 ANDFLIX: {
-        name: '&Flix (HLS)',
+        name: '&Flix',
         url: 'https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8',
 		type: 'hls'
     },	
    
 	ragetv: {
-        name: 'Rage TV (HLS)',
+        name: 'Rage TV',
         url: 'https://live20.bozztv.com/giatv/giatv-ragetv/ragetv/playlist.m3u8',
 		type: 'hls'
     },	
     
 	sinemanila: {
-        name: 'Sine Manila (HLS)',
+        name: 'Sine Manila',
         url: 'https://live20.bozztv.com/giatv/giatv-sinemanila/sinemanila/playlist.m3u8',
 		type: 'hls'
     },
     
 	bihtv: {
-        name: 'BIH TV (HLS)',
+        name: 'BIH TV',
         url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/playlist.m3u8',
 		type: 'hls'
     },
     
 	jungopinotv: {
-        name: 'Jungo Pinoy TV (HLS)',
+        name: 'Jungo Pinoy TV',
         url: 'https://jungotvstream.chanall.tv/jungotv/jungopinoytv/playlist_480p.m3u8',
 		type: 'hls'
     },
     
 	HALLYPO: {
-        name: 'Hally Pop (HLS)',
+        name: 'Hally Pop',
         url: 'https://jungotvstream.chanall.tv/jungotv/hallypop/playlist_1080p.m3u8',
 		type: 'hls'
     },
     
 	SCREAMFLIX: {
-        name: 'ScreamFlix (HLS)',
+        name: 'ScreamFlix',
         url: 'https://jungotvstream.chanall.tv/jungotv/screamflix/playlist_720p.m3u8',
 		type: 'hls'
     },
     
 	FRONTROW: {
-        name: 'Frontrow (HLS)',
+        name: 'Frontrow',
         url: 'https://jungotvstream.chanall.tv/jungotv/frontrow/playlist_720p.m3u8',
 		type: 'hls'
     },
     
 	  NBA: {
-        name: 'NBA TV  Philippines (HLS)',
+        name: 'NBA TV  Philippines',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd',
         keyId: 'c5e51f41ceac48709d0bdcd9c13a4d88',
         key: '20b91609967e472c27040716ef6a8b9a',
@@ -557,33 +557,33 @@ ANIMAX: {
     },
    
 ANIMEXHIVE: {
-        name: 'Anime X Hive (HLS)',
-        url: 'https://amc-anime-x-hidive-1-us.tablo.wurl.tv/1200.m3u8',
-		type: 'hls'
+    name: 'Anime X Hive',
+    url: 'https://amc-anime-x-hidive-1-us.tablo.wurl.tv/1200.m3u8',
+	type: 'hls'
     },
     
 ANIMEX: {
-        name: 'Anime X (HLS)',
-        url: 'https://live20.bozztv.com/giatv/giatv-animex/animex/playlist.m3u8',
-		type: 'hls'
+    name: 'Anime X',
+    url: 'https://live20.bozztv.com/giatv/giatv-animex/animex/playlist.m3u8',
+	type: 'hls'
     },	
     
 bean: {
-    name: 'Mr. Bean - 24/7 (HLS)',
+    name: 'Mr. Bean - 24/7',
     url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8',
-		type: 'hls'
+	type: 'hls'
     },  
     
 tomjerry: {
-    name: 'Tom & Jerry - 24/7 (HLS)',
+    name: 'Tom & Jerry - 24/7',
     url: 'https://utube.cocker-tk.workers.dev/rJU6YjyUbbE/master.m3u8',
-		type: 'hls'
+	type: 'hls'
     },
 
 TESTLINK: {
-    name: 'Test Stream Only (HLS)',
+    name: 'Test Stream Only',
     url: 'https://gma7.xocornerph.workers.dev/jdPwif_EqTk/stream.m3u8',
-		type: 'hls'
+	type: 'hls'
     },
       
 
