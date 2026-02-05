@@ -72,7 +72,7 @@ MYX: {
 
 GMAPINOYTV: {
       name: 'GMA PINOY TV',
-      url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono/7c693236-e0c1-40a3-8bd0-bb25e43f5bfc/index.mpd',
+      url: 'https://amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono-dzsx9.amagi.tv/index.mpd',
       type: 'mpd'
     },
 
