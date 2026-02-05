@@ -588,9 +588,9 @@ TESTLINKHLS: {
       
 TESTLINKMPD: {
     name: 'Test Stream Only (MPD)',
-    url: 'https://director.streaming.telia.com/tvm-packager-prod/group2/60ae45e51522bd66f469461b/manifest.mpd',
-    keyId: 'eb4b504ae8015e149965a48cfff9418e',
-    key: 'b67881cf246e6c7ef8a3db7491c5b036',
+    url: 'https://live-d-02-rogers-uw-prd.akamaized.net/out/v1/r-prd/ch-01-prd-r-v2/dash-ch-01-prd-r-hd/index.mpd',
+    keyId: '8e3977c581333101a527776030e5d379',
+    key: 'f726e9c49a640e932ec6a92685153772',
     type: 'mpd'
     },
 };
