@@ -46,6 +46,12 @@ TELERADYO: {
       type: 'mpd'
     },
 
+JEEPNEY: {
+      name: 'Jeepney TV',
+      url: 'https://abslive.akamaized.net/dash/live/2027618/jeepneytv/manifest.mpd',
+      type: 'mpd'
+    },
+
 CINEMAONE: {
       name: 'Cinema One',
       url: 'https://live-faws.akamaized.net/out/v1/93b9db7b231d45f28f64f29b86dc6c65/index.mpd',
