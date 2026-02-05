@@ -172,8 +172,8 @@ ANIMALPLANET: {
    }, 
    
 LOVENATURE: {
-      name: 'Love Nature (Unstable) (HLS)',
-      url: 'https://fl7.moveonjoy.com/LOVE_NATURE/index.m3u8',
+      name: 'Love Nature (UNIFI)',
+      url: 'https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(LoveNature)/master.mpd',
 		  type: 'hls'
     },
    
