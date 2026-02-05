@@ -42,7 +42,7 @@ ANC: {
 
 TELERADYO: {
       name: 'TeleRadyo',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/8b6f8288-48c7-47e1-b275-67e936c9e37a/index.mpd',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/af2a2a7f-5873-42bb-9e22-324b1e4e7f7d/index.mpd',
       type: 'mpd'
     },
 
