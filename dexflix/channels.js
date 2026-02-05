@@ -29,14 +29,14 @@ A2Z: {
    },
    
 TFC: {
-      name: 'TFC (DOWN)',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/428ac0c9-8490-4a47-8c86-fff6f9120c0a/index.mpd',
+      name: 'TFC',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/9414662e-4b0f-4fd5-8f40-78a1157bb03e/index.mpd',
       type: 'mpd'
     },
 
 ANC: {
       name: 'ANC (DOWN)',
-      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/346acbbc-d727-444b-a94b-1f068521addf/index.mpd',
+      url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/3cc223e8-d104-44da-828c-5a98d8b8d5b6/index.mpd',
       type: 'mpd'
     },
 
