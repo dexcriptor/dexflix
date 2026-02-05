@@ -35,7 +35,7 @@ TFC: {
     },
 
 ANC: {
-      name: 'ANC (DOWN)',
+      name: 'ANC',
       url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/3cc223e8-d104-44da-828c-5a98d8b8d5b6/index.mpd',
       type: 'mpd'
     },
