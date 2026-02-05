@@ -580,12 +580,18 @@ tomjerry: {
 	type: 'hls'
     },
 
-TESTLINK: {
-    name: 'Test Stream Only',
+TESTLINKHLS: {
+    name: 'Test Stream Only (HLS)',
     url: 'https://gma7.xocornerph.workers.dev/jdPwif_EqTk/stream.m3u8',
 	type: 'hls'
     },
       
-
+TESTLINKMPD: {
+    name: 'Test Stream Only (MPD)',
+    url: 'https://director.streaming.telia.com/tvm-packager-prod/group2/60ae45e51522bd66f469461b/manifest.mpd',
+    keyId: 'eb4b504ae8015e149965a48cfff9418e',
+    key: 'b67881cf246e6c7ef8a3db7491c5b036',
+    type: 'mpd'
+    },
 };
 
