@@ -252,13 +252,15 @@ NHKWORLDJAPAN: {
     key: '0800fff80980f47f7ac6bc60b361b0cf',
     type: 'mpd'
     },     
-    
+
+/*	
 COMBATGO: {
     name: 'Combat Go',
     url: 'https://jungotvstream.chanall.tv/jungotv/combatgo/playlist_720p.m3u8',
 	type: 'hls'
     },
-    
+*/
+	
 TRUE: {
     name: 'True TV',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/truefm_tv/default/index.mpd',
