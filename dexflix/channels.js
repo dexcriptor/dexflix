@@ -402,19 +402,19 @@ ANDFLIX: {
     },	
 
 THREERSTV: {
-    name: '3RSTV',
+    name: '3RS TV',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210631/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
 
 THREERSSINE: {
-    name: '3RSSINEPINOY',
+    name: '3RS Sine Pinoy',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
 
 MOVIEBOX: {
-    name: 'Movie Box',
+    name: '3RS Movie Box',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210731/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
