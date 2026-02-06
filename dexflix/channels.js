@@ -191,7 +191,25 @@ DISCOVERY: {
 
 DISCOVERYSCIENCE: {
     name: 'Discovery Science',
-    url: 'https://nog-live1-ott.izzigo.tv/4/out/u/dash/DISCOVERY-SCIENCE-HD/default.mpd',
+    url: 'https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryscience2/default/manifest.mpd',
+	keyId: '5458f45efedb4d6f8aa6ac76c85b621b',
+    key: 'dbf8a0a306a64525ba3012fd225370c0',
+    type: 'mpd'
+   },  
+
+DISCOVERYTURBO: {
+    name: 'Discovery Turbo',
+    url: 'https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryturbo2/default/manifest.mpd',
+	keyId: 'c011525969e44b99a86059dbb3cdf4e8',
+    key: '6700a5d93203417b8585f7de7dd1a09b',
+    type: 'mpd'
+   },  
+
+DISCOVERYINV: {
+    name: 'Discovery Investigation',
+    url: 'https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Investigationdiscovery2/default/manifest.mpd',
+	keyId: '2828ea6f6a984505b0454da0c03f68b9',
+    key: '5d3b7195086544c2807aa8c1544e7379',
     type: 'mpd'
    },  
 
