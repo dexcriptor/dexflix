@@ -185,6 +185,12 @@ DISCOVERY: {
     keyId: 'd9ac48f5131641a789328257e778ad3a',
     key: 'b6e67c37239901980c6e37e0607ceee6',
     type: 'mpd'
+   }, 
+
+DISCOVERYSCIENCE: {
+    name: 'Discovery Science',
+    url: 'https://nog-live1-ott.izzigo.tv/4/out/u/dash/DISCOVERY-SCIENCE-HD/default.mpd',
+    type: 'mpd'
    },  
 
 HISTORY: {
