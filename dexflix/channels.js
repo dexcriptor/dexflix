@@ -157,12 +157,6 @@ BILYONARYO: {
     type: 'mpd'
     },
 
-BILYONARYO2: {
-    name: 'Bilyonaryo Channel 2',
-    url: 'https://amg19223-amg19223c11-amgplt0352.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg19223-amg19223c11-amgplt0352/3a4c4a84-0339-11f1-8293-265966353197/106/1920x1080_5129264/index.m3u8',
-    type: 'hls'
-    },
-
 BBCEARTH: {
     name: 'BBC Earth',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_bbcearth_hd1/default/index.mpd',
@@ -406,6 +400,12 @@ ANDFLIX: {
         url: 'https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8',
 		type: 'hls'
     },	
+
+THREERSTV: {
+    name: '3RSTV',
+    url: 'https://live20.bozztv.com/giatvplayout7/giatv-210631/tracks-v1a1/mono.ts.m3u8',
+    type: 'hls'
+    },
    
 	ragetv: {
         name: 'Rage TV',
