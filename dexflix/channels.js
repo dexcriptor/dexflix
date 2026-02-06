@@ -409,7 +409,7 @@ THREERSTV: {
 
 THREERSSINE: {
     name: '3RSSINEPINOY',
-    url: 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.ts.m3u88',
+    url: 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
 
