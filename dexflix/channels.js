@@ -49,6 +49,8 @@ TELERADYO: {
 JEEPNEY: {
     name: 'Jeepney TV',
     url: 'https://abslive.akamaized.net/dash/live/2027618/jeepneytv/manifest.mpd',
+	keyId: '90ea4079e02f418db7b170e8763e65f0',
+    key: '1bfe2d166e31d03eee86ee568bd6c272',
     type: 'mpd'
     },
 
