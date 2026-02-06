@@ -424,14 +424,15 @@ ANDFLIX: {
         url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/playlist.m3u8',
 		type: 'hls'
     },
-    
+
+/*    
 	jungopinotv: {
         name: 'Jungo Pinoy TV',
         url: 'https://jungotvstream.chanall.tv/jungotv/jungopinoytv/playlist_480p.m3u8',
 		type: 'hls'
     },
     
-	HALLYPO: {
+	HALLYPOP: {
         name: 'Hally Pop',
         url: 'https://jungotvstream.chanall.tv/jungotv/hallypop/playlist_1080p.m3u8',
 		type: 'hls'
@@ -448,7 +449,8 @@ ANDFLIX: {
         url: 'https://jungotvstream.chanall.tv/jungotv/frontrow/playlist_720p.m3u8',
 		type: 'hls'
     },
-    
+  */
+	
 	  NBA: {
         name: 'NBA TV  Philippines',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd',
