@@ -79,8 +79,8 @@ GMAPINOYTV: {
     },
 
 PBB: {
-    name: 'PBB',
-    url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-pbb-live-dash-abscbnono/f4ae2102-bcb4-4678-95d4-1fa82243cad5/index.mpd',
+    name: 'PBB All-Access Livestream',
+    url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-pbb-live-dash-abscbnono/921c1b55-ae05-4a07-8ef6-40f2ec3300f2/index.mpd',
     type: 'mpd'
     },
    
