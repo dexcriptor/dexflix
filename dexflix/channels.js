@@ -2,7 +2,7 @@ const channels = {
     
 KAPAMILYA: {
     name: 'Kapamilya Channel HD',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/38c8bedc-181b-40f6-b7e6-99b7c5aea1fb/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/index.mpd',
 	  type: 'mpd'
     },
 
