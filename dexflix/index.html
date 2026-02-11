@@ -44,7 +44,7 @@
         <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
            <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-red-600 rounded flex items-center justify-center shadow-lg shadow-red-900/50">
-                <i class="fas fa-tv text-white text-xs"></i>
+                <i class="fas fa-play text-white text-xs"></i>
               </div>
               <h1 class="text-lg md:text-xl font-bold tracking-tight text-white">Dex <span class="text-gray-500 font-normal">Online TV</span></h1>
            </div>
@@ -116,16 +116,15 @@
         
         <!-- Footer Credit -->
         <div class="text-center mt-8 pb-4 text-gray-600 text-xs flex items-center justify-center gap-2">
-            <i class="fas fa-shield-alt"></i> Secure Stream &copy; 2026 Kaijo
+            <i class="fas fa-shield-alt"></i> Secure Stream &copy; 2024 Kaijo
         </div>
         
     </main>
 
     <script>
+        // Encoded Resources
         const _0x1 = [
-            'jwpsrv.js',
-            'jwplayer.js',
-            'aHR0cHM6Ly9kZXhmbGl4LnBhZ2VzLmRldi9jaGFubmVscy5qcw=='
+            'jwpsrv.js', 'jwplayer.js', 'aHR0cHM6Ly9kZXhmbGl4LnBhZ2VzLmRldi9jaGFubmVscy5qcw=='
         ];
         
         const _0x2 = 'WFN1UDRxTWwrOXRLMTdRTmIrNCt0aDJQbTlBV2dNTy9jWUg4Q0kwSEdHcjdiZGpv';
@@ -148,6 +147,7 @@
                 jwplayer[atob('a2V5')] = atob(_0x2);
                 
                 let currentActiveKey = null;
+                let channelStatus = {};
 
                 // Function to detect iOS devices
                 function isIOS() {
@@ -155,6 +155,104 @@
                         'iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'
                     ].includes(navigator.platform)
                     || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+                }
+
+                // Check URL Status with DRM and Key Validation
+                async function checkChannelStatus(channel) {
+                    try {
+                        let url = channel.url;
+                        if (isIOS() && channel.iosUrl) {
+                            url = channel.iosUrl;
+                        }
+
+                        const controller = new AbortController();
+                        // 5 second timeout to allow content download
+                        const timeoutId = setTimeout(() => controller.abort(), 5000);
+                        
+                        const response = await fetch(url, { 
+                            method: 'GET', 
+                            signal: controller.signal
+                        });
+                        clearTimeout(timeoutId);
+
+                        if (!response.ok) return false;
+
+                        // Deep inspection to confirm playability
+                        const text = await response.text();
+                        const lowerText = text.toLowerCase();
+                        
+                        // DASH Check: Must have MPD xml tag
+                        if (url.includes('.mpd') || channel.type === 'mpd') {
+                            const isValidMpd = text.includes('<MPD') || text.includes('urn:mpeg:dash');
+                            if (!isValidMpd) return false;
+
+                            // Check for DRM protection signals
+                            const isProtected = text.includes('ContentProtection') || text.includes('cenc:pssh');
+                            
+                            // If protected, we ensure keys are present AND match content
+                            if (isProtected) {
+                                if (!channel.key || !channel.keyId) {
+                                    return false; // Offline: Protected stream but no keys provided
+                                }
+
+                                // Verify if the Provided Key ID exists in the manifest
+                                // 1. Normalize config Key ID (remove dashes, lowercase)
+                                const configKidClean = channel.keyId.toLowerCase().replace(/-/g, '');
+                                
+                                // 2. Create dashed version (Standard UUID: 8-4-4-4-12)
+                                const configKidDashed = configKidClean.replace(/(.{8})(.{4})(.{4})(.{4})(.{12})/, '$1-$2-$3-$4-$5');
+
+                                // 3. Search for either format in the manifest
+                                // This confirms the Key ID in config matches the one requested by the stream (cenc:default_KID)
+                                if (!lowerText.includes(configKidClean) && !lowerText.includes(configKidDashed)) {
+                                    // Offline: Key ID mismatch. The stream is online, but the provided key is wrong.
+                                    return false; 
+                                }
+                            }
+                            
+                            return true;
+                        }
+                        
+                        // HLS Check: Must have M3U header
+                        if (url.includes('.m3u8') || url.includes('.m3u') || channel.type === 'hls') {
+                            return text.includes('#EXTM3U');
+                        }
+
+                        return true;
+                    } catch (error) {
+                        return false;
+                    }
+                }
+
+                // Iterate and update all channel statuses
+                async function updateAllChannelStatuses() {
+                    if (typeof channels === 'undefined') return;
+
+                    const keys = Object.keys(channels);
+                    
+                    // We process checks in parallel
+                    const checks = keys.map(async (key) => {
+                        const channel = channels[key];
+                        
+                        // Pass full channel object to check DRM status
+                        const isOnline = await checkChannelStatus(channel);
+                        channelStatus[key] = isOnline;
+
+                        // Update the specific icon if it exists in DOM
+                        const icon = document.getElementById('status-' + key);
+                        if (icon) {
+                            // Remove Loading State
+                            icon.classList.remove('text-gray-500', 'animate-pulse');
+                            
+                            if (isOnline) {
+                                icon.classList.add('text-green-500');
+                            } else {
+                                icon.classList.add('text-red-500');
+                            }
+                        }
+                    });
+
+                    await Promise.allSettled(checks);
                 }
 
                 // Setup Fullscreen Toggle
@@ -280,13 +378,30 @@
                         btn.appendChild(icon);
                         btn.appendChild(text);
 
-                        // Only append if format detected
+                        // Append Format Badge
                         if (formatText) {
                             const formatBadge = document.createElement('span');
                             formatBadge.className = formatClass;
                             formatBadge.textContent = formatText;
                             btn.appendChild(formatBadge);
                         }
+
+                        // Append Status Icon (Online/Offline)
+                        const statusIcon = document.createElement('i');
+                        statusIcon.id = 'status-' + key;
+                        let statusClass = 'fas fa-circle text-[10px] ml-2 shrink-0 ';
+                        
+                        // Check status cache
+                        if (channelStatus[key] === true) {
+                            statusClass += 'text-green-500'; // Online
+                        } else if (channelStatus[key] === false) {
+                            statusClass += 'text-red-500'; // Offline
+                        } else {
+                            statusClass += 'text-gray-500 animate-pulse'; // Loading/Unknown
+                        }
+                        
+                        statusIcon.className = statusClass;
+                        btn.appendChild(statusIcon);
 
                         btn.onclick = function() {
                             loadStream(key);
@@ -308,6 +423,9 @@
 
                 // Initial Render
                 renderChannelList();
+
+                // Trigger Background Status Check
+                updateAllChannelStatuses();
 
                 // Setup Search Listener
                 const searchInput = document.getElementById('channelSearch');
@@ -352,4 +470,3 @@
 
 </body>
 </html>
-
