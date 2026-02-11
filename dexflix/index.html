@@ -6,13 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dex Online TV</title>
+
     <script async src="f0a6f.txt" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com/"></script>
     
     <link href="all.min.css" rel="stylesheet">
     <link href="homebutton.css" rel="stylesheet">
     
+    <!-- Custom scrollbar for webkit to match dark theme -->
     <style>
+        /* Global Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -27,6 +30,7 @@
             background: #555; 
         }
 
+        /* Specific styles for the channel list to ensure it looks contained */
         .channel-list-container {
             scrollbar-width: thin;
             scrollbar-color: #333 #0f0f0f;
@@ -35,6 +39,7 @@
 </head>
 <body class="bg-[#141414] text-gray-100 font-sans antialiased min-h-screen flex flex-col selection:bg-red-900 selection:text-white">
 
+    <!-- Navbar / Header -->
     <nav class="bg-[#0a0a0a] border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-opacity-90">
         <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
            <div class="flex items-center gap-3">
@@ -50,18 +55,23 @@
         </div>
     </nav>
 
+    <!-- Main Interface -->
     <main class="flex-grow pt-6 pb-8 px-4 md:px-6">
         
+        <!-- Changed grid to flex-col for mobile, kept grid for lg screens -->
         <div class="max-w-[1600px] mx-auto flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-8">
             
+            <!-- LEFT COLUMN: Video Player & Fullscreen Button -->
+            <!-- Sticky behavior ensures both player and button stick on mobile -->
             <div class="lg:col-span-2 flex flex-col gap-4 sticky top-20 z-40 bg-[#141414] pb-4 lg:pb-0 lg:static lg:bg-transparent shadow-lg lg:shadow-none border-b lg:border-none border-gray-800">
+                <!-- Wrapper to keep player sticky on desktop if content gets long -->
                 <div class="lg:sticky lg:top-24 flex flex-col gap-4">
                     <div class="relative w-full bg-black rounded-xl overflow-hidden shadow-2xl shadow-black border border-gray-800 aspect-video z-10">
-   
+                        <!-- Player Placeholder / Injection Point -->
                         <div id="player" class="w-full h-full"></div>
                     </div>
 
-
+                    <!-- Full Screen Button (Moved here) -->
                     <button id="fullscreenBtn" onclick="toggleFullScreen()" class="w-full py-3 bg-gray-800 hover:bg-red-600 text-white rounded-lg border border-gray-700 hover:border-red-500 transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg cursor-pointer">
                         <i class="fas fa-expand group-hover:scale-110 transition-transform"></i>
                         <span class="font-medium text-sm">Full Screen</span>
@@ -69,27 +79,33 @@
                 </div>
             </div>
 
-
+            <!-- RIGHT COLUMN: Sidebar (Channel List Only) -->
             <div class="lg:col-span-1 flex flex-col gap-4 h-[calc(100vh-320px)] lg:h-[calc(100vh-100px)] min-h-[400px]">
                 
-
+                <!-- Channel List Container (Scrollable) -->
                 <div class="bg-[#1a1a1a] rounded-xl border border-gray-800 shadow-lg flex flex-col flex-grow overflow-hidden">
-
+                    <!-- Header with Search -->
                     <div class="p-3 bg-[#1f1f1f] border-b border-gray-700 flex items-center justify-between shrink-0">
+                        <!-- Removed 'hidden sm:flex' to show on mobile -->
                         <span class="text-gray-200 font-semibold text-sm flex items-center gap-2">
                             <i class="fas fa-list text-gray-500"></i> Channels
                         </span>
                         
+                        <!-- Search Input -->
+                        <!-- Adjusted classes to share width on mobile: removed w-full, added flex-1 and ml-2 -->
                         <div class="relative flex-1 sm:flex-none sm:w-auto ml-2 sm:ml-0">
                             <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-xs"></i>
                             <input type="text" id="channelSearch" placeholder="Search channels..." class="w-full sm:w-48 bg-black text-gray-300 text-xs rounded border border-gray-800 py-2 pl-8 pr-8 focus:outline-none focus:border-red-600 transition-colors placeholder-gray-600">
+                            <!-- Clear Button -->
                             <button id="clearSearchBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-white hidden focus:outline-none transition-colors">
                                 <i class="fas fa-times text-xs"></i>
                             </button>
                         </div>
                     </div>
                     
+                    <!-- Scrollable List Area -->
                     <div id="channelList" class="flex-grow overflow-y-auto p-2 space-y-1 channel-list-container">
+                        <!-- Buttons injected by JS -->
                         <div class="text-gray-500 text-center py-4 text-sm animate-pulse">Loading channels...</div>
                     </div>
                 </div>
@@ -98,6 +114,7 @@
 
         </div>
         
+        <!-- Footer Credit -->
         <div class="text-center mt-8 pb-4 text-gray-600 text-xs flex items-center justify-center gap-2">
             <i class="fas fa-shield-alt"></i> Secure Stream &copy; 2025 - 2026 Dex Online TV
         </div>
@@ -131,6 +148,7 @@
                 let currentActiveKey = null;
                 let channelStatus = {};
 
+                // Function to detect iOS devices
                 function isIOS() {
                     return [
                         'iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'
@@ -138,6 +156,7 @@
                     || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
                 }
 
+                // Check URL Status with DRM and Key Validation
                 async function checkChannelStatus(channel) {
                     try {
                         let url = channel.url;
@@ -146,6 +165,7 @@
                         }
 
                         const controller = new AbortController();
+                        // 5 second timeout to allow content download
                         const timeoutId = setTimeout(() => controller.abort(), 5000);
                         
                         const response = await fetch(url, { 
@@ -156,27 +176,35 @@
 
                         if (!response.ok) return false;
 
+                        // Deep inspection to confirm playability
                         const text = await response.text();
                         const lowerText = text.toLowerCase();
                         
+                        // DASH Check: Must have MPD xml tag
                         if (url.includes('.mpd') || channel.type === 'mpd') {
                             const isValidMpd = text.includes('<MPD') || text.includes('urn:mpeg:dash');
                             if (!isValidMpd) return false;
 
+                            // Check for DRM protection signals
                             const isProtected = text.includes('ContentProtection') || text.includes('cenc:pssh');
                             
+                            // If protected, we ensure keys are present AND match content
                             if (isProtected) {
                                 if (!channel.key || !channel.keyId) {
-                                    return false; 
+                                    return false; // Offline: Protected stream but no keys provided
                                 }
 
-)
+                                // Verify if the Provided Key ID exists in the manifest
+                                // 1. Normalize config Key ID (remove dashes, lowercase)
                                 const configKidClean = channel.keyId.toLowerCase().replace(/-/g, '');
                                 
+                                // 2. Create dashed version (Standard UUID: 8-4-4-4-12)
                                 const configKidDashed = configKidClean.replace(/(.{8})(.{4})(.{4})(.{4})(.{12})/, '$1-$2-$3-$4-$5');
 
-
+                                // 3. Search for either format in the manifest
+                                // This confirms the Key ID in config matches the one requested by the stream (cenc:default_KID)
                                 if (!lowerText.includes(configKidClean) && !lowerText.includes(configKidDashed)) {
+                                    // Offline: Key ID mismatch. The stream is online, but the provided key is wrong.
                                     return false; 
                                 }
                             }
@@ -184,6 +212,7 @@
                             return true;
                         }
                         
+                        // HLS Check: Must have M3U header
                         if (url.includes('.m3u8') || url.includes('.m3u') || channel.type === 'hls') {
                             return text.includes('#EXTM3U');
                         }
@@ -194,19 +223,24 @@
                     }
                 }
 
+                // Iterate and update all channel statuses
                 async function updateAllChannelStatuses() {
                     if (typeof channels === 'undefined') return;
 
                     const keys = Object.keys(channels);
                     
+                    // We process checks in parallel
                     const checks = keys.map(async (key) => {
                         const channel = channels[key];
                         
+                        // Pass full channel object to check DRM status
                         const isOnline = await checkChannelStatus(channel);
                         channelStatus[key] = isOnline;
 
+                        // Update the specific icon if it exists in DOM
                         const icon = document.getElementById('status-' + key);
-                        if (icon) { 
+                        if (icon) {
+                            // Remove Loading State
                             icon.classList.remove('text-gray-500', 'animate-pulse');
                             
                             if (isOnline) {
@@ -220,6 +254,7 @@
                     await Promise.allSettled(checks);
                 }
 
+                // Setup Fullscreen Toggle
                 window.toggleFullScreen = function() {
                     const player = jwplayer("player");
                     if (player && typeof player.setFullscreen === 'function') {
@@ -232,13 +267,15 @@
                     }
                 };
 
+                // Load Stream Logic
                 window.loadStream = function(channelKey) {
-                    currentActiveKey = channelKey;
+                    currentActiveKey = channelKey; // Set active key
 
                     if (typeof channels === 'undefined') return;
                     const channel = channels[channelKey];
                     if (!channel) return;
 
+                    // Update UI Active State
                     document.querySelectorAll('.channel-btn').forEach(btn => {
                         btn.classList.remove('bg-red-600', 'text-white', 'border-red-500');
                         btn.classList.add('bg-[#252525]', 'text-gray-300', 'border-transparent', 'hover:bg-[#333]');
@@ -284,6 +321,7 @@
                     });
                 };
 
+                // Function to Render Channel List (with optional filter)
                 function renderChannelList(filter = '') {
                     const listContainer = document.getElementById('channelList');
                     if (typeof channels === 'undefined') return;
@@ -296,12 +334,14 @@
                         const channel = channels[key];
                         const channelName = channel.name;
                         
+                        // Filter Logic
                         if (!channelName.toLowerCase().includes(lowerFilter)) return;
 
                         hasMatch = true;
                         const btn = document.createElement('button');
                         btn.id = 'btn-' + key;
                         
+                        // Check if this is the currently playing channel
                         const isActive = (key === currentActiveKey);
                         const baseClasses = 'channel-btn w-full text-left px-4 py-3 rounded-lg border transition-all duration-200 flex items-center gap-3 group focus:outline-none';
                         const activeClasses = 'bg-red-600 text-white border-red-500';
@@ -309,14 +349,17 @@
 
                         btn.className = `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`;
                         
+                        // Icon
                         const icon = document.createElement('div');
                         icon.className = 'w-8 h-8 rounded-full bg-black flex items-center justify-center text-gray-500 group-hover:text-white transition-colors text-xs shrink-0';
                         icon.innerHTML = '<i class="fas fa-tv"></i>';
                         
+                        // Text
                         const text = document.createElement('span');
-                        text.className = 'font-medium text-sm truncate flex-1 min-w-0'; 
+                        text.className = 'font-medium text-sm truncate flex-1 min-w-0'; // flex-1 allows it to take space, min-w-0 allows truncate
                         text.textContent = channelName;
 
+                        // Format Indicator
                         let formatText = '';
                         let formatClass = 'text-[10px] font-bold px-1 ml-2 shrink-0 border rounded ';
                         
@@ -325,15 +368,16 @@
 
                         if (type === 'hls' || url.includes('.m3u8') || url.includes('.m3u')) {
                             formatText = 'HLS';
-                            formatClass += 'text-blue-400 border-blue-900 bg-blue-900/20'; 
+                            formatClass += 'text-blue-400 border-blue-900 bg-blue-900/20'; // Light Blue style
                         } else if (type === 'mpd' || url.includes('.mpd')) {
                             formatText = 'DASH';
-                            formatClass += 'text-green-400 border-green-900 bg-green-900/20'; 
+                            formatClass += 'text-green-400 border-green-900 bg-green-900/20'; // Light Green style
                         }
 
                         btn.appendChild(icon);
                         btn.appendChild(text);
 
+                        // Append Format Badge
                         if (formatText) {
                             const formatBadge = document.createElement('span');
                             formatBadge.className = formatClass;
@@ -341,16 +385,18 @@
                             btn.appendChild(formatBadge);
                         }
 
+                        // Append Status Icon (Online/Offline)
                         const statusIcon = document.createElement('i');
                         statusIcon.id = 'status-' + key;
                         let statusClass = 'fas fa-circle text-[10px] ml-2 shrink-0 ';
                         
+                        // Check status cache
                         if (channelStatus[key] === true) {
-                            statusClass += 'text-green-500'; 
+                            statusClass += 'text-green-500'; // Online
                         } else if (channelStatus[key] === false) {
-                            statusClass += 'text-red-500'; 
+                            statusClass += 'text-red-500'; // Offline
                         } else {
-                            statusClass += 'text-gray-500 animate-pulse';
+                            statusClass += 'text-gray-500 animate-pulse'; // Loading/Unknown
                         }
                         
                         statusIcon.className = statusClass;
@@ -363,6 +409,7 @@
                         listContainer.appendChild(btn);
                     });
 
+                    // Empty State
                     if (!hasMatch) {
                         listContainer.innerHTML = `
                             <div class="flex flex-col items-center justify-center py-8 text-gray-500">
@@ -373,10 +420,13 @@
                     }
                 }
 
+                // Initial Render
                 renderChannelList();
 
+                // Trigger Background Status Check
                 updateAllChannelStatuses();
 
+                // Setup Search Listener
                 const searchInput = document.getElementById('channelSearch');
                 const clearBtn = document.getElementById('clearSearchBtn');
 
@@ -384,6 +434,7 @@
                     searchInput.addEventListener('input', function(e) {
                         const val = e.target.value;
                         renderChannelList(val);
+                        // Toggle clear button
                         if (val.length > 0) {
                             clearBtn.classList.remove('hidden');
                         } else {
@@ -401,6 +452,7 @@
                     });
                 }
 
+                // Hide Full Screen on iOS
                 if (isIOS()) {
                     const fsBtn = document.getElementById('fullscreenBtn');
                     if (fsBtn) fsBtn.style.display = 'none';
@@ -411,12 +463,9 @@
             }
         }
 
+        // Start initialization
         initApp();
     </script>
 
 </body>
 </html>
-
-
-
-
