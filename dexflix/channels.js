@@ -21,7 +21,7 @@ TV5: {
     },
     
 A2Z: {
-    name: 'A2Z',
+    name: 'A2Z (Offline)',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_a2z/default/index.mpd',
     keyId: 'f703e4c8ec9041eeb5028ab4248fa094',
     key: 'c22f2162e176eee6273a5d0b68d19530',
@@ -47,7 +47,7 @@ TELERADYO: {
     },
 
 JEEPNEY: {
-    name: 'Jeepney TV',
+    name: 'Jeepney TV (Offline)',
     url: 'https://abslive.akamaized.net/dash/live/2028025/jeepneytv/manifest.mpd',
 	keyId: '90ea4079e02f418db7b170e8763e65f0',
     key: '1bfe2d166e31d03eee86ee568bd6c272',
@@ -85,7 +85,7 @@ PBB: {
     },
    
 ONEPH: {
-    name: 'One PH',
+    name: 'One PH (Offline)',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/oneph_sd/default/index.mpd',
     keyId: '92834ab4a7e1499b90886c5d49220e46',
     key: 'a7108d9a6cfcc1b7939eb111daf09ab3',
@@ -126,7 +126,7 @@ DEPED: {
     },
     
 ONENEWS: {
-    name: 'One News',
+    name: 'One News (Offline)',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/onenews_hd1/default/index.mpd',
     keyId: 'd39eb201ae494a0b98583df4d110e8dd',
     key: '6797066880d344422abd3f5eda41f45f',
@@ -166,7 +166,7 @@ BBCEARTH: {
    },  
    
 ANIMALPLANET: {
-    name: 'Animal Planet',
+    name: 'Animal Planet (Offline)',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animal_planet_sd/default/index.mpd',
     keyId: '436b69f987924fcbbc06d40a69c2799a',
     key: 'c63d5b0d7e52335b61aeba4f6537d54d',
@@ -214,7 +214,7 @@ DISCOVERYINV: {
    },  
 
 HISTORY: {
-    name: 'History',
+    name: 'History (Offline)',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_historyhd/default/index.mpd',
     keyId: 'a7724b7ca2604c33bb2e963a0319968a',
     key: '6f97e3e2eb2bade626e0281ec01d3675',
@@ -222,7 +222,7 @@ HISTORY: {
    }, 
  
 ROCKACTION: {
-    name: 'Rock Action',
+    name: 'Rock Action (Offline)',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_rockextreme/default/index.mpd',
     keyId: '0f852fb8412b11edb8780242ac120002',
     key: '4cbc004d8c444f9f996db42059ce8178',
@@ -230,7 +230,7 @@ ROCKACTION: {
     }, 
 
 ROCKENT: {
-    name: 'Rock Entertainment',
+    name: 'Rock Entertainment (Offline)',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_rockentertainment/default/index.mpd',
     keyId: 'e4ee0cf8ca9746f99af402ca6eed8dc7',
     key: 'be2a096403346bc1d0bb0f812822bb62',
@@ -262,7 +262,7 @@ COMBATGO: {
 */
 	
 TRUE: {
-    name: 'True TV',
+    name: 'True TV (Offline)',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/truefm_tv/default/index.mpd',
     keyId: '0559c95496d44fadb94105b9176c3579',
     key: '40d8bb2a46ffd03540e0c6210ece57ce',
@@ -334,7 +334,7 @@ HBOXTREME: {
     },
     
     LOTUSMACAU: {
-        name: 'Lotus Macau',
+        name: 'Lotus Macau (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/lotusmacau_prd/default/index.mpd',
         keyId: '60dc692e64ea443a8fb5ac186c865a9b',
         key: '01bdbe22d59b2a4504b53adc2f606cc1',
@@ -342,7 +342,7 @@ HBOXTREME: {
     },
     
 	  HBO: {
-        name: 'HBO',
+        name: 'HBO (Offline)',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbohd/default/index.mpd',
         keyId: 'd47ebabf7a21430b83a8c4b82d9ef6b1',
         key: '54c213b2b5f885f1e0290ee4131d425b',
@@ -374,7 +374,7 @@ HBOXTREME: {
     },
     
 	  HM: {
-        name: 'HITS Movies',
+        name: 'HITS Movies (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_hitsmovies/default/index.mpd',
         keyId: 'f56b57b32d7e4b2cb21748c0b56761a7',
         key: '3df06a89aa01b32655a77d93e09e266f',
@@ -382,7 +382,7 @@ HBOXTREME: {
     },
     
 	  TAF: {
-        name: 'Tap Action Flix',
+        name: 'Tap Action Flix (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_tapactionflix_hd1/default/index.mpd',
         keyId: 'bee1066160c0424696d9bf99ca0645e3',
         key: 'f5b72bf3b89b9848de5616f37de040b7',
@@ -398,7 +398,7 @@ CINEMAX: {
     },
 
 ANDFLIX: {
-        name: '&Flix',
+        name: '&Flix (Offline)',
         url: 'https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8',
 		type: 'hls'
     },	
@@ -466,7 +466,7 @@ MOVIEBOX: {
   */
 	
 	  NBA: {
-        name: 'NBA TV  Philippines',
+        name: 'NBA TV  Philippines (Offline)',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd',
         keyId: 'c5e51f41ceac48709d0bdcd9c13a4d88',
         key: '20b91609967e472c27040716ef6a8b9a',
@@ -474,7 +474,7 @@ MOVIEBOX: {
     },
     
 	  OT: {
-        name: 'PBA Rush',
+        name: 'PBA Rush (Offline)',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_pbarush_hd1/default/index.mpd',
         keyId: '76dc29dd87a244aeab9e8b7c5da1e5f3',
         key: '95b2f2ffd4e14073620506213b62ac82',
@@ -490,7 +490,7 @@ MOVIEBOX: {
     },
     
 	  DO: {
-        name: 'One Sports Plus',
+        name: 'One Sports Plus (Offline)',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd',
         keyId: '322d06e9326f4753a7ec0908030c13d8',
         key: '1e3e0ca32d421fbfec86feced0efefda',
@@ -506,7 +506,7 @@ MOVIEBOX: {
     },
     
 	  EOO: {
-        name: 'TAP Sports',
+        name: 'TAP Sports (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_tapsports/default/index.mpd',
         keyId: 'eabd2d95c89e42f2b0b0b40ce4179ea0',
         key: '0e7e35a07e2c12822316c0dc4873903f',
@@ -538,7 +538,7 @@ MOVIEBOX: {
 
 
 	  Q: {
-        name: 'SpoTV 2 HD',
+        name: 'SpoTV 2 HD (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd',
         keyId: '7eea72d6075245a99ee3255603d58853',
         key: '6848ef60575579bf4d415db1032153ed',
@@ -546,7 +546,7 @@ MOVIEBOX: {
 
     
 	  Y: {
-        name: 'DreamWorks HD',
+        name: 'DreamWorks HD (Offline)',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_dreamworks_hd1/default/index.mpd',
         keyId: '4ab9645a2a0a47edbd65e8479c2b9669',
         key: '8cb209f1828431ce9b50b593d1f44079',
@@ -594,7 +594,7 @@ MOONBUGKIDS: {
    }, 
    
 ANIMAX: {
-    name: 'Animax',
+    name: 'Animax (Offline)',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animax_sd_new/default/index.mpd',
     keyId: '92032b0e41a543fb9830751273b8debd',
     key: '03f8b65e2af785b10d6634735dbe6c11',
