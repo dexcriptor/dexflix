@@ -176,9 +176,9 @@ ANIMALPLANET: {
 LOVENATURE: {
     name: 'Love Nature',
     url: 'https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(LoveNature)/master.mpd',
-	  keyId: '3af2407f93664272a2b0c24be3632d93',
+	keyId: '3af2407f93664272a2b0c24be3632d93',
     key: '6504d3e04a92a7d0d0d36818f477cae4',
-	  type: 'mpd'
+	type: 'mpd'
     },
    
 DISCOVERY: {
@@ -474,10 +474,10 @@ MOVIEBOX: {
     },
     
 	  OT: {
-        name: 'PBA Rush (Offline)',
+        name: 'PBA Rush',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_pbarush_hd1/default/index.mpd',
-        keyId: '76dc29dd87a244aeab9e8b7c5da1e5f3',
-        key: '95b2f2ffd4e14073620506213b62ac82',
+        keyId: 'd7f1a9c36b2e4f8d9a441c5e7b2d8f60',
+        key: 'fb83c86f600ab945e7e9afed8376eb1e',
      	type: 'mpd'
     },
     
