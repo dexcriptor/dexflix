@@ -30,19 +30,19 @@ A2Z: {
    
 TFC: {
     name: 'TFC',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/9414662e-4b0f-4fd5-8f40-78a1157bb03e/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
 ANC: {
     name: 'ANC',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/3cc223e8-d104-44da-828c-5a98d8b8d5b6/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
 TELERADYO: {
     name: 'TeleRadyo',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/af2a2a7f-5873-42bb-9e22-324b1e4e7f7d/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
@@ -68,7 +68,7 @@ CINEMO: {
 
 MYX: {
     name: 'MYX',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/f3af9635-8c0b-45f0-9a09-37296d3504c6/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
