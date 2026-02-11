@@ -542,6 +542,7 @@ MOVIEBOX: {
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd',
         keyId: '7eea72d6075245a99ee3255603d58853',
         key: '6848ef60575579bf4d415db1032153ed',
+		type: 'mpd'
     },
 
     
