@@ -87,8 +87,8 @@ PBB: {
 ONEPH: {
     name: 'One PH',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/oneph_sd/default/index.mpd',
-    keyId: '92834ab4a7e1499b90886c5d49220e46',
-    key: 'a7108d9a6cfcc1b7939eb111daf09ab3',
+    keyId: 'b1c7e9d24f8a4d6c9e337a2f1c5b8d60',
+    key: '8ff2e524cc1e028f2a4d4925e860c796',
     type: 'mpd'
     },
     
@@ -264,8 +264,8 @@ COMBATGO: {
 TRUE: {
     name: 'True TV',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/truefm_tv/default/index.mpd',
-    keyId: '0559c95496d44fadb94105b9176c3579',
-    key: '40d8bb2a46ffd03540e0c6210ece57ce',
+    keyId: 'a4e2b9d61c754f3a8d109b6c2f1e7a55',
+    key: '1d8d975f0bc2ed90eda138bd31f173f4',
     type: 'mpd'
     },
         
