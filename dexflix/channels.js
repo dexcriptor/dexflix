@@ -581,11 +581,13 @@ CINEMAX: {
     type: 'mpd'
     },
 
+/*
 ANDFLIX: {
-        name: '&Flix',
-        url: 'https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8',
-		type: 'hls'
+    name: '&Flix',
+    url: 'https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8',
+	type: 'hls'
     },	
+*/
 
 THREERSTV: {
     name: '3RS TV',
