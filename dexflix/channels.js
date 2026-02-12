@@ -23,8 +23,8 @@ TV5: {
 A2Z: {
     name: 'A2Z',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_a2z/default/index.mpd',
-    keyId: 'f703e4c8ec9041eeb5028ab4248fa094',
-    key: 'c22f2162e176eee6273a5d0b68d19530',
+    keyId: '3f6d8a2c1b7e4c9f8d52a7e1b0c6f93d',
+    key: '4019f9269b9054a2b9e257b114ebbaf2',
     type: 'mpd'
    },
    
@@ -128,8 +128,8 @@ DEPED: {
 ONENEWS: {
     name: 'One News',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/onenews_hd1/default/index.mpd',
-    keyId: 'd39eb201ae494a0b98583df4d110e8dd',
-    key: '6797066880d344422abd3f5eda41f45f',
+    keyId: '2e6a9d7c1f4b4c8a8d33c7b1f0a5e924',
+    key: '4c71e178d090332fbfe72e023b59f6d2',
     type: 'mpd'
     },
     
@@ -168,8 +168,8 @@ BBCEARTH: {
 ANIMALPLANET: {
     name: 'Animal Planet',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animal_planet_sd/default/index.mpd',
-    keyId: '436b69f987924fcbbc06d40a69c2799a',
-    key: 'c63d5b0d7e52335b61aeba4f6537d54d',
+    keyId: '1c9f7a6d3b2e4e5d8a61f4d0c2b9e813',
+    key: 'b8f52451c67a2b54f272543eef45b621',
     type: 'mpd'
    }, 
    
@@ -216,8 +216,8 @@ DISCOVERYINV: {
 HISTORY: {
     name: 'History',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_historyhd/default/index.mpd',
-    keyId: 'a7724b7ca2604c33bb2e963a0319968a',
-    key: '6f97e3e2eb2bade626e0281ec01d3675',
+    keyId: 'e2a8c7d15b9f4d6a9c101f7e3b2d8a44',
+    key: '397ca914a73b1e00bc94ed9eccf9c258',
     type: 'mpd'
    }, 
  
