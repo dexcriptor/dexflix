@@ -78,6 +78,14 @@ GMAPINOYTV: {
     type: 'mpd'
     },
 
+KAPATID: {
+    name: 'Kapatid HD',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kapatid_hd/default/index.mpd',
+	keyId: '045d103180f64562b1db7c932741c3ba',
+    key: 'c3380548b9075c767a6ae2006ef4bff8',
+    type: 'mpd'
+    },
+
 PBB: {
     name: 'PBB',
     url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-pbb-live-dash-abscbnono/index.mpd',
@@ -122,6 +130,14 @@ DEPED: {
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/depedch_sd/default/index.mpd',
     keyId: '0f853706412b11edb8780242ac120002',
     key: '2157d6529d80a760f60a8b5350dbc4df',
+    type: 'mpd'
+    },
+
+KNOWLEDGECH: {
+    name: 'Knowledge Channel',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/knowledge_channel/default/index.mpd',
+    keyId: 'c7d2b1e94f8a4d6c8a106b3d1f9c2e55',
+    key: '2052f6b844aa53144bb32f0e41295106',
     type: 'mpd'
     },
     
@@ -245,6 +261,14 @@ ROCKENT: {
     type: 'mpd'
     }, 
 
+KIX: {
+    name: 'KIX HD',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kix_hd1/default/index.mpd',
+    keyId: 'c9d4b7a18e2f4d6c9a103f5b7e1c2d88',
+    key: '7f3139092bf87d8aa51ee40e6294d376',
+    type: 'mpd'
+    }, 
+
 ASIANFOODNET: {
     name: 'Asian Food Network',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/asianfoodnetwork_sd/default/index.mpd',
@@ -285,6 +309,22 @@ GLOBALTREKKER: {
     type: 'mpd'
     }, 
 
+LIFETIME: {
+    name: 'Lifetime',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_lifetime/default/index.mpd',
+    keyId: 'cf861d26e7834166807c324d57df5119',
+    key: '64a81e30f6e5b7547e3516bbf8c647d0',
+    type: 'mpd'
+    }, 
+
+TRAVELCH: {
+    name: 'Travel Channel',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/travel_channel_sd/default/index.mpd',
+    keyId: 'f3047fc13d454dacb6db4207ee79d3d3',
+    key: 'bdbd38748f51fc26932e96c9a2020839',
+    type: 'mpd'
+    }, 
+
 AXN: {
     name: 'AXN',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_axn_sd/default/index.mpd',
@@ -292,6 +332,14 @@ AXN: {
     key: '05e6bfa4b6805c46b772f35326b26b36',
     type: 'mpd'
     },  
+
+ WARNERTV: {
+    name: 'Warner TV',
+ 	url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_warnerhd/default/index.mpd',
+    keyId: '7f2a9c6d1e5b4c8a8d10a2b7e1c9f344',
+    key: 'ae3d135d5ddd9e8f3a7bbfbfae0e40d1',
+    type: 'mpd'
+    },
 
 ABCAUSTRALIA: {
     name: 'ABC Australia',
@@ -362,6 +410,14 @@ FRANCETF: {
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/france24/default/index.mpd',
     keyId: '257f9fdeb39d41bdb226c2ae1fbdaeb6',
     key: 'e80ead0f4f9d6038ab34f332713ceaa5',
+    type: 'mpd'
+    }, 
+
+TVMARIA: {
+    name: 'TV Maria',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/tvmaria_prd/default/index.mpd',
+    keyId: 'fa3998b9a4de40659725ebc5151250d6',
+    key: '998f1294b122bbf1a96c1ddc0cbb229f',
     type: 'mpd'
     }, 
 
@@ -598,6 +654,14 @@ ARIRANG: {
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/arirang_sd/default/index.mpd',
     keyId: '13815d0fa026441ea7662b0c9de00bcf',
     key: '2d99a55743677c3879a068dd9c92f824',
+    type: 'mpd'
+    },	
+
+KBSWORLD: {
+    name: 'KBS World',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kbsworld/default/index.mpd',
+    keyId: '22ff2347107e4871aa423bea9c2bd363',
+    key: 'c6e7ba2f48b3a3b8269e8bc360e60404',
     type: 'mpd'
     },	
 	
