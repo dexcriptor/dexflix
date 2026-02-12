@@ -245,13 +245,45 @@ ASIANFOODNET: {
     type: 'mpd'
     }, 
 
+AXN: {
+    name: 'AXN',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_axn_sd/default/index.mpd',
+    keyId: '8a6c2f1e9d7b4c5aa1f04d2b7e9c1f88',
+    key: '05e6bfa4b6805c46b772f35326b26b36',
+    type: 'mpd'
+    },  
+
+ABCAUSTRALIA: {
+    name: 'ABC Australia',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/abc_aus/default/index.mpd',
+    keyId: 'd6f1a8c29b7e4d5a8f332c1e9d7b6a90',
+    key: '790bd17b9e623e832003a993a2de1d87',
+    type: 'mpd'
+    },  
+
+ALJAZEERA: {
+    name: 'Aljazeera',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_aljazeera/default/index.mpd',
+    keyId: '7f3d900a04d84492b31fe9f79ac614e3',
+    key: 'd33ff14f50beac42969385583294b8f2',
+    type: 'mpd'
+    },  
+	
 NHKWORLDJAPAN: {
     name: 'NHK World Japan',
     url: 'https://qp-pldt-live-grp-12-prod.akamaized.net/out/u/dr_nhk_japan.mpd',
     keyId: '3d6e9d4de7d7449aadd846b7a684e564',
     key: '0800fff80980f47f7ac6bc60b361b0cf',
     type: 'mpd'
-    },     
+    }, 
+
+BBCWORLDNEWS: {
+    name: 'BBC World News',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/bbcworld_news_sd/default/index.mpd',
+    keyId: 'f59650be475e4c34a844d4e2062f71f3',
+    key: '119639e849ddee96c4cec2f2b6b09b40',
+    type: 'mpd'
+    }, 
 
 /*	
 COMBATGO: {
@@ -464,6 +496,14 @@ MOVIEBOX: {
 		type: 'hls'
     },
   */
+
+ARIRANG: {
+    name: 'Arirang',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/arirang_sd/default/index.mpd',
+    keyId: '13815d0fa026441ea7662b0c9de00bcf',
+    key: '2d99a55743677c3879a068dd9c92f824',
+    type: 'mpd'
+    },	
 	
 	  NBA: {
         name: 'NBA TV  Philippines',
@@ -619,12 +659,6 @@ bean: {
     url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8',
 	type: 'hls'
     },  
-    
-tomjerry: {
-    name: 'Tom & Jerry - 24/7',
-    url: 'https://utube.cocker-tk.workers.dev/rJU6YjyUbbE/master.m3u8',
-	type: 'hls'
-    },
 
 TESTLINKHLS: {
     name: 'Test Stream Only (HLS)',
