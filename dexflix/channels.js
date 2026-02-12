@@ -283,6 +283,38 @@ BBCWORLDNEWS: {
     keyId: 'f59650be475e4c34a844d4e2062f71f3',
     key: '119639e849ddee96c4cec2f2b6b09b40',
     type: 'mpd'
+    },
+
+BLOOMBERG: {
+    name: 'Bloomberg',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/bloomberg_sd/default/index.mpd',
+    keyId: '3b8e6d1f2c9a4f7d9a556c1e7b2d8f90',
+    key: '09f0bd803966c4befbd239cfa75efe23',
+    type: 'mpd'
+    }, 
+
+CGTN: {
+    name: 'CGTN',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgtn/default/index.mpd',
+    keyId: '0f854ee4412b11edb8780242ac120002',
+    key: '9f2c82a74e727deadbda389e18798d55',
+    type: 'mpd'
+    }, 
+
+CHANNELNEWSASIA: {
+    name: 'Channel News Asia',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/channelnewsasia/default/index.mpd',
+    keyId: 'b259df9987364dd3b778aa5d42cb9acd',
+    key: '753e3dba96ab467e468269e7e33fb813',
+    type: 'mpd'
+    }, 
+
+CNNHD: {
+    name: 'CNN HD',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd',
+    keyId: '900c43f0e02742dd854148b7a75abbec',
+    key: 'da315cca7f2902b4de23199718ed7e90',
+    type: 'mpd'
     }, 
 
 /*	
