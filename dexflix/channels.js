@@ -224,16 +224,16 @@ HISTORY: {
 ROCKACTION: {
     name: 'Rock Action',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_rockextreme/default/index.mpd',
-    keyId: '0f852fb8412b11edb8780242ac120002',
-    key: '4cbc004d8c444f9f996db42059ce8178',
+    keyId: '8d2a6f1c9b7e4c3da5f01e7b9c6d2f44',
+    key: '23841651ebf49fa03fdfcd7b43337f87',
     type: 'mpd'
     }, 
 
 ROCKENT: {
     name: 'Rock Entertainment',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_rockentertainment/default/index.mpd',
-    keyId: 'e4ee0cf8ca9746f99af402ca6eed8dc7',
-    key: 'be2a096403346bc1d0bb0f812822bb62',
+    keyId: 'a8b2d6f14c9e4d7a8f552c1e9b7d6a30',
+    key: 'b61a33a4281e7c8e68b24b9af466f7b4',
     type: 'mpd'
     }, 
 
@@ -336,16 +336,16 @@ HBOXTREME: {
     LOTUSMACAU: {
         name: 'Lotus Macau',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/lotusmacau_prd/default/index.mpd',
-        keyId: '60dc692e64ea443a8fb5ac186c865a9b',
-        key: '01bdbe22d59b2a4504b53adc2f606cc1',
+        keyId: '9a7c2d1f4e8b4a6d8f301b5c9e7d2a44',
+        key: 'ca88469cabc18aa33d1f2e46a6efb4f7',
      	type: 'mpd'
     },
     
 	  HBO: {
         name: 'HBO',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbohd/default/index.mpd',
-        keyId: 'd47ebabf7a21430b83a8c4b82d9ef6b1',
-        key: '54c213b2b5f885f1e0290ee4131d425b',
+        keyId: 'c2b7a1e95d4f4c3a8e617f9d0a2b6c18',
+        key: '27fca1ab042998b0c2f058b0764d7ed4',
      	type: 'mpd'
     },
     
@@ -376,8 +376,8 @@ HBOXTREME: {
 	  HM: {
         name: 'HITS Movies',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_hitsmovies/default/index.mpd',
-        keyId: 'f56b57b32d7e4b2cb21748c0b56761a7',
-        key: '3df06a89aa01b32655a77d93e09e266f',
+        keyId: '2c8a5f1e7b9d4c6a9e55f1d7b2a8c360',
+        key: 'c9f622dff27e9e1c1f78617ba3b81a62',
      	type: 'mpd'
     },
     
@@ -468,8 +468,8 @@ MOVIEBOX: {
 	  NBA: {
         name: 'NBA TV  Philippines',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd',
-        keyId: 'c5e51f41ceac48709d0bdcd9c13a4d88',
-        key: '20b91609967e472c27040716ef6a8b9a',
+        keyId: 'd1f8a0c97b3d4e529a6f2c4b8d7e1f90',
+        key: '58ab331d14b66bf31aca4284e0a3e536',
      	type: 'mpd'
     },
     
@@ -490,10 +490,10 @@ MOVIEBOX: {
     },
     
 	  DO: {
-        name: 'One Sports Plus',
+        name: 'One Sports Plus HD',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd',
-        keyId: '322d06e9326f4753a7ec0908030c13d8',
-        key: '1e3e0ca32d421fbfec86feced0efefda',
+        keyId: 'f00bd0122a8a4da1a49ea6c49f7098ad',
+        key: 'a4079f3667ba4c2bcfdeb13e45a6e9c6',
      	type: 'mpd'
     },
     
@@ -508,8 +508,8 @@ MOVIEBOX: {
 	  EOO: {
         name: 'TAP Sports',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_tapsports/default/index.mpd',
-        keyId: 'eabd2d95c89e42f2b0b0b40ce4179ea0',
-        key: '0e7e35a07e2c12822316c0dc4873903f',
+        keyId: '5e7c1b9a2d8f4a6c9f30b1d6e2a8c744',
+        key: '6178d9d177689eec5028e2dd608ae7b6',
      	type: 'mpd'
     },
     
@@ -549,8 +549,8 @@ MOVIEBOX: {
 	  Y: {
         name: 'DreamWorks HD',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_dreamworks_hd1/default/index.mpd',
-        keyId: '4ab9645a2a0a47edbd65e8479c2b9669',
-        key: '8cb209f1828431ce9b50b593d1f44079',
+        keyId: '7b1e9c4d5a2f4d8c9f106d3a8b2c1e77',
+        key: '8b2904224c6cee13d2d4e06c0a3b2887',
      	type: 'mpd'
     },
     
@@ -597,8 +597,8 @@ MOONBUGKIDS: {
 ANIMAX: {
     name: 'Animax',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animax_sd_new/default/index.mpd',
-    keyId: '92032b0e41a543fb9830751273b8debd',
-    key: '03f8b65e2af785b10d6634735dbe6c11',
+    keyId: '1e7b9d2c6a4f4d8c9f33b5c1a8d7e260',
+    key: '67336c0c5b24fb4b8caac248dad3c55d',
     type: 'mpd'
     },
    
