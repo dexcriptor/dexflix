@@ -213,6 +213,14 @@ DISCOVERYINV: {
     type: 'mpd'
    },  
 
+CRIMEINVESTIGATION: {
+    name: 'Crime Investigation',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/crime_invest/default/index.mpd',
+	keyId: '21e2843b561c4248b8ea487986a16d33',
+    key: 'db6bb638ccdfc1ad1a3e98d728486801',
+    type: 'mpd'
+   },  
+
 HISTORY: {
     name: 'History',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_historyhd/default/index.mpd',
@@ -242,6 +250,38 @@ ASIANFOODNET: {
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/asianfoodnetwork_sd/default/index.mpd',
     keyId: '1619db30b9ed42019abb760a0a3b5e7f',
     key: '5921e47fb290ae263291b851c0b4b6e4',
+    type: 'mpd'
+    }, 
+
+FOODNETWORK: {
+    name: 'Food Network HD',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_foodnetwork_hd1/default/index.mpd',
+    keyId: '4a9d2f7c1e6b4c8d8a55d7b1e3f0c926',
+    key: '2e62531bdb450480a18197b14f4ebc77',
+    type: 'mpd'
+    }, 
+
+HGTV: {
+    name: 'HGTV HD',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hgtv_hd1/default/index.mpd',
+    keyId: 'f1e8c2d97a3b4f5d8c669d1a2b7e4c30',
+    key: '03aaa7dcf893e6b934aeb3c46f9df5b9',
+    type: 'mpd'
+    }, 
+
+FASHIONTV: {
+    name: 'Fashion TV HD',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/fashiontvhd/default/index.mpd',
+    keyId: '9d7c1f2a6b4e4a8d8f33c1e5b7d2a960',
+    key: '3a18c535c52db7c79823f59036a9d195',
+    type: 'mpd'
+    },
+
+GLOBALTREKKER: {
+    name: 'Global Trekker',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/globaltrekker/default/index.mpd',
+    keyId: 'b7a6c5d23f1e4a9d8c721e5d9f4a6b13',
+    key: '63ca9ad0d88fccb8c667b028f47287ba',
     type: 'mpd'
     }, 
 
@@ -314,6 +354,14 @@ CNNHD: {
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd',
     keyId: '900c43f0e02742dd854148b7a75abbec',
     key: 'da315cca7f2902b4de23199718ed7e90',
+    type: 'mpd'
+    }, 
+
+FRANCETF: {
+    name: 'France24',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/france24/default/index.mpd',
+    keyId: '257f9fdeb39d41bdb226c2ae1fbdaeb6',
+    key: 'e80ead0f4f9d6038ab34f332713ceaa5',
     type: 'mpd'
     }, 
 
@@ -436,12 +484,28 @@ HBOXTREME: {
         key: '559da1b63eec77b5a942018f14d3f56f',
      	type: 'mpd'
     },
+
+	  HITSHD: {
+        name: 'HITS HD',
+        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hits_hd1/default/index.mpd',
+        keyId: '6d2f8a1c9b5e4c7da1f03e7b9d6c2a55',
+        key: '37c9835795779f8d848a6119d3270c69',
+     	type: 'mpd'
+    },
     
-	  HM: {
+	  HITSMOVIES: {
         name: 'HITS Movies',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_hitsmovies/default/index.mpd',
         keyId: '2c8a5f1e7b9d4c6a9e55f1d7b2a8c360',
         key: 'c9f622dff27e9e1c1f78617ba3b81a62',
+     	type: 'mpd'
+    },
+
+	  HITSNOW: {
+        name: 'HITS Now',
+        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hitsnow/default/index.mpd',
+        keyId: 'f9c3d6b18a2e4d7f9e453b1a8c6d2f70',
+        key: 'ce8874347ec428c624558dcdc3575dd4',
      	type: 'mpd'
     },
     
