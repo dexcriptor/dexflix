@@ -66,7 +66,8 @@
             <div class="lg:col-span-2 flex flex-col gap-4 sticky top-20 z-40 bg-[#141414] pb-4 lg:pb-0 lg:static lg:bg-transparent shadow-lg lg:shadow-none border-b lg:border-none border-gray-800">
                 <!-- Wrapper to keep player sticky on desktop if content gets long -->
                 <div class="lg:sticky lg:top-24 flex flex-col gap-4">
-                    <div class="relative w-full bg-black rounded-xl overflow-hidden shadow-2xl shadow-black border border-gray-800 aspect-video z-10">
+                    <!-- Added ID player-wrapper to the container -->
+                    <div id="player-wrapper" class="relative w-full bg-black rounded-xl overflow-hidden shadow-2xl shadow-black border border-gray-800 aspect-video z-10">
                         <!-- Player Placeholder / Injection Point -->
                         <div id="player" class="w-full h-full"></div>
                     </div>
@@ -309,7 +310,7 @@
                         };
                     }
 
-                    jwplayer("player").setup({
+                    const playerInstance = jwplayer("player").setup({
                         file: fileUrl,
                         type: fileType,
                         drm: drmConfig,
@@ -317,8 +318,40 @@
                         aspectratio: "16:9",
                         autostart: true,
                         androidhls: true,
-                        primary: 'html5' 
+                        primary: 'html5',
+                        controls: false // Start with controls hidden
                     });
+
+                    // Logic to show controls on user interaction
+                    // We attach to the wrapper because JW Player might replace/swallow events on the #player element
+                    const wrapper = document.getElementById('player-wrapper');
+                    
+                    // Cleanup previous listeners if they exist to prevent stacking
+                    if (wrapper && wrapper._showControlsHandler) {
+                         wrapper.removeEventListener('click', wrapper._showControlsHandler);
+                         wrapper.removeEventListener('touchstart', wrapper._showControlsHandler);
+                         wrapper.removeEventListener('mousemove', wrapper._showControlsHandler);
+                    }
+
+                    const showControls = () => {
+                        playerInstance.setControls(true);
+                        
+                        // Remove listeners once controls are enabled so JW Player handles it from there
+                        if (wrapper) {
+                            wrapper.removeEventListener('click', showControls);
+                            wrapper.removeEventListener('touchstart', showControls);
+                            wrapper.removeEventListener('mousemove', showControls);
+                            wrapper._showControlsHandler = null;
+                        }
+                    };
+
+                    // Store reference for cleanup
+                    if (wrapper) {
+                        wrapper._showControlsHandler = showControls;
+                        wrapper.addEventListener('click', showControls);
+                        wrapper.addEventListener('touchstart', showControls);
+                        wrapper.addEventListener('mousemove', showControls);
+                    }
                 };
 
                 // Function to Render Channel List (with optional filter)
@@ -469,5 +502,3 @@
 
 </body>
 </html>
-
-
