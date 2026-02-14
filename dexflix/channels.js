@@ -1,18 +1,18 @@
 const channels = {
     
-KAPAMILYA: {
+VJTGDHROBK: {
     name: 'Kapamilya Channel HD',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/index.mpd',
 	  type: 'mpd'
     },
 
-GMA: {
+HSIBWWWBIC: {
     name: 'GMA 7',
     url: 'https://gsattv.akamaized.net/live/media0/gma7/Widevine/gma7.mpd',
 	  type: 'mpd'
     },
     
-TV5: {
+MHPMAICNSG: {
     name: 'TV5 HD',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/tv5_hd/default1/index.mpd',
     keyId: '2615129ef2c846a9bbd43a641c7303ef',
@@ -20,7 +20,7 @@ TV5: {
     type: 'mpd'
     },
     
-A2Z: {
+NFHENFOCTV: {
     name: 'A2Z',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_a2z/default/index.mpd',
     keyId: '3f6d8a2c1b7e4c9f8d52a7e1b0c6f93d',
@@ -28,25 +28,25 @@ A2Z: {
     type: 'mpd'
    },
    
-TFC: {
+LLERNTFWBY: {
     name: 'TFC Asia',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
-ANC: {
+CFGIZWNTOK: {
     name: 'ANC',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
-TELERADYO: {
+UFYGUMKOJL: {
     name: 'TeleRadyo',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
-JEEPNEY: {
+GLSLRFGOAU: {
     name: 'Jeepney TV',
     url: 'https://abslive.akamaized.net/dash/live/2027618/jeepneytv/manifest.mpd',
 	keyId: '90ea4079e02f418db7b170e8763e65f0',
@@ -54,31 +54,31 @@ JEEPNEY: {
     type: 'mpd'
     },
 
-CINEMAONE: {
+WFRKAMKUHN: {
     name: 'Cinema One',
     url: 'https://live-faws.akamaized.net/out/v1/93b9db7b231d45f28f64f29b86dc6c65/index.mpd',
     type: 'mpd'
     },
 
-CINEMO: {
+NZDTQAJULE: {
     name: 'Cinemo',
     url: 'https://live-faws.akamaized.net/out/v1/3a895f368f4a467c9bca0962559efc19/index.mpd',
     type: 'mpd'
     },
 
-MYX: {
+EQGQJDOCXW: {
     name: 'MYX',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
 
-GMAPINOYTV: {
+YJQAOQJBMQ: {
     name: 'GMA PINOY TV',
     url: 'https://amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono-dzsx9.amagi.tv/index.mpd',
     type: 'mpd'
     },
 
-KAPATID: {
+EZWESVUERG: {
     name: 'Kapatid HD',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kapatid_hd/default/index.mpd',
 	keyId: '045d103180f64562b1db7c932741c3ba',
@@ -86,13 +86,13 @@ KAPATID: {
     type: 'mpd'
     },
 
-PBB: {
+ETIEYDGLLW: {
     name: 'PBB',
     url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-pbb-live-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
    
-ONEPH: {
+HUBRZHFYJR: {
     name: 'One PH',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/oneph_sd/default/index.mpd',
     keyId: 'b1c7e9d24f8a4d6c9e337a2f1c5b8d60',
@@ -101,7 +101,7 @@ ONEPH: {
     },
     
     
-BUKO: {
+TSNBBRHLBL: {
     name: 'Buko',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_buko_sd/default/index.mpd',
     keyId: 'd273c085f2ab4a248e7bfc375229007d',
@@ -109,7 +109,7 @@ BUKO: {
     type: 'mpd'
     },
     
-SARI: {
+XHLREZRWBQ: {
     name: 'Sari-Sari',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_sarisari/default/index.mpd',
     keyId: '0a7ab3612f434335aa6e895016d8cd2d',
@@ -117,7 +117,7 @@ SARI: {
     type: 'mpd'
     },		
 
-PTV: {
+ZLNNYRCWDO: {
     name: 'PTV',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_ptv4_sd/default/index.mpd',
     keyId: '71a130a851b9484bb47141c8966fb4a3',
@@ -125,7 +125,7 @@ PTV: {
     type: 'mpd'
     },
     
-DEPED: {
+VELZCTLQQY: {
     name: 'DepEd Channel',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/depedch_sd/default/index.mpd',
     keyId: '0f853706412b11edb8780242ac120002',
@@ -133,7 +133,7 @@ DEPED: {
     type: 'mpd'
     },
 
-KNOWLEDGECH: {
+EEITVIWIOH: {
     name: 'Knowledge Channel',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/knowledge_channel/default/index.mpd',
     keyId: 'c7d2b1e94f8a4d6c8a106b3d1f9c2e55',
@@ -141,7 +141,7 @@ KNOWLEDGECH: {
     type: 'mpd'
     },
     
-ONENEWS: {
+IVMMOQGANR: {
     name: 'One News',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/onenews_hd1/default/index.mpd',
     keyId: '2e6a9d7c1f4b4c8a8d33c7b1f0a5e924',
@@ -149,7 +149,7 @@ ONENEWS: {
     type: 'mpd'
     },
     
-RPTV: {
+DCMTBJQDPR: {
     name: 'RPTV',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cnn_rptv_prod_hd/default/index.mpd',
     keyId: '1917f4caf2364e6d9b1507326a85ead6',
@@ -157,7 +157,7 @@ RPTV: {
     type: 'mpd'
     },
     
-IBC: {
+TVVRTMVPZA: {
     name: 'IBC 13',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/ibc13_sd_new/default1/index.mpd',
     keyId: '16ecd238c0394592b8d3559c06b1faf5',
@@ -165,7 +165,7 @@ IBC: {
     type: 'mpd'
     },
     
-BILYONARYO: {
+MQVHVNFMBA: {
     name: 'Bilyonaryo Channel',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/bilyonaryoch/default1/index.mpd',
     keyId: '227ffaf09bec4a889e0e0988704d52a2',
@@ -173,7 +173,7 @@ BILYONARYO: {
     type: 'mpd'
     },
 
-BBCEARTH: {
+CQCFCOSBXW: {
     name: 'BBC Earth',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_bbcearth_hd1/default/index.mpd',
     keyId: '34ce95b60c424e169619816c5181aded',
@@ -181,7 +181,7 @@ BBCEARTH: {
     type: 'mpd'
    },  
    
-ANIMALPLANET: {
+LKZBQHEIEI: {
     name: 'Animal Planet',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animal_planet_sd/default/index.mpd',
     keyId: '1c9f7a6d3b2e4e5d8a61f4d0c2b9e813',
@@ -189,7 +189,7 @@ ANIMALPLANET: {
     type: 'mpd'
    }, 
    
-LOVENATURE: {
+WPCWAZUVDZ: {
     name: 'Love Nature',
     url: 'https://unifi-live2.secureswiftcontent.com/content/dash/live/channel%28lovenature%29/master.mpd',
 	keyId: '3af2407f93664272a2b0c24be3632d93',
@@ -197,7 +197,7 @@ LOVENATURE: {
 	type: 'mpd'
     },
    
-DISCOVERY: {
+XTNVBRQULD: {
     name: 'Discovery Channel',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/discovery/default/index.mpd',
     keyId: 'd9ac48f5131641a789328257e778ad3a',
@@ -205,7 +205,7 @@ DISCOVERY: {
     type: 'mpd'
    }, 
 
-DISCOVERYSCIENCE: {
+AVHUGQWJVN: {
     name: 'Discovery Science',
     url: 'https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryscience2/default/manifest.mpd',
 	keyId: '5458f45efedb4d6f8aa6ac76c85b621b',
@@ -213,7 +213,7 @@ DISCOVERYSCIENCE: {
     type: 'mpd'
    },  
 
-DISCOVERYTURBO: {
+MFPGWQZOMN: {
     name: 'Discovery Turbo',
     url: 'https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryturbo2/default/manifest.mpd',
 	keyId: 'c011525969e44b99a86059dbb3cdf4e8',
@@ -221,7 +221,7 @@ DISCOVERYTURBO: {
     type: 'mpd'
    },  
 
-DISCOVERYINV: {
+EXSCCQGNYA: {
     name: 'Discovery Investigation',
     url: 'https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Investigationdiscovery2/default/manifest.mpd',
 	keyId: '2828ea6f6a984505b0454da0c03f68b9',
@@ -229,7 +229,7 @@ DISCOVERYINV: {
     type: 'mpd'
    },  
 
-CRIMEINVESTIGATION: {
+WQFXADPXFI: {
     name: 'Crime Investigation',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/crime_invest/default/index.mpd',
 	keyId: '21e2843b561c4248b8ea487986a16d33',
@@ -237,7 +237,7 @@ CRIMEINVESTIGATION: {
     type: 'mpd'
    },  
 
-HISTORY: {
+APXOFOEFBD: {
     name: 'History',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_historyhd/default/index.mpd',
     keyId: 'e2a8c7d15b9f4d6a9c101f7e3b2d8a44',
@@ -245,7 +245,7 @@ HISTORY: {
     type: 'mpd'
    }, 
  
-ROCKACTION: {
+HHUODGDYJL: {
     name: 'Rock Action',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_rockextreme/default/index.mpd',
     keyId: '8d2a6f1c9b7e4c3da5f01e7b9c6d2f44',
@@ -253,7 +253,7 @@ ROCKACTION: {
     type: 'mpd'
     }, 
 
-ROCKENT: {
+IINOGIYVQA: {
     name: 'Rock Entertainment',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_rockentertainment/default/index.mpd',
     keyId: 'a8b2d6f14c9e4d7a8f552c1e9b7d6a30',
@@ -261,7 +261,7 @@ ROCKENT: {
     type: 'mpd'
     }, 
 
-KIX: {
+XYYWGKBYSD: {
     name: 'KIX HD',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kix_hd1/default/index.mpd',
     keyId: 'c9d4b7a18e2f4d6c9a103f5b7e1c2d88',
@@ -269,7 +269,7 @@ KIX: {
     type: 'mpd'
     }, 
 
-ASIANFOODNET: {
+TUPVZWQMNE: {
     name: 'Asian Food Network',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/asianfoodnetwork_sd/default/index.mpd',
     keyId: '1619db30b9ed42019abb760a0a3b5e7f',
@@ -277,7 +277,7 @@ ASIANFOODNET: {
     type: 'mpd'
     }, 
 
-FOODNETWORK: {
+IEKRDWOPCI: {
     name: 'Food Network HD',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_foodnetwork_hd1/default/index.mpd',
     keyId: '4a9d2f7c1e6b4c8d8a55d7b1e3f0c926',
@@ -285,7 +285,7 @@ FOODNETWORK: {
     type: 'mpd'
     }, 
 
-HGTV: {
+VQAJWHZEZX: {
     name: 'HGTV HD',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hgtv_hd1/default/index.mpd',
     keyId: 'f1e8c2d97a3b4f5d8c669d1a2b7e4c30',
@@ -293,7 +293,7 @@ HGTV: {
     type: 'mpd'
     }, 
 
-FASHIONTV: {
+JQLZSOCVKY: {
     name: 'Fashion TV HD',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/fashiontvhd/default/index.mpd',
     keyId: '9d7c1f2a6b4e4a8d8f33c1e5b7d2a960',
@@ -301,7 +301,7 @@ FASHIONTV: {
     type: 'mpd'
     },
 
-GLOBALTREKKER: {
+NBBXQSBCEY: {
     name: 'Global Trekker',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/globaltrekker/default/index.mpd',
     keyId: 'b7a6c5d23f1e4a9d8c721e5d9f4a6b13',
@@ -309,7 +309,7 @@ GLOBALTREKKER: {
     type: 'mpd'
     }, 
 
-LIFETIME: {
+KWXNUHRMIG: {
     name: 'Lifetime',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_lifetime/default/index.mpd',
     keyId: 'cf861d26e7834166807c324d57df5119',
@@ -317,7 +317,7 @@ LIFETIME: {
     type: 'mpd'
     }, 
 
-TRAVELCH: {
+XIJOOHBKAD: {
     name: 'Travel Channel',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/travel_channel_sd/default/index.mpd',
     keyId: 'f3047fc13d454dacb6db4207ee79d3d3',
@@ -325,7 +325,7 @@ TRAVELCH: {
     type: 'mpd'
     }, 
 
-AXN: {
+XAQYGLJQPO: {
     name: 'AXN',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_axn_sd/default/index.mpd',
     keyId: '8a6c2f1e9d7b4c5aa1f04d2b7e9c1f88',
@@ -333,7 +333,7 @@ AXN: {
     type: 'mpd'
     },  
 
- WARNERTV: {
+ WPTXZPVPGX: {
     name: 'Warner TV',
  	url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_warnerhd/default/index.mpd',
     keyId: '7f2a9c6d1e5b4c8a8d10a2b7e1c9f344',
@@ -341,7 +341,7 @@ AXN: {
     type: 'mpd'
     },
 
-ABCAUSTRALIA: {
+NOKDTKBBOR: {
     name: 'ABC Australia',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/abc_aus/default/index.mpd',
     keyId: 'd6f1a8c29b7e4d5a8f332c1e9d7b6a90',
@@ -349,7 +349,7 @@ ABCAUSTRALIA: {
     type: 'mpd'
     },  
 
-ALJAZEERA: {
+CYCBMWWRIQ: {
     name: 'Aljazeera',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_aljazeera/default/index.mpd',
     keyId: '7f3d900a04d84492b31fe9f79ac614e3',
@@ -357,7 +357,7 @@ ALJAZEERA: {
     type: 'mpd'
     },  
 	
-NHKWORLDJAPAN: {
+DWPAUDHHTN: {
     name: 'NHK World Japan',
     url: 'https://qp-pldt-live-grp-12-prod.akamaized.net/out/u/dr_nhk_japan.mpd',
     keyId: '3d6e9d4de7d7449aadd846b7a684e564',
@@ -365,7 +365,7 @@ NHKWORLDJAPAN: {
     type: 'mpd'
     }, 
 
-BBCWORLDNEWS: {
+BQEZSESOJI: {
     name: 'BBC World News',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/bbcworld_news_sd/default/index.mpd',
     keyId: 'f59650be475e4c34a844d4e2062f71f3',
@@ -373,7 +373,7 @@ BBCWORLDNEWS: {
     type: 'mpd'
     },
 
-BLOOMBERG: {
+GCCLMWTZFB: {
     name: 'Bloomberg',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/bloomberg_sd/default/index.mpd',
     keyId: '3b8e6d1f2c9a4f7d9a556c1e7b2d8f90',
