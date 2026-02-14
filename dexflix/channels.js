@@ -381,7 +381,7 @@ GCCLMWTZFB: {
     type: 'mpd'
     }, 
 
-CGTN: {
+KIODVVNNET: {
     name: 'CGTN',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgtn/default/index.mpd',
     keyId: '0f854ee4412b11edb8780242ac120002',
@@ -389,7 +389,7 @@ CGTN: {
     type: 'mpd'
     }, 
 
-CHANNELNEWSASIA: {
+ZHJDBTSZHV: {
     name: 'Channel News Asia',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/channelnewsasia/default/index.mpd',
     keyId: 'b259df9987364dd3b778aa5d42cb9acd',
@@ -397,7 +397,7 @@ CHANNELNEWSASIA: {
     type: 'mpd'
     }, 
 
-CNNHD: {
+XQGTJWFXNX: {
     name: 'CNN HD',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd',
     keyId: '900c43f0e02742dd854148b7a75abbec',
@@ -405,7 +405,7 @@ CNNHD: {
     type: 'mpd'
     }, 
 
-FRANCETF: {
+TFRRVSKYMZ: {
     name: 'France24',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/france24/default/index.mpd',
     keyId: '257f9fdeb39d41bdb226c2ae1fbdaeb6',
@@ -413,7 +413,7 @@ FRANCETF: {
     type: 'mpd'
     }, 
 
-TVMARIA: {
+TSVTVHOYJG: {
     name: 'TV Maria',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/tvmaria_prd/default/index.mpd',
     keyId: 'fa3998b9a4de40659725ebc5151250d6',
@@ -422,14 +422,14 @@ TVMARIA: {
     }, 
 
 /*	
-COMBATGO: {
+UTRIDAQNCH: {
     name: 'Combat Go',
     url: 'https://jungotvstream.chanall.tv/jungotv/combatgo/playlist_720p.m3u8',
 	type: 'hls'
     },
 */
 	
-TRUE: {
+HFUYTLVYAT: {
     name: 'True TV',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/truefm_tv/default/index.mpd',
     keyId: 'a4e2b9d61c754f3a8d109b6c2f1e7a55',
@@ -437,7 +437,7 @@ TRUE: {
     type: 'mpd'
     },
         
-HBOXTREME: {
+HMCYBYGNEO: {
     name: 'HBO Xtreme',
     url: 'https://zap-live1-ott.izzigo.tv/5/out/u/dash/HBO-XTREME-HD/default.mpd',
     keyId: 'bc8d4369fcff86db765db82356b4797c',
@@ -445,7 +445,7 @@ HBOXTREME: {
 		type: 'mpd'
     },
     
-	  TVNP: {
+	  TIBXUDCSSA: {
         name: 'TVN Movies Pinoy',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tvnmovie/default/index.mpd',
         keyId: '2e53f8d8a5e94bca8f9a1e16ce67df33',
@@ -453,7 +453,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  PBO: {
+	  BUUPMLMGOV: {
         name: 'PBO',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pbo_sd/default/index.mpd',
         keyId: 'dcbdaaa6662d4188bdf97f9f0ca5e830',
@@ -461,7 +461,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  VIVA: {
+	  RKHUNAQQDE: {
         name: 'Viva Cinema',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/viva_sd/default/index.mpd',
         keyId: '07aa813bf2c147748046edd930f7736e',
@@ -469,7 +469,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  TMC: {
+	  HERFIFLRFI: {
         name: 'TMC (Tagalized Movie Channel)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_tagalogmovie/default/index.mpd',
         keyId: '96701d297d1241e492d41c397631d857',
@@ -477,7 +477,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  CELESTIAL: {
+	  QSDUPRWHIN: {
         name: 'Celestial Movies Pinoy',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/celmovie_pinoy_sd/default/index.mpd',
         keyId: '0f8537d8412b11edb8780242ac120002',
@@ -485,7 +485,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  THR: {
+	  QSCEXXJGRQ: {
         name: 'Thrill',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_thrill_sd/default/index.mpd',
         keyId: '928114ffb2394d14b5585258f70ed183',
@@ -493,7 +493,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  TM: {
+	  OJTYMKZROU: {
         name: 'Tap Movies',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tapmovies_hd1/default/index.mpd',
         keyId: '71cbdf02b595468bb77398222e1ade09',
@@ -501,7 +501,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-    LOTUSMACAU: {
+    WKWDOADTVT: {
         name: 'Lotus Macau',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/lotusmacau_prd/default/index.mpd',
         keyId: '9a7c2d1f4e8b4a6d8f301b5c9e7d2a44',
@@ -509,7 +509,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  HBO: {
+	  CQFVYGLEFI: {
         name: 'HBO',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbohd/default/index.mpd',
         keyId: 'c2b7a1e95d4f4c3a8e617f9d0a2b6c18',
@@ -517,7 +517,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  HBO1: {
+	  UNXSFWLWGJ: {
         name: 'HBO Hits',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbohits/default1/index.mpd',
         keyId: 'b04ae8017b5b4601a5a0c9060f6d5b7d',
@@ -525,7 +525,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  HBO2: {
+	  LLKHXTVYEX: {
         name: 'HBO Family',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbofam/default/index.mpd',
         keyId: '872910c843294319800d85f9a0940607',
@@ -533,7 +533,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  HBO3: {
+	  PPUHAPZCOM: {
         name: 'HBO Signature',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbosign/default/index.mpd',
         keyId: 'a06ca6c275744151895762e0346380f5',
@@ -541,7 +541,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
 
-	  HITSHD: {
+	  WENTZCYWGL: {
         name: 'HITS HD',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hits_hd1/default/index.mpd',
         keyId: '6d2f8a1c9b5e4c7da1f03e7b9d6c2a55',
@@ -549,7 +549,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  HITSMOVIES: {
+	  BHGYYALHDW: {
         name: 'HITS Movies',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_hitsmovies/default/index.mpd',
         keyId: '2c8a5f1e7b9d4c6a9e55f1d7b2a8c360',
@@ -557,7 +557,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
 
-	  HITSNOW: {
+	  QLJMIQHNKR: {
         name: 'HITS Now',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hitsnow/default/index.mpd',
         keyId: 'f9c3d6b18a2e4d7f9e453b1a8c6d2f70',
@@ -565,7 +565,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-	  TAF: {
+	  MFKSNUCRNS: {
         name: 'Tap Action Flix',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_tapactionflix_hd1/default/index.mpd',
         keyId: 'bee1066160c0424696d9bf99ca0645e3',
@@ -573,7 +573,7 @@ HBOXTREME: {
      	type: 'mpd'
     },
     
-CINEMAX: {
+KRQWWAMRZR: {
     name: 'Cinemax',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cinemax/default/index.mpd',
     keyId: 'b207c44332844523a3a3b0469e5652d7',
@@ -582,76 +582,76 @@ CINEMAX: {
     },
 
 /*
-ANDFLIX: {
+OELMURJVZL: {
     name: '&Flix',
     url: 'https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8',
 	type: 'hls'
     },	
 */
 
-THREERSTV: {
+KXXPTKPDIL: {
     name: '3RS TV',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210631/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
 
-THREERSSINE: {
+ZLXPFMSIAL: {
     name: '3RS Sine Pinoy',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
 
-MOVIEBOX: {
+BJBESGHZIK: {
     name: '3RS Movie Box',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210731/tracks-v1a1/mono.ts.m3u8',
     type: 'hls'
     },
    
-	ragetv: {
+	AEOCYYFSBO: {
         name: 'Rage TV',
         url: 'https://live20.bozztv.com/giatv/giatv-ragetv/ragetv/playlist.m3u8',
 		type: 'hls'
     },	
     
-	sinemanila: {
+	XQRGCZLEBW: {
         name: 'Sine Manila',
         url: 'https://live20.bozztv.com/giatv/giatv-sinemanila/sinemanila/playlist.m3u8',
 		type: 'hls'
     },
     
-	bihtv: {
+	JJAYNBJAUX: {
         name: 'BIH TV',
         url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/playlist.m3u8',
 		type: 'hls'
     },
 
 /*    
-	jungopinotv: {
+	NQBXZVQNCI: {
         name: 'Jungo Pinoy TV',
         url: 'https://jungotvstream.chanall.tv/jungotv/jungopinoytv/playlist_480p.m3u8',
 		type: 'hls'
     },
     
-	HALLYPOP: {
+	NNJPIIEVZN: {
         name: 'Hally Pop',
         url: 'https://jungotvstream.chanall.tv/jungotv/hallypop/playlist_1080p.m3u8',
 		type: 'hls'
     },
     
-	SCREAMFLIX: {
+	AYRJQMIPBD: {
         name: 'ScreamFlix',
         url: 'https://jungotvstream.chanall.tv/jungotv/screamflix/playlist_720p.m3u8',
 		type: 'hls'
     },
     
-	FRONTROW: {
+	ABZCKPZWPV: {
         name: 'Frontrow',
         url: 'https://jungotvstream.chanall.tv/jungotv/frontrow/playlist_720p.m3u8',
 		type: 'hls'
     },
   */
 
-ARIRANG: {
+WJHFJKVPGI: {
     name: 'Arirang',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/arirang_sd/default/index.mpd',
     keyId: '13815d0fa026441ea7662b0c9de00bcf',
@@ -659,7 +659,7 @@ ARIRANG: {
     type: 'mpd'
     },	
 
-KBSWORLD: {
+OCWQQOHGPK: {
     name: 'KBS World',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kbsworld/default/index.mpd',
     keyId: '22ff2347107e4871aa423bea9c2bd363',
@@ -667,7 +667,7 @@ KBSWORLD: {
     type: 'mpd'
     },	
 	
-	  NBA: {
+	  JTFLGZZOAF: {
         name: 'NBA TV  Philippines',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd',
         keyId: 'd1f8a0c97b3d4e529a6f2c4b8d7e1f90',
@@ -675,7 +675,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  OT: {
+	  YRAHNRYZYR: {
         name: 'PBA Rush',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_pbarush_hd1/default/index.mpd',
         keyId: 'd7f1a9c36b2e4f8d9a441c5e7b2d8f60',
@@ -683,7 +683,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  FU: {
+	  MLXVYRFJBX: {
         name: 'One Sports HD',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesports_hd/default/index.mpd',
         keyId: '53c3bf2eba574f639aa21f2d4409ff11',
@@ -691,7 +691,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  DO: {
+	  TWBFRUMKCX: {
         name: 'One Sports Plus HD',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd',
         keyId: 'f00bd0122a8a4da1a49ea6c49f7098ad',
@@ -699,7 +699,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  DD: {
+	  YKORJHDDCT: {
         name: 'UAAP Varsity Channel',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_uaap_cplay_sd/default/index.mpd',
         keyId: '95588338ee37423e99358a6d431324b9',
@@ -707,7 +707,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  EOO: {
+	  FGRKETJEEQ: {
         name: 'TAP Sports',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_tapsports/default/index.mpd',
         keyId: '5e7c1b9a2d8f4a6c9f30b1d6e2a8c744',
@@ -715,14 +715,15 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  GEOO: {
+	  TBQGXBXPDI: {
         name: 'Premier Sports',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_ps_hd1/default/index.mpd',
         keyId: 'b8b595299fdf41c1a3481fddeb0b55e4',
         key: 'cd2b4ad0eb286239a4a022e6ca5fd007',
      	type: 'mpd'
     },
-	  A: {
+	
+	  DHQTATKHOJ: {
         name: 'Premier Sports 2',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/premiersports2hd/default/index.mpd',
         keyId: '59454adb530b4e0784eae62735f9d850',
@@ -730,7 +731,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  B: {
+	  MXGTDMXJRD: {
         name: 'SpoTV HD',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd',
         keyId: 'ec7ee27d83764e4b845c48cca31c8eef',
@@ -738,17 +739,15 @@ KBSWORLD: {
      	type: 'mpd'
     },
 
-
-	  Q: {
+	  CAASIEPIOZ: {
         name: 'SpoTV 2 HD',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd',
         keyId: '7eea72d6075245a99ee3255603d58853',
         key: '6848ef60575579bf4d415db1032153ed',
 		type: 'mpd'
     },
-
-    
-	  Y: {
+ 
+	  GCVZHCEBEJ: {
         name: 'DreamWorks HD',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_dreamworks_hd1/default/index.mpd',
         keyId: '7b1e9c4d5a2f4d8c9f106d3a8b2c1e77',
@@ -756,7 +755,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
     
-	  U: {
+	  AAWAWQRLZO: {
         name: 'Dreamworks Tagalog',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_dreamworktag/default/index.mpd',
         keyId: '564b3b1c781043c19242c66e348699c5',
@@ -764,7 +763,7 @@ KBSWORLD: {
      	type: 'mpd'
     },
 
-CARTOONNETWORK: {
+UPYSADUMQW: {
     name: 'Cartoon Network',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cartoonnetworkhd/default/index.mpd',
     keyId: 'a2d1f552ff9541558b3296b5a932136b',
@@ -772,7 +771,7 @@ CARTOONNETWORK: {
     type: 'mpd'
    }, 
 
-NICKELODEON: {
+XOUDEFZTWK: {
     name: 'Nickelodeon',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickelodeon/default/index.mpd',
     keyId: '9ce58f37576b416381b6514a809bfd8b',
@@ -780,7 +779,7 @@ NICKELODEON: {
     type: 'mpd'
    }, 
 
-NICKJR: {
+JLPKXHSYVK: {
     name: 'Nick Jr.',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickjr/default/index.mpd',
     keyId: 'bab5c11178b646749fbae87962bf5113',
@@ -788,7 +787,7 @@ NICKJR: {
     type: 'mpd'
    }, 
 
-MOONBUGKIDS: {
+TFYMEHANRB: {
     name: 'Moonbug Kids',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_moonbug_kids_sd/default/index.mpd',
     keyId: '0bf00921bec94a65a124fba1ef52b1cd',
@@ -796,7 +795,7 @@ MOONBUGKIDS: {
     type: 'mpd'
    }, 
    
-ANIMAX: {
+JFPRNIQIPX: {
     name: 'Animax',
     url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animax_sd_new/default/index.mpd',
     keyId: '1e7b9d2c6a4f4d8c9f33b5c1a8d7e260',
@@ -804,19 +803,19 @@ ANIMAX: {
     type: 'mpd'
     },
    
-ANIMEXHIVE: {
+JWMHKXGSDX: {
     name: 'Anime X Hive',
     url: 'https://amc-anime-x-hidive-1-us.tablo.wurl.tv/1200.m3u8',
 	type: 'hls'
     },
     
-ANIMEX: {
+ODGDKXXGWH: {
     name: 'Anime X',
     url: 'https://live20.bozztv.com/giatv/giatv-animex/animex/playlist.m3u8',
 	type: 'hls'
     },	
     
-bean: {
+TTCNCOZNAK: {
     name: 'Mr. Bean - 24/7',
     url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8',
 	type: 'hls'
