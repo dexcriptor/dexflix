@@ -829,9 +829,9 @@ TESTLINKHLS: {
       
 TESTLINKMPD: {
     name: 'Test Stream Only (MPD)',
-    url: 'https://live-d-02-rogers-uw-prd.akamaized.net/out/v1/r-prd/ch-01-prd-r-v2/dash-ch-01-prd-r-hd/index.mpd',
-    keyId: '8e3977c581333101a527776030e5d379',
-    key: 'f726e9c49a640e932ec6a92685153772',
+    url: 'https://atemecdnbalancer-voe.sysln.id/live/eds/LoveNatureHD/mpd/LoveNatureHD.mpd',
+    keyId: 'c3066eaa0984588f78d12dcdb75ef88b',
+    key: '4e98eb4927941bff51ea526d223fa16d',
     type: 'mpd'
     },
 };
