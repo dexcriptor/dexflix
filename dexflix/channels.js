@@ -564,7 +564,16 @@ HMCYBYGNEO: {
         key: 'ce8874347ec428c624558dcdc3575dd4',
      	type: 'mpd'
     },
-    
+
+KRQWWAMRZR: {
+    name: 'Cinemax',
+    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cinemax/default/index.mpd',
+    keyId: 'b207c44332844523a3a3b0469e5652d7',
+    key: 'fe71aea346db08f8c6fbf0592209f955',
+    type: 'mpd'
+},
+	
+	/*
 	  MFKSNUCRNS: {
         name: 'Tap Action Flix',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_tapactionflix_hd1/default/index.mpd',
@@ -572,14 +581,8 @@ HMCYBYGNEO: {
         key: 'f5b72bf3b89b9848de5616f37de040b7',
      	type: 'mpd'
     },
+	*/
     
-KRQWWAMRZR: {
-    name: 'Cinemax',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cinemax/default/index.mpd',
-    keyId: 'b207c44332844523a3a3b0469e5652d7',
-    key: 'fe71aea346db08f8c6fbf0592209f955',
-    type: 'mpd'
-    },
 
 /*
 OELMURJVZL: {
