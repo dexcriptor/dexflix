@@ -68,7 +68,7 @@ NZDTQAJULE: {
 
 EQGQJDOCXW: {
     name: 'MYX',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/9ef1dfeb-1c37-4c53-9fc2-1678199375a1/index.mpd',
     type: 'mpd'
     },
 
