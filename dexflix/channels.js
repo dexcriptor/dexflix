@@ -196,7 +196,7 @@ LKZBQHEIEI: {
    }, 
    
 WPCWAZUVDZ: {
-    name: 'Love Nature',
+    name: 'Love Nature (Use VPN)',
     url: 'https://unifi-live2.secureswiftcontent.com/content/dash/live/channel%28lovenature%29/master.mpd',
 	keyId: '3af2407f93664272a2b0c24be3632d93',
     key: '6504d3e04a92a7d0d0d36818f477cae4',
