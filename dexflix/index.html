@@ -300,7 +300,7 @@
                             fileUrl = channel.iosUrl;
                             fileType = 'hls';
                         } else if (channel.type === 'mpd') {
-                            alert("Channel Unavailable on iOS: This channel uses technology (MPEG-DASH) not supported by Apple devices.");
+                            alert("Channel Unavailable on iOS: This channel uses technology (MPEG-DASH) not supported by Apple devices. If you are using an iOS device, please try the HLS streaming option instead, as it is fully supported on Apple devices.");
                             return; 
                         }
                     }
@@ -506,3 +506,4 @@
 
 </body>
 </html>
+
