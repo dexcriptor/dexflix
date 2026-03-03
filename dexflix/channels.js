@@ -445,10 +445,10 @@ HFUYTLVYAT: {
         
 HMCYBYGNEO: {
     name: 'HBO Xtreme',
-    url: 'https://zap-live1-ott.izzigo.tv/5/out/u/dash/HBO-XTREME-HD/default.mpd',
+    url: 'https://zap-live1-ott.izzigo.tv/15/out/u/dash/HBO-XTREME-HD/default.mpd',
     keyId: 'bc8d4369fcff86db765db82356b4797c',
     key: '8a7e801dbc275e3f4e1f43cba648906a',
-		type: 'mpd'
+	type: 'mpd'
     },
     
 	  TIBXUDCSSA: {
