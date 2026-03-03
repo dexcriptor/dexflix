@@ -3,13 +3,19 @@ const channels = {
 VJTGDHROBK: {
     name: 'Kapamilya Channel HD',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/index.mpd',
-	  type: 'mpd'
+	type: 'mpd'
     },
 
 HSIBWWWBIC: {
     name: 'GMA 7',
     url: 'https://gsattv.akamaized.net/live/media0/gma7/Widevine/gma7.mpd',
-	  type: 'mpd'
+	type: 'mpd'
+    },
+
+IJEDPUSVRF: {
+    name: 'GMA 7 (2)',
+    url: 'https://gsattv.akamaized.net/live/media0/gma7/Fairplay/gma7.m3u8',
+	type: 'hls'
     },
     
 MHPMAICNSG: {
