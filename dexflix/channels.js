@@ -365,7 +365,7 @@ CYCBMWWRIQ: {
 	
 DWPAUDHHTN: {
     name: 'NHK World Japan',
-    url: 'https://qp-pldt-live-grp-12-prod.akamaized.net/out/u/dr_nhk_japan.mpd',
+    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nhk_japan/default/index.mpd',
     keyId: '3d6e9d4de7d7449aadd846b7a684e564',
     key: '0800fff80980f47f7ac6bc60b361b0cf',
     type: 'mpd'
