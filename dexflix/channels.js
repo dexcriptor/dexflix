@@ -3,6 +3,8 @@ const channels = {
 VJTGDHROBK: {
     name: 'Kapamilya Channel HD',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/index.mpd',
+	keyId: 'bd17afb5dc9648a39be79ee3634dd4b8',
+    key: 'b475084a1a58857e18480e30fbb0e544',
 	type: 'mpd'
     },
 
@@ -37,44 +39,56 @@ NFHENFOCTV: {
 LLERNTFWBY: {
     name: 'TFC Asia',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-tfcasia-dash-abscbnono/index.mpd',
+	keyId: '9568cc84e1d944f38eac304517eab6fd',
+    key: '2c8306892361e3fba18cb142f31ec775',
     type: 'mpd'
     },
 
 CFGIZWNTOK: {
     name: 'ANC',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/index.mpd',
+	keyId: '4bbdc78024a54662854b412d01fafa16',
+    key: '8c6c920cf3f7df2087b0ae1a4a8c6058',
     type: 'mpd'
     },
 
 UFYGUMKOJL: {
     name: 'TeleRadyo',
     url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-teleradyo-dash-abscbnono/index.mpd',
+	keyId: '47c093e0c9fd4f80839a0337da3dd876',
+    key: '603248b858276f533a13e17f2f48c711',
     type: 'mpd'
     },
 
 GLSLRFGOAU: {
     name: 'Jeepney TV',
     url: 'https://abslive.akamaized.net/dash/live/2027618/jeepneytv/manifest.mpd',
-	keyId: '90ea4079e02f418db7b170e8763e65f0',
-    key: '1bfe2d166e31d03eee86ee568bd6c272',
+	keyId: 'dc9fec234a5841bb8d06e92042c741ec',
+    key: '225676f32612dc803cb4d0f950d063d0',
     type: 'mpd'
     },
 
 WFRKAMKUHN: {
     name: 'Cinema One',
-    url: 'https://live-faws.akamaized.net/out/v1/93b9db7b231d45f28f64f29b86dc6c65/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-cinemaone-dash-abscbnono/index.mpd',
+	keyId: '58d0e56991194043b8fb82feb4db7276',
+    key: 'c116c612201e178193693eced13d7319',
     type: 'mpd'
     },
 
 NZDTQAJULE: {
     name: 'Cinemo',
-    url: 'https://live-faws.akamaized.net/out/v1/3a895f368f4a467c9bca0962559efc19/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-cinemo-dash-abscbnono/index.mpd',
+	keyId: 'aa8aebe35ccc4541b7ce6292efcb1bfb',
+    key: 'f06b6031a3604cc6708c14d83f1a1b27',
     type: 'mpd'
     },
 
 EQGQJDOCXW: {
     name: 'MYX',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/9ef1dfeb-1c37-4c53-9fc2-1678199375a1/index.mpd',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/index.mpd',
+	keyId: 'f40a52a3ac9b4702bdd5b735d910fd2f',
+    key: '35e4893c6e76546085941be3010932d4',
     type: 'mpd'
     },
 
