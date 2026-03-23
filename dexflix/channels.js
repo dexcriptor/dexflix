@@ -8,13 +8,13 @@ VJTGDHROBK: {
 	type: 'mpd'
     },
 
+/*
 HSIBWWWBIC: {
     name: 'GMA 7',
     url: 'https://converse.nathcreqtives.com/1093/manifest.mpd?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJtb29uIiwiaWF0IjoxNzczNzM4MjU1LCJleHAiOjE3NzQ3OTIzNTUsImFjY291bnRFeHBpcmVkIjpmYWxzZSwiYWNjb3VudEV4cGlyZXNBdCI6MTc3NDc5MjM1NSwiYWxsb3dlZE9yaWdpbnMiOlsiaHR0cHM6Ly8zcnNuZXcucGFnZXMuZGV2IiwiaHR0cHM6Ly8zcnNyYWRpbzIucGFnZXMuZGV2Il19.ycFfPHz1jNeSTCLvHTOdciars4VIb3yhHhTf4BKtrWU',
 	type: 'mpd'
     },
 
-/*
 IJEDPUSVRF: {
     name: 'GMA 7 (2)',
     url: 'https://gsattv.akamaized.net/live/media0/gma7/Fairplay/gma7.m3u8',
@@ -95,7 +95,7 @@ EQGQJDOCXW: {
     },
 
 YJQAOQJBMQ: {
-    name: 'GMA PINOY TV',
+    name: 'GMA PINOY TV (OFFLINE)',
     url: 'https://amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono-dzsx9.amagi.tv/index.mpd',
     type: 'mpd'
     },
