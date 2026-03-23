@@ -10,15 +10,17 @@ VJTGDHROBK: {
 
 HSIBWWWBIC: {
     name: 'GMA 7',
-    url: 'https://gsattv.akamaized.net/live/media0/gma7/Widevine/gma7.mpd',
+    url: 'https://converse.nathcreqtives.com/1093/manifest.mpd?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJtb29uIiwiaWF0IjoxNzczNzM4MjU1LCJleHAiOjE3NzQ3OTIzNTUsImFjY291bnRFeHBpcmVkIjpmYWxzZSwiYWNjb3VudEV4cGlyZXNBdCI6MTc3NDc5MjM1NSwiYWxsb3dlZE9yaWdpbnMiOlsiaHR0cHM6Ly8zcnNuZXcucGFnZXMuZGV2IiwiaHR0cHM6Ly8zcnNyYWRpbzIucGFnZXMuZGV2Il19.ycFfPHz1jNeSTCLvHTOdciars4VIb3yhHhTf4BKtrWU',
 	type: 'mpd'
     },
 
+/*
 IJEDPUSVRF: {
     name: 'GMA 7 (2)',
     url: 'https://gsattv.akamaized.net/live/media0/gma7/Fairplay/gma7.m3u8',
 	type: 'hls'
     },
+*/
     
 MHPMAICNSG: {
     name: 'TV5 HD',
@@ -106,12 +108,14 @@ EZWESVUERG: {
     type: 'mpd'
     },
 
+/*
 ETIEYDGLLW: {
     name: 'PBB',
     url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-pbb-live-dash-abscbnono/index.mpd',
     type: 'mpd'
     },
-   
+*/
+
 HUBRZHFYJR: {
     name: 'One PH',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/oneph_sd/default/index.mpd',
