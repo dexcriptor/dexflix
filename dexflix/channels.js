@@ -32,7 +32,7 @@ MHPMAICNSG: {
     
 NFHENFOCTV: {
     name: 'A2Z',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_a2z/default/index.mpd',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_a2z/default/index.mpd',
     keyId: '3f6d8a2c1b7e4c9f8d52a7e1b0c6f93d',
     key: '4019f9269b9054a2b9e257b114ebbaf2',
     type: 'mpd'
