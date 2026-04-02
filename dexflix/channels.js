@@ -208,8 +208,8 @@ CQCFCOSBXW: {
 LKZBQHEIEI: {
     name: 'Animal Planet',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_animal_planet_sd/default/index.mpd',
-    keyId: '1c9f7a6d3b2e4e5d8a61f4d0c2b9e813',
-    key: 'b8f52451c67a2b54f272543eef45b621',
+    keyId: '436b69f987924fcbbc06d40a69c2799a',
+    key: 'c63d5b0d7e52335b61aeba4f6537d54d',
     type: 'mpd'
    }, 
    
