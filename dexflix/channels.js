@@ -280,8 +280,8 @@ HHUODGDYJL: {
 IINOGIYVQA: {
     name: 'Rock Entertainment',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_rockentertainment/default/index.mpd',
-    keyId: 'a8b2d6f14c9e4d7a8f552c1e9b7d6a30',
-    key: 'b61a33a4281e7c8e68b24b9af466f7b4',
+    keyId: 'e4ee0cf8ca9746f99af402ca6eed8dc7',
+    key: 'be2a096403346bc1d0bb0f812822bb62',
     type: 'mpd'
     }, 
 
