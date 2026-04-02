@@ -359,10 +359,8 @@ XAQYGLJQPO: {
 
  WPTXZPVPGX: {
     name: 'Warner TV',
- 	url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_warnerhd/default/index.mpd',
-    keyId: '7f2a9c6d1e5b4c8a8d10a2b7e1c9f344',
-    key: 'ae3d135d5ddd9e8f3a7bbfbfae0e40d1',
-    type: 'mpd'
+ 	url: 'https://cdn4.skygo.mn/live/disk1/Warner/HLSv3-FTA/Warner.m3u8',
+    type: 'hls'
     },
 
 NOKDTKBBOR: {
