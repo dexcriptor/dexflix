@@ -127,9 +127,9 @@ HUBRZHFYJR: {
     
 TSNBBRHLBL: {
     name: 'Buko',
-    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/buko_sd/default/index.mpd',
-    keyId: '0f854ee4412b11edb8780242ac120002',
-    key: '2157d6529d80a760f60a8b5848740f8a',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_buko_sd/default/index.mpd',
+    keyId: 'd273c085f2ab4a248e7bfc375229007d',
+    key: '7932354c3a84f7fc1b80efa6bcea0615',
     type: 'mpd'
     },
     
