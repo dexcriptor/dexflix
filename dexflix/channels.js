@@ -272,8 +272,8 @@ APXOFOEFBD: {
 HHUODGDYJL: {
     name: 'Rock Action',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_rockextreme/default/index.mpd',
-    keyId: '8d2a6f1c9b7e4c3da5f01e7b9c6d2f44',
-    key: '23841651ebf49fa03fdfcd7b43337f87',
+    keyId: '0f852fb8412b11edb8780242ac120002',
+    key: '4cbc004d8c444f9f996db42059ce8178',
     type: 'mpd'
     }, 
 
@@ -528,8 +528,8 @@ HMCYBYGNEO: {
     WKWDOADTVT: {
         name: 'Lotus Macau',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/lotusmacau_prd/default/index.mpd',
-        keyId: '9a7c2d1f4e8b4a6d8f301b5c9e7d2a44',
-        key: 'ca88469cabc18aa33d1f2e46a6efb4f7',
+        keyId: '60dc692e64ea443a8fb5ac186c865a9b',
+        key: '01bdbe22d59b2a4504b53adc2f606cc1',
      	type: 'mpd'
     },
     
@@ -825,8 +825,8 @@ TFYMEHANRB: {
 JFPRNIQIPX: {
     name: 'Animax',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_animax_sd_new/default/index.mpd',
-    keyId: '1e7b9d2c6a4f4d8c9f33b5c1a8d7e260',
-    key: '67336c0c5b24fb4b8caac248dad3c55d',
+    keyId: '92032b0e41a543fb9830751273b8debd',
+    key: '03f8b65e2af785b10d6634735dbe6c11',
     type: 'mpd'
     },
    
