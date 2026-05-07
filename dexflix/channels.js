@@ -8,6 +8,12 @@ VJTGDHROBK: {
 	type: 'mpd'
     },
 
+QHUBKOCCQR: {
+    name: 'Kapamilya Channel HD',
+    url: 'http://primestreams.tv:826/live/LouCarey/KYsHfE1YLU/119484.ts',
+	type: 'hls'
+    },
+
 
 HSIBWWWBIC: {
     name: 'GMA 7',
