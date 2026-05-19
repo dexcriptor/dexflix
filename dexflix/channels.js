@@ -2,9 +2,9 @@ const channels = {
     
 VJTGDHROBK: {
     name: 'Kapamilya Channel HD',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/index.mpd',
-	keyId: 'bd17afb5dc9648a39be79ee3634dd4b8',
-    key: 'b475084a1a58857e18480e30fbb0e544',
+    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-kapcha-dash-abscbnono/manifest.mpd',
+	keyId: '292dee4236d04054910e9706ee22626b',
+    key: 'b7c5d3220f6eb6e042a2bcb367b5c09b',
 	type: 'mpd'
     },
 
@@ -79,9 +79,9 @@ GLSLRFGOAU: {
 
 WFRKAMKUHN: {
     name: 'Cinema One',
-    url: 'https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-cinemaone-dash-abscbnono/index.mpd',
-	keyId: '58d0e56991194043b8fb82feb4db7276',
-    key: 'c116c612201e178193693eced13d7319',
+    url: 'https://abslive.akamaized.net/dash/live/2027618/c1ph/manifest.mpd',
+	keyId: '55eddd1e157e4c3b830866e4679e7032',
+    key: '525030e984567ba8df0af80660952368',
     type: 'mpd'
     },
 
