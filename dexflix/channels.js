@@ -102,8 +102,10 @@ EQGQJDOCXW: {
     },
 
 YJQAOQJBMQ: {
-    name: 'GMA PINOY TV (OFFLINE)',
-    url: 'https://amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono-dzsx9.amagi.tv/index.mpd',
+    name: 'GMA PINOY TV',
+    url: 'https://abslive.akamaized.net/dash/live/2099522/gmapt3/manifest.mpd',
+	keyId: '7b5d15a7385546768aca9fd505ad5e16',
+    key: 'f534393c84c1a9c17fa36bc3a4380981',
     type: 'mpd'
     },
 
