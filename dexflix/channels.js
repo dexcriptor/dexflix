@@ -141,14 +141,16 @@ TSNBBRHLBL: {
     key: '168bbf02d7eca252a61a402e25cb33f5',
     type: 'mpd'
     },
-    
+
+/*	
 XHLREZRWBQ: {
     name: 'Sari-Sari',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_sarisari/default/index.mpd',
     keyId: '0a7ab3612f434335aa6e895016d8cd2d',
     key: 'b21654621230ae21714a5cab52daeb9d',
     type: 'mpd'
-    },		
+    },	
+*/	
 
 ZLNNYRCWDO: {
     name: 'PTV',
@@ -221,7 +223,13 @@ LKZBQHEIEI: {
     key: 'a9b9198bf7b116b30492aea4dc471122',
     type: 'mpd'
    }, 
-   
+
+ANTKCUMTCQ: {
+    name: 'Love Nature 4K',
+    url: 'https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8',
+	type: 'hls'
+    },
+	
 WPCWAZUVDZ: {
     name: 'Love Nature (Use VPN)',
     url: 'https://unifi-live2.secureswiftcontent.com/content/dash/live/channel%28lovenature%29/master.mpd',
@@ -483,7 +491,8 @@ HMCYBYGNEO: {
         key: 'ec695ab203cb2258db220b3863e2a7ee',
      	type: 'mpd'
     },
-    
+
+	/*
 	  BUUPMLMGOV: {
         name: 'PBO (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pbo_sd/default/index.mpd',
@@ -499,6 +508,7 @@ HMCYBYGNEO: {
         key: '3bd6688b8b44e96201e753224adfc8fb',
      	type: 'mpd'
     },
+	*/
     
 	  HERFIFLRFI: {
         name: 'TMC (Tagalized Movie Channel)',
