@@ -485,7 +485,7 @@ HMCYBYGNEO: {
     },
     
 	  BUUPMLMGOV: {
-        name: 'PBO',
+        name: 'PBO (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pbo_sd/default/index.mpd',
         keyId: 'dcbdaaa6662d4188bdf97f9f0ca5e830',
         key: '31e752b441bd2972f2b98a4b1bc1c7a1',
@@ -493,7 +493,7 @@ HMCYBYGNEO: {
     },
     
 	  RKHUNAQQDE: {
-        name: 'Viva Cinema',
+        name: 'Viva Cinema (Offline)',
         url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/viva_sd/default/index.mpd',
         keyId: '07aa813bf2c147748046edd930f7736e',
         key: '3bd6688b8b44e96201e753224adfc8fb',
@@ -642,19 +642,19 @@ BJBESGHZIK: {
     },
    
 	AEOCYYFSBO: {
-        name: 'Rage TV',
+        name: 'Rage TV (Offline)',
         url: 'https://live20.bozztv.com/giatv/giatv-ragetv/ragetv/playlist.m3u8',
 		type: 'hls'
     },	
     
 	XQRGCZLEBW: {
-        name: 'Sine Manila',
+        name: 'Sine Manila (Offline)',
         url: 'https://live20.bozztv.com/giatv/giatv-sinemanila/sinemanila/playlist.m3u8',
 		type: 'hls'
     },
     
 	JJAYNBJAUX: {
-        name: 'BIH TV',
+        name: 'BIH TV (Offline)',
         url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/playlist.m3u8',
 		type: 'hls'
     },
@@ -687,108 +687,109 @@ BJBESGHZIK: {
 
 WJHFJKVPGI: {
     name: 'Arirang',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/arirang_sd/default/index.mpd',
-    keyId: '13815d0fa026441ea7662b0c9de00bcf',
-    key: '2d99a55743677c3879a068dd9c92f824',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/arirang_sd/default/index.mpd',
+    keyId: '7d4f9c216a834e508b165c3a7d9e2048',
+    key: '9d148906d890053a00f5e581185ac066',
     type: 'mpd'
     },	
 
 OCWQQOHGPK: {
     name: 'KBS World',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/kbsworld/default/index.mpd',
-    keyId: '22ff2347107e4871aa423bea9c2bd363',
-    key: 'c6e7ba2f48b3a3b8269e8bc360e60404',
+    keyId: 'e8c5d2317a944f06b2186d3a9e7c5042',
+    key: 'ce327be0871677eb1c480d10a73eac34',
     type: 'mpd'
     },	
 	
 	  JTFLGZZOAF: {
         name: 'NBA TV  Philippines',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd',
-        keyId: 'd1f8a0c97b3d4e529a6f2c4b8d7e1f90',
-        key: '58ab331d14b66bf31aca4284e0a3e536',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cgnl_nba/default/index.mpd',
+        keyId: '2f7c9a615d834e40b2188a6d3c7f9042',
+        key: '41d2ade5ff1798859420e925d5d2080d',
      	type: 'mpd'
     },
     
 	  YRAHNRYZYR: {
         name: 'PBA Rush',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_pbarush_hd1/default/index.mpd',
-        keyId: 'd7f1a9c36b2e4f8d9a441c5e7b2d8f60',
-        key: 'fb83c86f600ab945e7e9afed8376eb1e',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_pbarush_hd1/default/index.mpd',
+        keyId: '91a5e6327c844f09b2186d3a5e7c2041',
+        key: '984beb3aeff3554c1a5acc04d6044e55',
      	type: 'mpd'
     },
     
 	  MLXVYRFJBX: {
         name: 'One Sports HD',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesports_hd/default/index.mpd',
-        keyId: '53c3bf2eba574f639aa21f2d4409ff11',
-        key: '3de28411cf08a64ea935b9578f6d0edd',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_onesports_hd/default/index.mpd',
+        keyId: '69f5a2318d744c609b125e3a7d8f2046',
+        key: '182523c0bae912e17e916dd4283280e9',
      	type: 'mpd'
     },
     
 	  TWBFRUMKCX: {
         name: 'One Sports Plus HD',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_onesportsplus_hd1/default/index.mpd',
-        keyId: 'f00bd0122a8a4da1a49ea6c49f7098ad',
-        key: 'a4079f3667ba4c2bcfdeb13e45a6e9c6',
+        keyId: 'e9c4f7312a854d69b0137f6e8c2a5490',
+        key: '1105fa92173b06885be336b887bc4d26',
      	type: 'mpd'
     },
     
 	  YKORJHDDCT: {
         name: 'UAAP Varsity Channel',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_uaap_cplay_sd/default/index.mpd',
-        keyId: '95588338ee37423e99358a6d431324b9',
-        key: '6e0f50a12f36599a55073868f814e81e',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_uaap_cplay_sd/default/index.mpd',
+        keyId: 'b6c9f4218d734a059e165c3d7a2f8049',
+        key: '948aa5c0d0c15c70efb9257f5b75c379',
      	type: 'mpd'
     },
     
 	  FGRKETJEEQ: {
         name: 'TAP Sports',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_tapsports/default/index.mpd',
-        keyId: 'eabd2d95c89e42f2b0b0b40ce4179ea0',
-        key: '0e7e35a07e2c12822316c0dc4873903f',
+        keyId: 'a6d4f8912c734b608e159f3a7d5c2046',
+        key: 'ec647e6c500235352a8df03c518e9b23',
      	type: 'mpd'
     },
     
 	  TBQGXBXPDI: {
         name: 'Premier Sports',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_ps_hd1/default/index.mpd',
-        keyId: 'b8b595299fdf41c1a3481fddeb0b55e4',
-        key: 'cd2b4ad0eb286239a4a022e6ca5fd007',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_ps_hd1/default/index.mpd',
+        keyId: '91e4c6725a834d198f602c7b9e3a5148',
+        key: '4185d260443198690be03e294fdc1240',
      	type: 'mpd'
     },
 	
 	  DHQTATKHOJ: {
         name: 'Premier Sports 2',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/premiersports2hd/default/index.mpd',
-        keyId: '59454adb530b4e0784eae62735f9d850',
-        key: '61100d0b8c4dd13e4eb8b4851ba192cc',
+        keyId: '72e4b9c13f864a52a9178d6c0e5b2394',
+        key: '9390c1edae5ecf680c168daf44bf6a03',
      	type: 'mpd'
     },
     
 	  MXGTDMXJRD: {
         name: 'SpoTV HD',
-        url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd',
-        keyId: 'ec7ee27d83764e4b845c48cca31c8eef',
-        key: '9c0e4191203fccb0fde34ee29999129e',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_spotvhd/default/index.mpd',
+        keyId: 'c5e8a3927d414b609f286a3c5e1d7049',
+        key: '7c5edbd3d090bb6de9a9c3685defa959',
      	type: 'mpd'
     },
 
 	  CAASIEPIOZ: {
         name: 'SpoTV 2 HD',
-        url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd',
-        keyId: '7eea72d6075245a99ee3255603d58853',
-        key: '6848ef60575579bf4d415db1032153ed',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_spotv2hd/default/index.mpd',
+        keyId: 'b2d8f6315c494e07a8129f6a3d5c2048',
+        key: '6b4247def21bbd0d08629a3cb4c62ee9',
 		type: 'mpd'
     },
  
 	  GCVZHCEBEJ: {
         name: 'DreamWorks HD',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_dreamworks_hd1/default/index.mpd',
-        keyId: '7b1e9c4d5a2f4d8c9f106d3a8b2c1e77',
-        key: '8b2904224c6cee13d2d4e06c0a3b2887',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_dreamworks_hd1/default/index.mpd',
+        keyId: '1f7c9a425d864e30b2198a3c6f7d5041',
+        key: 'b392ee3cd42686a8cff3070eef614745',
      	type: 'mpd'
     },
-    
+
+/*	
 	  AAWAWQRLZO: {
         name: 'Dreamworks Tagalog',
         url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_dreamworktag/default/index.mpd',
@@ -796,6 +797,7 @@ OCWQQOHGPK: {
         key: 'd3ad27d7fe1f14fb1a2cd5688549fbab',
      	type: 'mpd'
     },
+*/	
 
 UPYSADUMQW: {
     name: 'Cartoon Network',
