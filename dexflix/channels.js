@@ -31,17 +31,17 @@ IJEDPUSVRF: {
     
 MHPMAICNSG: {
     name: 'TV5 HD',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/tv5_hd/default1/index.mpd',
-    keyId: '2615129ef2c846a9bbd43a641c7303ef',
-    key: '07c7f996b1734ea288641a68e1cfdc4d',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/tv5_hd/default1/index.mpd',
+    keyId: '9c3e7a516d824f04a9175b8c2e3d7040',
+    key: '524a9c2cec98272f71c347345a3fd12e',
     type: 'mpd'
     },
     
 NFHENFOCTV: {
     name: 'A2Z',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_a2z/default/index.mpd',
-    keyId: '3f6d8a2c1b7e4c9f8d52a7e1b0c6f93d',
-    key: '4019f9269b9054a2b9e257b114ebbaf2',
+    keyId: 'f3a8c9126e544d809b312c7f5a8e6140',
+    key: '43f5361983896b47ff01b4f77c5dbf3f',
     type: 'mpd'
    },
    
@@ -112,8 +112,8 @@ YJQAOQJBMQ: {
 EZWESVUERG: {
     name: 'Kapatid HD',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/kapatid_hd/default/index.mpd',
-	keyId: '045d103180f64562b1db7c932741c3ba',
-    key: 'c3380548b9075c767a6ae2006ef4bff8',
+	keyId: '8f7a2c913d6b4e5a9f127c8d4e6a1b90',
+    key: 'a73d3d1211fb23084c62572706f45397',
     type: 'mpd'
     },
 
@@ -128,8 +128,8 @@ ETIEYDGLLW: {
 HUBRZHFYJR: {
     name: 'One PH',
     url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/oneph_sd/default/index.mpd',
-    keyId: 'b1c7e9d24f8a4d6c9e337a2f1c5b8d60',
-    key: '8ff2e524cc1e028f2a4d4925e860c796',
+    keyId: '5e9a3c718d464f20b9157a6c2e4d8031',
+    key: '7bf8a7666a2d572fe111b5f829c99266',
     type: 'mpd'
     },
     
@@ -137,8 +137,8 @@ HUBRZHFYJR: {
 TSNBBRHLBL: {
     name: 'Buko',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_buko_sd/default/index.mpd',
-    keyId: 'd273c085f2ab4a248e7bfc375229007d',
-    key: '7932354c3a84f7fc1b80efa6bcea0615',
+    keyId: 'c8b1d5f42a674e93b8016f2d9c7a5e34',
+    key: '168bbf02d7eca252a61a402e25cb33f5',
     type: 'mpd'
     },
     
@@ -152,25 +152,25 @@ XHLREZRWBQ: {
 
 ZLNNYRCWDO: {
     name: 'PTV',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_ptv4_sd/default/index.mpd',
-    keyId: '71a130a851b9484bb47141c8966fb4a3',
-    key: 'ad1f003b4f0b31b75ea4593844435600',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_ptv4_sd/default/index.mpd',
+    keyId: 'f8c2a6915d744b309e186a3f7c2d8049',
+    key: '1ad3243b38c60312caa6ba11f150c19c',
     type: 'mpd'
     },
     
 VELZCTLQQY: {
     name: 'DepEd Channel',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/depedch_sd/default/index.mpd',
-    keyId: '0f853706412b11edb8780242ac120002',
-    key: '2157d6529d80a760f60a8b5350dbc4df',
+    keyId: 'c1a5e8329d644f70b2187a3c6e5d2041',
+    key: '55979431f291f7dff35a43b73b3c2a36',
     type: 'mpd'
     },
 
 EEITVIWIOH: {
     name: 'Knowledge Channel',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/knowledge_channel/default/index.mpd',
-    keyId: 'c7d2b1e94f8a4d6c8a106b3d1f9c2e55',
-    key: '2052f6b844aa53144bb32f0e41295106',
+    keyId: '84d2f6917b354c08a9163e5d8f2a7049',
+    key: '192c69ef479dd7e3fccc908d6c5dbb3a',
     type: 'mpd'
     },
     
