@@ -478,9 +478,9 @@ HMCYBYGNEO: {
     
 	  TIBXUDCSSA: {
         name: 'TVN Movies Pinoy',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tvnmovie/default/index.mpd',
-        keyId: '2e53f8d8a5e94bca8f9a1e16ce67df33',
-        key: '3471b2464b5c7b033a03bb8307d9fa35',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_tvnmovie/default/index.mpd',
+        keyId: 'e6c9a4215d734f608b197c3e2a5d9048',
+        key: 'ec695ab203cb2258db220b3863e2a7ee',
      	type: 'mpd'
     },
     
@@ -502,105 +502,105 @@ HMCYBYGNEO: {
     
 	  HERFIFLRFI: {
         name: 'TMC (Tagalized Movie Channel)',
-        url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_tagalogmovie/default/index.mpd',
-        keyId: '96701d297d1241e492d41c397631d857',
-        key: 'ca2931211c1a261f082a3a2c4fd9f91b',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_tagalogmovie/default/index.mpd',
+        keyId: '27f6c4818a534d09b2169e5c7a3f6048',
+        key: 'fbd8e319511ff5a1593f5b68da7b81cd',
      	type: 'mpd'
     },
     
 	  QSDUPRWHIN: {
         name: 'Celestial Movies Pinoy',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/celmovie_pinoy_sd/default/index.mpd',
-        keyId: '0f8537d8412b11edb8780242ac120002',
-        key: '2ffd7230416150fd5196fd7ea71c36f3',
+        keyId: '35f8d6917a424b059e166c3a7d5f8049',
+        key: '76830e1bcb5819f76b7c515e9d65cc31',
      	type: 'mpd'
     },
     
 	  QSCEXXJGRQ: {
         name: 'Thrill',
-        url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_thrill_sd/default/index.mpd',
-        keyId: '928114ffb2394d14b5585258f70ed183',
-        key: 'a82edc340bc73447bac16cdfed0a4c62',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_thrill_sd/default/index.mpd',
+        keyId: 'b8c3d5906e424f17a9215d8c7a2e6043',
+        key: '02ce48f1b48f7cbdc3e2703a56e8fa31',
      	type: 'mpd'
     },
     
 	  OJTYMKZROU: {
         name: 'Tap Movies',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tapmovies_hd1/default/index.mpd',
-        keyId: '71cbdf02b595468bb77398222e1ade09',
-        key: 'c3f2aa420b8908ab8761571c01899460',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_tapmovies_hd1/default/index.mpd',
+        keyId: '65d8c4912f734a90b8163e7c5d9a2041',
+        key: 'fd495b984013da4e26f83b1a921c0a15',
      	type: 'mpd'
     },
     
     WKWDOADTVT: {
         name: 'Lotus Macau',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/lotusmacau_prd/default/index.mpd',
-        keyId: '60dc692e64ea443a8fb5ac186c865a9b',
-        key: '01bdbe22d59b2a4504b53adc2f606cc1',
+        keyId: 'e2c9a5748b314f60a9276d5e3c1f8042',
+        key: 'c845cc41e3826b6d880b802911eb43f9',
      	type: 'mpd'
     },
     
 	  CQFVYGLEFI: {
         name: 'HBO',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbohd/default/index.mpd',
-        keyId: 'c2b7a1e95d4f4c3a8e617f9d0a2b6c18',
-        key: '27fca1ab042998b0c2f058b0764d7ed4',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_hbohd/default/index.mpd',
+        keyId: 'd7f3c8215a944e068b176c9d2a5f3048',
+        key: '93c0a798243d6443864d1a7ff3e42c05',
      	type: 'mpd'
     },
     
 	  UNXSFWLWGJ: {
         name: 'HBO Hits',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbohits/default1/index.mpd',
-        keyId: 'b04ae8017b5b4601a5a0c9060f6d5b7d',
-        key: 'a8795f3bdb8a4778b7e888ee484cc7a1',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_hbohits/default/index.mpd',
+        keyId: '3e8c5a917d424f06b2196a5c9e2d8043',
+        key: '516c47ccef00a12421d9805c8c1c6c1d',
      	type: 'mpd'
     },
     
 	  LLKHXTVYEX: {
         name: 'HBO Family',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbofam/default/index.mpd',
-        keyId: '872910c843294319800d85f9a0940607',
-        key: 'f79fd895b79c590708cf5e8b5c6263be',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_hbofam/default/index.mpd',
+        keyId: 'c6e4b9218f534a709d165c3a7e2f8048',
+        key: '87c0e7cf73324aea32dada7b5f33063d',
      	type: 'mpd'
     },
     
 	  PPUHAPZCOM: {
         name: 'HBO Signature',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbosign/default/index.mpd',
-        keyId: 'a06ca6c275744151895762e0346380f5',
-        key: '559da1b63eec77b5a942018f14d3f56f',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_hbosign/default/index.mpd',
+        keyId: '74d8f5916c234b80a9179e5d3c7a2046',
+        key: 'f8d2753ff54579efc01d3373acf21f96',
      	type: 'mpd'
     },
 
 	  WENTZCYWGL: {
         name: 'HITS HD',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hits_hd1/default/index.mpd',
-        keyId: '6d2f8a1c9b5e4c7da1f03e7b9d6c2a55',
-        key: '37c9835795779f8d848a6119d3270c69',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/hits_hd1/default/index.mpd',
+        keyId: 'd2e8c4715a634f09b2187c6d3e9a5042',
+        key: '8b11760042654021997fd07a8a0b7acc',
      	type: 'mpd'
     },
     
 	  BHGYYALHDW: {
         name: 'HITS Movies',
-        url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_hitsmovies/default/index.mpd',
-        keyId: '2c8a5f1e7b9d4c6a9e55f1d7b2a8c360',
-        key: 'c9f622dff27e9e1c1f78617ba3b81a62',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/hitsmovies/default/index.mpd',
+        keyId: '45c9e7328b614d059f247a6c3e5d1048',
+        key: '13ef5feae7c84eb06bcc655a225fb01d',
      	type: 'mpd'
     },
 
 	  QLJMIQHNKR: {
         name: 'HITS Now',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hitsnow/default/index.mpd',
-        keyId: 'f9c3d6b18a2e4d7f9e453b1a8c6d2f70',
-        key: 'ce8874347ec428c624558dcdc3575dd4',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_hitsnow/default/index.mpd',
+        keyId: '24a8e6917c534d809f165b3e6a2d9047',
+        key: '183f05bcb80e9cfcb613b8c767777f27',
      	type: 'mpd'
     },
 
 KRQWWAMRZR: {
     name: 'Cinemax',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cinemax/default/index.mpd',
-    keyId: 'b207c44332844523a3a3b0469e5652d7',
-    key: 'fe71aea346db08f8c6fbf0592209f955',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_cinemax/default/index.mpd',
+    keyId: 'd7a9c5215e364b809f148c2d6a7e3045',
+    key: 'c92a3b4a7fe9fab97c130468260b963f',
     type: 'mpd'
 },
 	
