@@ -177,48 +177,48 @@ EEITVIWIOH: {
 IVMMOQGANR: {
     name: 'One News',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/onenews_hd1/default/index.mpd',
-    keyId: '2e6a9d7c1f4b4c8a8d33c7b1f0a5e924',
-    key: '4c71e178d090332fbfe72e023b59f6d2',
+    keyId: 'd5c8a2914e734b609f127a3d6c5e8048',
+    key: '11368a3b001407d65a85b4edb410ecdd',
     type: 'mpd'
     },
     
 DCMTBJQDPR: {
     name: 'RPTV',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cnn_rptv_prod_hd/default/index.mpd',
-    keyId: '1917f4caf2364e6d9b1507326a85ead6',
-    key: 'a1340a251a5aa63a9b0ea5d9d7f67595',
+    keyId: 'b5d7a6219c434e188f026a3d7c5e9148',
+    key: '28e1244057ff6feae879c1e985ded0fb',
     type: 'mpd'
     },
     
 TVVRTMVPZA: {
     name: 'IBC 13',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/ibc13_sd_new/default1/index.mpd',
-    keyId: '16ecd238c0394592b8d3559c06b1faf5',
-    key: '05b47ae3be1368912ebe28f87480fc84',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/ibc13_sd_new/default/index.mpd',
+    keyId: 'f4a8d6216c954e709b187d3a5f2c8049',
+    key: '34710df996a4089ee6f7e8deb7f46586',
     type: 'mpd'
     },
     
 MQVHVNFMBA: {
     name: 'Bilyonaryo Channel',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/bilyonaryoch/default1/index.mpd',
-    keyId: '227ffaf09bec4a889e0e0988704d52a2',
-    key: 'b2d0dce5c486891997c1c92ddaca2cd2',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/bilyonaryoch/default/index.mpd',
+    keyId: '2e7f9c518a424d30b2165c3e7a9d6041',
+    key: '8c8c0ef924c982bc1dd92348e024cd4c',
     type: 'mpd'
     },
 
 CQCFCOSBXW: {
     name: 'BBC Earth',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_bbcearth_hd1/default/index.mpd',
-    keyId: '34ce95b60c424e169619816c5181aded',
-    key: '0e2a2117d705613542618f58bf26fc8e',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_bbcearth_hd1/default/index.mpd',
+    keyId: '4f9c6e217a354d80b9268e5c3f1a7042',
+    key: '41b33eebbacf91fe6c86bd28081bf3fd',
     type: 'mpd'
    },  
    
 LKZBQHEIEI: {
     name: 'Animal Planet',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_animal_planet_sd/default/index.mpd',
-    keyId: '436b69f987924fcbbc06d40a69c2799a',
-    key: 'c63d5b0d7e52335b61aeba4f6537d54d',
+    keyId: '3c8e5a927d414b069f236a5c8e1d7049',
+    key: 'a9b9198bf7b116b30492aea4dc471122',
     type: 'mpd'
    }, 
    
@@ -233,8 +233,8 @@ WPCWAZUVDZ: {
 XTNVBRQULD: {
     name: 'Discovery Channel',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/discovery/default/index.mpd',
-    keyId: 'd9ac48f5131641a789328257e778ad3a',
-    key: 'b6e67c37239901980c6e37e0607ceee6',
+    keyId: 'd5a7f8219c364e50b2147f6d3a8c9025',
+    key: 'c77d5e56c52c4065c42594422ac85e2c',
     type: 'mpd'
    }, 
 
@@ -265,48 +265,48 @@ EXSCCQGNYA: {
 WQFXADPXFI: {
     name: 'Crime Investigation',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/crime_invest/default/index.mpd',
-	keyId: '6c9e1f2a7b4d4c8a8d33f5b1a0c7e944',
-    key: '3d2a1b8c7e4f6d5a9c0b1e2f7a3d8c5b',
+	keyId: 'e7a3d5916c824b459f105d8e2c7a3046',
+    key: '616f8ab0c416966e8de415cb60e9e6cf',
     type: 'mpd'
    },  
 
 APXOFOEFBD: {
     name: 'History',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_historyhd/default/index.mpd',
-    keyId: 'e2a8c7d15b9f4d6a9c101f7e3b2d8a44',
-    key: '397ca914a73b1e00bc94ed9eccf9c258',
+    keyId: 'f5c7a8219d464e30b2186a3f7c5d9041',
+    key: 'dacc84b7010ca22f8c63a7c290461ed3',
     type: 'mpd'
    }, 
  
 HHUODGDYJL: {
-    name: 'Rock Action',
+    name: 'Rock Extreme',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_rockextreme/default/index.mpd',
-    keyId: '0f852fb8412b11edb8780242ac120002',
-    key: '4cbc004d8c444f9f996db42059ce8178',
+    keyId: 'd9a4f5218c374b069e156f2d7a3c8049',
+    key: '72aa902f471adf15bef2710b6b689ed0',
     type: 'mpd'
     }, 
 
 IINOGIYVQA: {
     name: 'Rock Entertainment',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_rockentertainment/default/index.mpd',
-    keyId: 'e4ee0cf8ca9746f99af402ca6eed8dc7',
-    key: 'be2a096403346bc1d0bb0f812822bb62',
+    keyId: '86e5c7921a434f60b9287d3c9e5a6041',
+    key: 'fab817af24eab2a73ae89145797cf556',
     type: 'mpd'
     }, 
 
 XYYWGKBYSD: {
     name: 'KIX HD',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/kix_hd1/default/index.mpd',
-    keyId: 'c9d4b7a18e2f4d6c9a103f5b7e1c2d88',
-    key: '7f3139092bf87d8aa51ee40e6294d376',
+    keyId: '7f4a9c312e854d67b0198c6f5a3e7240',
+    key: '141f058ad1a6230e7c6f9d302ce378ef',
     type: 'mpd'
     }, 
 
 TUPVZWQMNE: {
     name: 'Asian Food Network',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/asianfoodnetwork_sd/default/index.mpd',
-    keyId: '1619db30b9ed42019abb760a0a3b5e7f',
-    key: '5921e47fb290ae263291b851c0b4b6e4',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/asianfoodnetwork_sd/default/index.mpd',
+    keyId: 'f4b7c8219e364a058d295c6f3e7a1042',
+    key: 'd10c7f2a37c1079e6b83837423c0d6b2',
     type: 'mpd'
     }, 
 
