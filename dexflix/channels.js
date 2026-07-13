@@ -312,57 +312,57 @@ TUPVZWQMNE: {
 
 IEKRDWOPCI: {
     name: 'Food Network HD',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_foodnetwork_hd1/default/index.mpd',
-    keyId: '4a9d2f7c1e6b4c8d8a55d7b1e3f0c926',
-    key: '2e62531bdb450480a18197b14f4ebc77',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_foodnetwork_hd1/default/index.mpd',
+    keyId: 'b1f4a8926c374d509e218a7c3f5d6049',
+    key: '15cde0b44b44f38ea936513a99606c1b',
     type: 'mpd'
     }, 
 
 VQAJWHZEZX: {
     name: 'HGTV HD',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hgtv_hd1/default/index.mpd',
-    keyId: 'f1e8c2d97a3b4f5d8c669d1a2b7e4c30',
-    key: '03aaa7dcf893e6b934aeb3c46f9df5b9',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/hgtv_hd1/default/index.mpd',
+    keyId: '4e9a6c317d524f808b163c5a2e7d9048',
+    key: '5079e2288b584f47d4bbf8d149b2a986',
     type: 'mpd'
     }, 
 
 JQLZSOCVKY: {
     name: 'Fashion TV HD',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/fashiontvhd/default/index.mpd',
-    keyId: '9d7c1f2a6b4e4a8d8f33c1e5b7d2a960',
-    key: '3a18c535c52db7c79823f59036a9d195',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/fashiontvhd/default/index.mpd',
+    keyId: 'c8a4e6917f324d05b9186c5e3a2f7049',
+    key: '92b4ece8c84379145045267b47f183d2',
     type: 'mpd'
     },
 
 NBBXQSBCEY: {
     name: 'Global Trekker',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/globaltrekker/default/index.mpd',
-    keyId: 'b7a6c5d23f1e4a9d8c721e5d9f4a6b13',
-    key: '63ca9ad0d88fccb8c667b028f47287ba',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/globaltrekker/default/index.mpd',
+    keyId: 'e4b8d2916a534f709c187d3e5a2f6049',
+    key: '85d67d8b52caf380c82dc45b07f26f69',
     type: 'mpd'
     }, 
 
 KWXNUHRMIG: {
     name: 'Lifetime',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_lifetime/default/index.mpd',
-    keyId: 'cf861d26e7834166807c324d57df5119',
-    key: '64a81e30f6e5b7547e3516bbf8c647d0',
+    keyId: 'b9e6a3214c754f908d165a3c7e2f6048',
+    key: '32300d9517f91a4acb747d360768dd00',
     type: 'mpd'
     }, 
 
 XIJOOHBKAD: {
     name: 'Travel Channel',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/travel_channel_sd/default/index.mpd',
-    keyId: 'f3047fc13d454dacb6db4207ee79d3d3',
-    key: 'bdbd38748f51fc26932e96c9a2020839',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/travel_channel_sd/default/index.mpd',
+    keyId: '18c6f9235b744d81a0397e2c9f6a5048',
+    key: '7974c1376447c563f5fdb41be0104ddf',
     type: 'mpd'
     }, 
 
 XAQYGLJQPO: {
     name: 'AXN',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_axn_sd/default/index.mpd',
-    keyId: '8a6c2f1e9d7b4c5aa1f04d2b7e9c1f88',
-    key: '05e6bfa4b6805c46b772f35326b26b36',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_axn_sd/default/index.mpd',
+    keyId: 'c7e5a2199d644b318f702a6c4e5d8139',
+    key: '300778996b5a71594db508982256f365',
     type: 'mpd'
     },  
 
@@ -383,72 +383,72 @@ NOKDTKBBOR: {
 CYCBMWWRIQ: {
     name: 'Aljazeera',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_aljazeera/default/index.mpd',
-    keyId: '7f3d900a04d84492b31fe9f79ac614e3',
-    key: 'd33ff14f50beac42969385583294b8f2',
+    keyId: '73c5f8919d424b06a2186e7c3a5d9040',
+    key: 'bf46e85e8fba9f0eae0931394d478d25',
     type: 'mpd'
     },  
 	
 DWPAUDHHTN: {
     name: 'NHK World Japan',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_nhk_japan/default/index.mpd',
-    keyId: '3d6e9d4de7d7449aadd846b7a684e564',
-    key: '0800fff80980f47f7ac6bc60b361b0cf',
+    keyId: 'a3d7f5916c824e09b2158a5c3f7d2046',
+    key: '32d760047f05c233d9dae35083fe0b30',
     type: 'mpd'
     }, 
 
 BQEZSESOJI: {
     name: 'BBC World News',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/bbcworld_news_sd/default/index.mpd',
-    keyId: 'f59650be475e4c34a844d4e2062f71f3',
-    key: '119639e849ddee96c4cec2f2b6b09b40',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/bbcworld_news_sd/default/index.mpd',
+    keyId: 'f1a6e8329c574b048d216e5f3a7c9048',
+    key: '8106237b47f99be13f4e941ca5bd35c5',
     type: 'mpd'
     },
 
 GCCLMWTZFB: {
     name: 'Bloomberg',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/bloomberg_sd/default/index.mpd',
-    keyId: '3b8e6d1f2c9a4f7d9a556c1e7b2d8f90',
-    key: '09f0bd803966c4befbd239cfa75efe23',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/bloomberg_sd/default/index.mpd',
+    keyId: '19f6c8325a744d90b2618e3f7c2a5049',
+    key: '784fffb38dc4fb6d5b74de822074feb4',
     type: 'mpd'
     }, 
 
 KIODVVNNET: {
     name: 'CGTN',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgtn/default/index.mpd',
-    keyId: '0f854ee4412b11edb8780242ac120002',
-    key: '9f2c82a74e727deadbda389e18798d55',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cgtn/default/index.mpd',
+    keyId: 'f2a7d6318c544b099e216d5f3a7c8042',
+    key: '1abff1626a5403fa2ea8964c2f3b9c1d',
     type: 'mpd'
     }, 
 
 ZHJDBTSZHV: {
     name: 'Channel News Asia',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/channelnewsasia/default/index.mpd',
-    keyId: 'b259df9987364dd3b778aa5d42cb9acd',
-    key: '753e3dba96ab467e468269e7e33fb813',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/channelnewsasia/default/index.mpd',
+    keyId: '56d8c4917a234e60b9159f3a6c7d2048',
+    key: 'e6f0a100b6a2fcda66e8554f8c9b510b',
     type: 'mpd'
     }, 
 
 XQGTJWFXNX: {
     name: 'CNN HD',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd',
-    keyId: '900c43f0e02742dd854148b7a75abbec',
-    key: 'da315cca7f2902b4de23199718ed7e90',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_cnnhd/default/index.mpd',
+    keyId: '1d9f6b828c454a17b2395e7d3f90a621',
+    key: 'c5776d83cbf50c9354f27b1c830e1996',
     type: 'mpd'
     }, 
 
 TFRRVSKYMZ: {
     name: 'France24',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/france24/default/index.mpd',
-    keyId: '257f9fdeb39d41bdb226c2ae1fbdaeb6',
-    key: 'e80ead0f4f9d6038ab34f332713ceaa5',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/france24/default/index.mpd',
+    keyId: '92d8f3416c754b09a2187e5d3a9c6042',
+    key: '4e668d238bc656b7d2c7535757aa9531',
     type: 'mpd'
     }, 
 
 TSVTVHOYJG: {
     name: 'TV Maria',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/tvmaria_prd/default/index.mpd',
-    keyId: 'fa3998b9a4de40659725ebc5151250d6',
-    key: '998f1294b122bbf1a96c1ddc0cbb229f',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/tvmaria_prd/default/index.mpd',
+    keyId: '6a2d9f815c744e30b9168f3a7d2c5049',
+    key: 'fb07ec8ca16ffdb8b8a045fa4c8aac74',
     type: 'mpd'
     }, 
 
@@ -462,9 +462,9 @@ UTRIDAQNCH: {
 	
 HFUYTLVYAT: {
     name: 'True TV',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/truefm_tv/default/index.mpd',
-    keyId: 'a4e2b9d61c754f3a8d109b6c2f1e7a55',
-    key: '1d8d975f0bc2ed90eda138bd31f173f4',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/truefm_tv/default/index.mpd',
+    keyId: '8c4e9a516d724f30b2187a3c5e9d6041',
+    key: 'e25c167573772b510ff8e5282560a349',
     type: 'mpd'
     },
         
