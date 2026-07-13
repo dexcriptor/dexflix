@@ -478,9 +478,9 @@ HFUYTLVYAT: {
         
 HMCYBYGNEO: {
     name: 'HBO Xtreme',
-    url: 'https://zap-live1-ott.izzigo.tv/15/out/u/dash/HBO-XTREME-HD/default.mpd',
-    keyId: 'bc8d4369fcff86db765db82356b4797c',
-    key: '8a7e801dbc275e3f4e1f43cba648906a',
+    url: 'https://lilac01.pontiscloud.com/live/eds/HBOXtreme/live_dash_cld/HBOXtreme.mpd',
+    keyId: '33d4823ed2cae55c19fa0a7c20fa4235',
+    key: 'a64c4d55edb20046802e76332c8aa75e',
 	type: 'mpd'
     },
     
