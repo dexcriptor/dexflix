@@ -802,40 +802,40 @@ OCWQQOHGPK: {
 UPYSADUMQW: {
     name: 'Cartoon Network',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cartoonnetworkhd/default/index.mpd',
-    keyId: 'a2d1f552ff9541558b3296b5a932136b',
-    key: 'cdd48fa884dc0c3a3f85aeebca13d444',
+    keyId: '53c8e6914d724f30a9168b5e2c7d1043',
+    key: '1e17afbdfff786533796780f3f04aa67',
     type: 'mpd'
    }, 
 
 XOUDEFZTWK: {
     name: 'Nickelodeon',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_nickelodeon/default/index.mpd',
-    keyId: '9ce58f37576b416381b6514a809bfd8b',
-    key: 'f0fbb758cdeeaddfa3eae538856b4d72',
+    keyId: '81f3e6924c754a08b9215d7e9c3f6048',
+    key: '094cd48e9729cb8bcb0e03e848fc8751',
     type: 'mpd'
    }, 
 
 JLPKXHSYVK: {
     name: 'Nick Jr.',
-    url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickjr/default/index.mpd',
-    keyId: 'bab5c11178b646749fbae87962bf5113',
-    key: '0ac679aad3b9d619ac39ad634ec76bc8',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_nickjr/default/index.mpd',
+    keyId: 'ca7e5b318d624f099c246a3e7d5f8140',
+    key: '3175f0646c504fad87e97c7677a85393',
     type: 'mpd'
    }, 
 
 TFYMEHANRB: {
     name: 'Moonbug Kids',
-    url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_moonbug_kids_sd/default/index.mpd',
-    keyId: '0bf00921bec94a65a124fba1ef52b1cd',
-    key: '0f1488487cbe05e2badc3db53ae0f29f',
+    url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_moonbug_kids_sd/default/index.mpd',
+    keyId: '48e7d3219c564f80b2147a5d3e6c2048',
+    key: '23a7b41054c60983ad020652f7ffa06e',
     type: 'mpd'
    }, 
    
 JFPRNIQIPX: {
     name: 'Animax',
     url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_animax_sd_new/default/index.mpd',
-    keyId: '92032b0e41a543fb9830751273b8debd',
-    key: '03f8b65e2af785b10d6634735dbe6c11',
+    keyId: 'a7d3f5916c844b209e158f3a7d5c2046',
+    key: '021fe5515e7dfb1a00a98d51abd0cb7f',
     type: 'mpd'
     },
    
@@ -858,13 +858,13 @@ TTCNCOZNAK: {
     },  
 
 TESTLINKHLS: {
-    name: 'Test Stream Only (HLS)',
+    name: 'Test Stream Only (HLS) - Offline',
     url: 'https://gma7.xocornerph.workers.dev/jdPwif_EqTk/stream.m3u8',
 	type: 'hls'
     },
       
 TESTLINKMPD: {
-    name: 'Test Stream Only (MPD)',
+    name: 'Test Stream Only (MPD) - Offline',
     url: 'https://atemecdnbalancer-voe.sysln.id/live/eds/LoveNatureHD/mpd/LoveNatureHD.mpd',
     keyId: 'c3066eaa0984588f78d12dcdb75ef88b',
     key: '4e98eb4927941bff51ea526d223fa16d',
